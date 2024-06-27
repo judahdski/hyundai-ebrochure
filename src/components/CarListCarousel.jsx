@@ -24,7 +24,7 @@ export const CarListCarousel = () => {
 const CarCard = ({ imgPath, carTitle }) => {
 	return (
 		<div className='w-full flex justify-center'>
-			<div className='max-w-[680px] flex flex-col items-center gap-2 md:gap-6'>
+			<div className='max-w-[640px] flex flex-col items-center gap-2 md:gap-6'>
 				<img
 					src={imgPath}
 					alt={carTitle}

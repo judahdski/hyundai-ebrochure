@@ -12,7 +12,7 @@ const Lineups = () => {
 						<img
 							src={icon}
 							alt={title}
-							className='w-[32px]'
+							className='w-[32px] h-[32px]'
 						/>
 						<p className='pt-2 text-base font-medium'>{title}</p>
 					</div>

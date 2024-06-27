@@ -5,16 +5,17 @@ import Footer from './components/Footer';
 import BasePage from './components/BasePage';
 
 import Lineups from './pages/Lineups';
+import Contact from './pages/Contact';
 
 function App() {
-	let page = 'lineups';
-	const mainContent = <Lineups />;
+	let page = 'contact';
+	const mainContent = <Contact />;
 
 	return (
 		<div>
 			<Header />
 			<BasePage content={mainContent} />
-			<Footer />
+			{page == 'contact' ? <div></div> : <Footer />}
 		</div>
 	);
 }

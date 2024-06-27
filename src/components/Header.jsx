@@ -1,5 +1,5 @@
 import React from 'react';
-import headerLogo from '../assets/hyundai-logo-header.png';
+import headerLogo from '../assets/img/hyundai-logo-header.png';
 
 const Header = () => {
 	return (

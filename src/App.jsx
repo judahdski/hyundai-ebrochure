@@ -6,10 +6,11 @@ import BasePage from './components/BasePage';
 
 import Lineups from './pages/Lineups';
 import Contact from './pages/Contact';
+import MainCarDetails from './pages/CarDetails/MainCarDetails';
 
 function App() {
-	let page = 'contact';
-	const mainContent = <Contact />;
+	let page = 'a';
+	const mainContent = <MainCarDetails />;
 
 	return (
 		<div>

@@ -1,7 +1,8 @@
 'use client';
 
 import { Carousel } from 'flowbite-react';
-import { carList } from '../assets/data';
+import { cars } from '../assets/data/cars';
+import { carDetails } from '../assets/data/carDetails';
 
 export const CarListCarousel = () => {
 	return (
@@ -9,13 +10,28 @@ export const CarListCarousel = () => {
 			<Carousel
 				slideInterval={1000}
 				indicators={false}
-				pauseOnHover={true}>
-				{carList.map(({ imgPath, name }) => (
-					<CarCard
-						imgPath={imgPath}
-						carTitle={name}
-					/>
-				))}
+				pauseOnHover={true}
+				leftControl={
+					<div className='p-8'>
+						<i class='fa-solid fa-chevron-left text-base md:text-3xl'></i>
+					</div>
+				}
+				rightControl={
+					<div className='p-8'>
+						<i class='fa-solid fa-chevron-right text-base md:text-3xl'></i>
+					</div>
+				}>
+				{carDetails.map(({ carID, image }, index) => {
+					let carName = cars.filter((car) => car.id == carID)[0].name;
+
+					return (
+						<CarCard
+							key={index}
+							imgPath={image.mainDisplay}
+							carTitle={carName}
+						/>
+					);
+				})}
 			</Carousel>
 		</div>
 	);

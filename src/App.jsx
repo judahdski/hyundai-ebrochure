@@ -9,27 +9,27 @@ import Contact from './pages/Contact';
 import Pricelist from './pages/Pricelist';
 
 function App() {
-	const [page, setPage] = useState('lineups');
+	const [page, setPage] = useState(null);
 	let mainContent;
 
 	switch (page) {
-		case 'lineups':
+		case 'scr_lu':
 			mainContent = <Lineups />;
 			break;
-		case 'contact':
+		case 'scr_ct':
 			mainContent = <Contact />;
 			break;
-		case 'pricelist':
+		case 'scr_pl':
 			mainContent = <Pricelist />;
-			break;
-
-		default:
 			break;
 	}
 
 	return (
 		<div>
-			<Header setPage={setPage} page={page} />
+			<Header
+				setPage={setPage}
+				page={page}
+			/>
 			<BasePage content={mainContent ?? <Lineups />} />
 			{page == 'contact' ? <div></div> : <Footer />}
 		</div>

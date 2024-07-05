@@ -1,22 +1,24 @@
 import React from 'react';
 import { CarListCarousel } from '../components/CarListCarousel';
-import { features } from '../assets/data';
+import { generalCode } from '../assets/data/generalCodes';
 
 const Lineups = () => {
 	return (
 		<div className='w-full max-w-[1280px]'>
 			{/* Features */}
 			<div className='hidden md:flex -mt-[47px] rounded-2xl shadow overflow-hidden'>
-				{features.map(({ title, icon, isMiddle }) => (
-					<div className={isMiddle ? 'w-full bg-white py-4 flex flex-col items-center border-r-2 border-l-2 border-[#EDF3FA]' : 'w-full bg-white py-4 flex flex-col items-center'}>
-						<img
-							src={icon}
-							alt={title}
-							className='w-[32px] h-[32px]'
-						/>
-						<p className='pt-2 text-base font-medium'>{title}</p>
-					</div>
-				))}
+				{generalCode
+					.filter((item) => item.category == 'feature')
+					.map(({ code, description, value }) => (
+						<div className={`w-full bg-white py-4 flex flex-col items-center  ${code == 'ftr_po' ? 'border-r-2 border-l-2 border-[#EDF3FA]' : ''}`}>
+							<img
+								src={value}
+								alt={description}
+								className='w-[32px] h-[32px]'
+							/>
+							<p className='pt-2 text-base font-medium'>{description}</p>
+						</div>
+					))}
 			</div>
 			{/* end Features */}
 

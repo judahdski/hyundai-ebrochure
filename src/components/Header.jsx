@@ -1,5 +1,6 @@
 import React from 'react';
 import headerLogo from '../assets/img/hyundai-logo-header.png';
+import { generalCode } from '../assets/data/generalCodes';
 
 const Header = ({ setPage, page }) => {
 	return (
@@ -18,21 +19,16 @@ const Header = ({ setPage, page }) => {
 			</div>
 
 			<div className='hidden md:flex items-center'>
-				<p
-					className={`px-[36px] py-2 tracking-wide cursor-pointer ${page == 'lineups' ? 'font-medium' : 'text-slate-200'}`}
-					onClick={() => setPage('lineups')}>
-					Lineups
-				</p>
-				<p
-					className={`px-[36px] py-2 tracking-wide cursor-pointer ${page == 'pricelist' ? 'font-medium' : 'text-slate-200'}`}
-					onClick={() => setPage('pricelist')}>
-					Pricelist
-				</p>
-				<p
-					className={`px-[36px] py-2 tracking-wide cursor-pointer ${page == 'contact' ? 'font-medium' : 'text-slate-200'}`}
-					onClick={() => setPage('contact')}>
-					Contact
-				</p>
+				{generalCode
+					.filter((item) => item.category == 'screen')
+					.map(({ code, description }, index) => (
+						<p
+							key={index}
+							className={`px-[36px] py-2 tracking-wide cursor-pointer ${page == code ? 'font-medium' : 'text-slate-200'}`}
+							onClick={() => setPage(code)}>
+							{description}
+						</p>
+					))}
 			</div>
 		</div>
 	);

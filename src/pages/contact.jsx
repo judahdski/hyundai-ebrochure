@@ -1,11 +1,15 @@
 import React from 'react';
+import { salesProfile } from '../assets/data/salesProfile';
 
 const Contact = () => {
 	return (
 		<div className='w-full max-w-[1280px] md:flex md:flex-row'>
 			<div className='p-8 w-1/2 md:flex md:justify-center items-center'>
-				<div className='bg-[#E7E7E7] w-[320px] md:w-[480px] aspect-square rounded-2xl flex justify-center items-center'>
-					<i class='fa-solid fa-user text-[106px] text-[#BBBBBB]'></i>
+				<div className='bg-[#E7E7E7] w-[320px] md:w-[480px] aspect-square rounded-2xl flex justify-center items-center overflow-hidden'>
+					<img
+						src={salesProfile.images[0].path}
+						alt='Photo 1'
+					/>
 				</div>
 			</div>
 			<div className='w-1/2'>

@@ -20,7 +20,6 @@ const Header = ({ setPage, page }) => {
 			</div>
 
 			<Modal
-				dismissible
 				show={openModal}
 				onClose={() => setOpenModal(false)}>
 				<Modal.Body>
@@ -30,31 +29,33 @@ const Header = ({ setPage, page }) => {
 							.map(({ code, description }, index) => (
 								<div
 									key={index}
-									className='p-4 w-full rounded-2xl border border-slate-100 flex justify-center tracking-wide'
+									className='p-6 bg-[#1C4682] w-full rounded-2xl flex justify-center text-white tracking-[6px]'
 									onClick={() => {
 										setOpenModal(false);
 										setPage(code);
 									}}>
-									{description}
+									{description.toUpperCase()}
 								</div>
 							))}
 					</div>
 				</Modal.Body>
 				<Modal.Footer>
-					<div className='w-full flex flex-col gap-4'>
-						<p className='font-medium text-center pb-2'>Layanan Kami</p>
-						{generalCode
-							.filter((item) => item.category == 'feature')
-							.map(({ code, description, value }) => (
-								<div className='px-6 py-4 w-full flex items-center justify-center gap-4'>
-									<img
-										src={value}
-										alt={description}
-										className='w-[24px] h-[24px]'
-									/>
-									<p className='text-sm font-medium'>{description}</p>
-								</div>
-							))}
+					<div className='px-2 w-full flex flex-col gap-6'>
+						<p className='font-medium'>Layanan Kami</p>
+						<div className='w-full flex flex-col justify-stretch gap-4'>
+							{generalCode
+								.filter((item) => item.category == 'feature')
+								.map(({ code, description, value }) => (
+									<div className='p-4 w-full border border-[#E2E2E2] rounded-2xl flex items-center justify-stretch gap-4'>
+										<img
+											src={value}
+											alt={description}
+											className='w-[24px] h-[24px]'
+										/>
+										<p className='text-sm font-medium'>{description}</p>
+									</div>
+								))}
+						</div>
 					</div>
 				</Modal.Footer>
 			</Modal>

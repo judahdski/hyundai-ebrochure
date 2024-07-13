@@ -37,10 +37,14 @@ function App() {
 	return (
 		<div>
 			<Header
+				setCarID={setCarID}
 				setPage={setPage}
 				page={page}
 			/>
-			<BasePage content={mainContent ?? <Lineups />} />
+			<BasePage
+				carID={carID}
+				content={mainContent ?? <Lineups />}
+			/>
 			<Footer isContactPage={page == 'scr_ct'} />
 		</div>
 	);

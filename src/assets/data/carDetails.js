@@ -1,5 +1,5 @@
 import { ionic6MD, ionic5MD, palisadeMD, stariaMD, cretaMD, santaFeMD, stargazerMD, stargazerXMD } from '../img/main_display/index';
-import { cretaBanner } from '../img/banner/index';
+import { cretaBanner, ionic6Banner, ionic5Banner, palisadeBanner, stariaBanner, santaFeBanner, stargazerBanner, stargazerXBanner } from '../img/banner/index';
 
 export const carDetails = [
 	{
@@ -234,7 +234,7 @@ export const carDetails = [
 	},
 	{
 		carID: 'fpPQbL', // palisade
-		image: { banner: cretaBanner, mainDisplay: palisadeMD },
+		image: { banner: palisadeBanner, mainDisplay: palisadeMD },
 		sections: {
 			highlight: [
 				{
@@ -470,7 +470,7 @@ export const carDetails = [
 	},
 	{
 		carID: 'RBm1W3', // stargazer
-		image: { banner: cretaBanner, mainDisplay: stargazerMD },
+		image: { banner: stargazerBanner, mainDisplay: stargazerMD },
 		sections: {
 			highlight: [
 				{
@@ -701,7 +701,7 @@ export const carDetails = [
 	},
 	{
 		carID: 'ipEZQz', // 
-		image: { banner: cretaBanner, mainDisplay: stargazerXMD },
+		image: { banner: stargazerXBanner, mainDisplay: stargazerXMD },
 		sections: {
 			highlight: [
 				{
@@ -888,7 +888,7 @@ export const carDetails = [
 	},
 	{
 		carID: '1hsMWj', // staria
-		image: { banner: cretaBanner, mainDisplay: stariaMD },
+		image: { banner: stariaBanner, mainDisplay: stariaMD },
 		sections: {
 			highlight: [
 				{
@@ -1116,7 +1116,7 @@ export const carDetails = [
 	},
 	{
 		carID: 'lmVrRt', // santa fe
-		image: { banner: cretaBanner, mainDisplay: santaFeMD },
+		image: { banner: santaFeBanner, mainDisplay: santaFeMD },
 		sections: {
 			highlight: [
 				{
@@ -1380,7 +1380,7 @@ export const carDetails = [
 	},
 	{
 		carID: 'W8poza', // ionic 5
-		image: { banner: cretaBanner, mainDisplay: ionic5MD },
+		image: { banner: ionic5Banner, mainDisplay: ionic5MD },
 		sections: {
 			highlight: [
 				{
@@ -1623,7 +1623,7 @@ export const carDetails = [
 	},
 	{
 		carID: 'ciEPt3', // ionic 6
-		image: { banner: cretaBanner, mainDisplay: ionic6MD },
+		image: { banner: ionic6Banner, mainDisplay: ionic6MD },
 		sections: {
 			highlight: [
 				{

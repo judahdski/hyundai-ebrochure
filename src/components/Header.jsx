@@ -3,7 +3,7 @@ import headerLogo from '../assets/img/hyundai-logo-header.png';
 import { generalCode } from '../assets/data/generalCodes';
 import { Button, Modal } from 'flowbite-react';
 
-const Header = ({ setPage, page }) => {
+const Header = ({ setPage, setCarID, page }) => {
 	const [openModal, setOpenModal] = useState(false);
 
 	return (
@@ -32,6 +32,7 @@ const Header = ({ setPage, page }) => {
 									className='p-6 bg-[#1C4682] w-full rounded-2xl flex justify-center text-white tracking-[6px]'
 									onClick={() => {
 										setOpenModal(false);
+										setCarID(null);
 										setPage(code);
 									}}>
 									{description.toUpperCase()}
@@ -67,7 +68,10 @@ const Header = ({ setPage, page }) => {
 						<p
 							key={index}
 							className={`px-[36px] py-2 tracking-wide cursor-pointer ${page == code ? 'font-medium' : 'text-slate-200'}`}
-							onClick={() => setPage(code)}>
+							onClick={() => {
+								setPage(code);
+								setCarID(null);
+							}}>
 							{description}
 						</p>
 					))}

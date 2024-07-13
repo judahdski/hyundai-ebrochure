@@ -1,7 +1,7 @@
 import { Dropdown, Table } from 'flowbite-react';
 import React, { useState } from 'react';
 
-const SubFullSpec = () => {
+const SubFullSpec = ({carID}) => {
 	const [carModel, setCarModel] = useState(null);
 
 	return (

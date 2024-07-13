@@ -2,7 +2,7 @@ import React from 'react';
 import { CarListCarousel } from '../components/CarListCarousel';
 import { generalCode } from '../assets/data/generalCodes';
 
-const Lineups = () => {
+const Lineups = ({ setPage, setCarID }) => {
 	return (
 		<div className='w-full max-w-[1280px]'>
 			{/* Features */}
@@ -27,7 +27,10 @@ const Lineups = () => {
 				<div className='w-[50px] md:w-[90px] h-1 mt-1 bg-[#D7E1ED]'></div>
 			</div>
 
-			<CarListCarousel />
+			<CarListCarousel
+				setPage={setPage}
+				setCarID={setCarID}
+			/>
 
 			{/* Button Buy and test drive */}
 			<div className='pt-[32px] pb-[48px] md:pt-[48px] md:pb-[54px] px-4 flex flex-col md:flex-row items-center md:justify-center gap-4 md:gap-8'>

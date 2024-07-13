@@ -4,7 +4,7 @@ import { Carousel } from 'flowbite-react';
 import { cars } from '../assets/data/cars';
 import { carDetails } from '../assets/data/carDetails';
 
-export const CarListCarousel = () => {
+export const CarListCarousel = ({ setPage, setCarID }) => {
 	return (
 		<div>
 			<Carousel
@@ -29,6 +29,9 @@ export const CarListCarousel = () => {
 							key={index}
 							imgPath={image.mainDisplay}
 							carTitle={carName}
+							carID={carID}
+							setPage={setPage}
+							setCarID={setCarID}
 						/>
 					);
 				})}
@@ -37,9 +40,14 @@ export const CarListCarousel = () => {
 	);
 };
 
-const CarCard = ({ imgPath, carTitle }) => {
+const CarCard = ({ imgPath, carTitle, carID, setPage, setCarID }) => {
 	return (
-		<div className='w-full flex justify-center'>
+		<div
+			className='w-full flex justify-center cursor-pointer'
+			onClick={() => {
+				setPage(carID);
+				setCarID(carID);
+			}}>
 			<div className='max-w-[640px] flex flex-col items-center gap-2 md:gap-6'>
 				<img
 					src={imgPath}

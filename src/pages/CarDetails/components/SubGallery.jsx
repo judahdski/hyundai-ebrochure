@@ -1,7 +1,7 @@
 import React from 'react';
 import { ionic6ColorPick, ionic6EksteriorOverview, ionic6GalleryMain, ionic6InteriorOverview } from '../../../assets/img/temp/index';
 
-const SubGallery = () => {
+const SubGallery = ({ carID }) => {
 	return (
 		<div className='p-[72px] pt-[48px] flex flex-col gap-[72px]'>
 			<div className='flex flex-col items-center gap-[32px]'>

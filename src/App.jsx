@@ -11,17 +11,26 @@ import MainCarDetails from './pages/CarDetails/MainCarDetails';
 
 function App() {
 	const [page, setPage] = useState(null);
+	const [carID, setCarID] = useState(null);
 	let mainContent;
 
 	switch (page) {
 		case 'scr_lu':
-			mainContent = <Lineups />;
+			mainContent = (
+				<Lineups
+					setPage={setPage}
+					setCarID={setCarID}
+				/>
+			);
 			break;
 		case 'scr_ct':
 			mainContent = <Contact />;
 			break;
 		case 'scr_pl':
 			mainContent = <Pricelist />;
+			break;
+		default:
+			mainContent = <MainCarDetails carID={carID} />;
 			break;
 	}
 
@@ -31,8 +40,7 @@ function App() {
 				setPage={setPage}
 				page={page}
 			/>
-			<BasePage content={<MainCarDetails />} />
-			{/* <BasePage content={mainContent ?? <Lineups />} /> */}
+			<BasePage content={mainContent ?? <Lineups />} />
 			<Footer isContactPage={page == 'scr_ct'} />
 		</div>
 	);

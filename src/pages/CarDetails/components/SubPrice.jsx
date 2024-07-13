@@ -2,7 +2,7 @@ import { Dropdown } from 'flowbite-react';
 import React, { useState } from 'react';
 import { ionic6PriceTemp } from '../../../assets/img/temp';
 
-const SubPrice = () => {
+const SubPrice = ({ carID }) => {
 	const [carVariant, setCarVariant] = useState(null);
 
 	return (

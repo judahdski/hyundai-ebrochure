@@ -5,23 +5,23 @@ import SubGallery from './components/SubGallery';
 import SubPrice from './components/SubPrice';
 import SubFullSpec from './components/SubFullSpec';
 
-const MainCarDetails = () => {
+const MainCarDetails = ({ carID }) => {
 	const [carDetailSection, setCarDetailSection] = useState('highlight');
-	
-	let sectionComponent;	
+
+	let sectionComponent;
 
 	switch (carDetailSection) {
 		case 'highlight':
-			sectionComponent = <SubHighlight />;
+			sectionComponent = <SubHighlight carID={carID} />;
 			break;
 		case 'gallery':
-			sectionComponent = <SubGallery />;
+			sectionComponent = <SubGallery carID={carID} />;
 			break;
 		case 'price':
-			sectionComponent = <SubPrice />;
+			sectionComponent = <SubPrice carID={carID} />;
 			break;
 		case 'full_spec':
-			sectionComponent = <SubFullSpec />;
+			sectionComponent = <SubFullSpec carID={carID} />;
 			break;
 
 		default:

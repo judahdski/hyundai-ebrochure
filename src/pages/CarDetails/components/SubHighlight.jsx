@@ -1,7 +1,7 @@
 import React from 'react';
 import { articleSect11Img, articleSect21Img, articleSect22Img, articleSect23Img } from '../../../assets/img/temp/index';
 
-const SubHighlight = () => {
+const SubHighlight = ({ carID }) => {
 	return (
 		<div className='p-[72px] flex flex-col gap-[72px]'>
 			<div className='flex flex-col gap-8 items-center'>

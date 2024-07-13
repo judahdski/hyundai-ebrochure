@@ -7,7 +7,7 @@ import SubFullSpec from './components/SubFullSpec';
 
 const MainCarDetails = () => {
 	const [carDetailSection, setCarDetailSection] = useState('highlight');
-	console.log({ carDetailSection });
+	
 	let sectionComponent;	
 
 	switch (carDetailSection) {

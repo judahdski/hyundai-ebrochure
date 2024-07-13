@@ -4,7 +4,7 @@ import { salesProfile } from '../assets/data/salesProfile';
 const Contact = () => {
 	return (
 		<div className='w-full max-w-[1280px] md:flex md:flex-row'>
-			<div className='p-8 w-1/2 md:flex md:justify-center items-center'>
+			<div className='p-8 md:w-1/2 flex justify-center items-center'>
 				<div className='bg-[#E7E7E7] w-[320px] md:w-[480px] aspect-square rounded-2xl flex justify-center items-center overflow-hidden'>
 					<img
 						src={salesProfile.images[0].path}
@@ -12,7 +12,7 @@ const Contact = () => {
 					/>
 				</div>
 			</div>
-			<div className='w-1/2'>
+			<div className='md:w-1/2'>
 				{/* kontak */}
 				<div className='md:h-[262.5px] pt-4 pb-12 md:pb-8 px-6 md:px-[72px] border-b-2 border-[#EDF3FA] flex flex-col justify-end gap-6'>
 					{/* nama dan title */}

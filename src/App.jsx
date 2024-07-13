@@ -7,6 +7,7 @@ import BasePage from './components/BasePage';
 import Lineups from './pages/Lineups';
 import Contact from './pages/Contact';
 import Pricelist from './pages/Pricelist';
+import MainCarDetails from './pages/CarDetails/MainCarDetails';
 
 function App() {
 	const [page, setPage] = useState(null);
@@ -30,8 +31,9 @@ function App() {
 				setPage={setPage}
 				page={page}
 			/>
+			{/* <BasePage content={<MainCarDetails />} /> */}
 			<BasePage content={mainContent ?? <Lineups />} />
-			{page == 'contact' ? <div></div> : <Footer />}
+			<Footer isContactPage={page == 'scr_ct'} />
 		</div>
 	);
 }

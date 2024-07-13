@@ -1,10 +1,19 @@
 import React from 'react';
 import footerLogo from '../assets/img/hyundai-logo-footer.png';
 
-const Footer = () => {
-	return (
+const Footer = ({ isContactPage }) => {
+	return isContactPage ? (
+		<div className='flex'>
+			<div className='py-[48px] md:py-[72px] w-full flex  items-center justify-center'>
+				<img
+					src={footerLogo}
+					alt='Hyundai Footer Logo'
+				/>
+			</div>
+		</div>
+	) : (
 		<div className='flex flex-col md:flex-row'>
-			<div className=' p-8 md:p-12 flex flex-col gap-4 md:order-2 md:w-1/2'>
+			<div className='p-8 md:p-12 flex flex-col gap-4 md:order-2 md:w-1/2'>
 				<p className='text-sm text-[#676767] font-semibold'>Contact Us :</p>
 				<div className='flex flex-col gap-1'>
 					<p className='text-4xl font-semibold'>Renaldy</p>

@@ -31,8 +31,8 @@ function App() {
 				setPage={setPage}
 				page={page}
 			/>
-			{/* <BasePage content={<MainCarDetails />} /> */}
-			<BasePage content={mainContent ?? <Lineups />} />
+			<BasePage content={<MainCarDetails />} />
+			{/* <BasePage content={mainContent ?? <Lineups />} /> */}
 			<Footer isContactPage={page == 'scr_ct'} />
 		</div>
 	);

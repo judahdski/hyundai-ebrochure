@@ -1,5 +1,6 @@
 import React from 'react';
 import footerLogo from '../assets/img/hyundai-logo-footer.png';
+import { salesProfile } from '../assets/data/salesProfile';
 
 const Footer = ({ isContactPage }) => {
 	return isContactPage ? (
@@ -16,19 +17,27 @@ const Footer = ({ isContactPage }) => {
 			<div className='p-8 md:p-12 flex flex-col gap-4 md:order-2 md:w-1/2'>
 				<p className='text-sm text-[#676767] font-semibold'>Contact Us :</p>
 				<div className='flex flex-col gap-1'>
-					<p className='text-4xl font-semibold'>Renaldy</p>
-					<p className='text-sm md:text-base text-[#3F3E3E] font-medium'>Senior Hyundai Consultant</p>
+					<p className='text-4xl font-semibold'>{salesProfile.fullName}</p>
+					<p className='text-sm md:text-base text-[#3F3E3E] font-medium'>{salesProfile.role}</p>
 					<p className='text-sm md:text-base font-medium pt-1'>Dealer Resmi Hyundai</p>
 				</div>
 
 				<div className='flex flex-col gap-[10px]'>
 					<div className='flex items-center gap-2'>
 						<i class='fa-brands fa-whatsapp text-[#16C907]'></i>
-						<p className='text-sm md:text-base font-medium'>(+62) 813 123456789</p>
+						<a
+							className='text-sm md:text-base font-medium'
+							href={`tel:${salesProfile.phoneNo}`}>
+							{salesProfile.whatsappNo}
+						</a>
 					</div>
 					<div className='flex items-center gap-2'>
-						<i class='fa-brands fa-instagram text-[#FF0C9E]'></i>
-						<p className='text-sm md:text-base font-medium'>@ig_account_dummy</p>
+						<i class='fa-solid fa-envelope text-[#c71610]'></i>
+						<a
+							className='text-sm md:text-base font-medium'
+							href={`mailto:${salesProfile.email}`}>
+							{salesProfile.email}
+						</a>
 					</div>
 				</div>
 			</div>

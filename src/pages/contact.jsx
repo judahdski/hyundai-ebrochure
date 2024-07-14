@@ -17,8 +17,8 @@ const Contact = () => {
 				<div className='md:h-[262.5px] pt-4 pb-12 md:pb-8 px-6 md:px-[72px] border-b-2 border-[#EDF3FA] flex flex-col justify-end gap-6'>
 					{/* nama dan title */}
 					<div className='flex flex-col items-center md:items-start gap-1.5 md:gap-2'>
-						<p className='text-3xl md:text-4xl font-semibold'>Renaldy</p>
-						<p className='text-sm md:text-base text-[#3F3E3E] font-medium'>Senior Hyundai Consultant</p>
+						<p className='text-3xl md:text-4xl font-semibold'>{salesProfile.fullName}</p>
+						<p className='text-sm md:text-base text-[#3F3E3E] font-medium'>{salesProfile.role}</p>
 					</div>
 					{/* nama dan title */}
 
@@ -26,11 +26,19 @@ const Contact = () => {
 					<div className='flex flex-col items-center md:items-start gap-3'>
 						<div className='flex items-center gap-4'>
 							<i class='fa-brands fa-whatsapp text-[21px] text-[#16C907]'></i>
-							<p className='text-[18px] font-medium'>0813 1234 56789</p>
+							<a
+								className='text-[18px] font-medium'
+								href={`tel:${salesProfile.phoneNo}`}>
+								{salesProfile.whatsappNo}
+							</a>
 						</div>
 						<div className='flex items-center gap-4'>
-							<i class='fa-brands fa-instagram text-[21px] text-[#FF0C9E]'></i>
-							<p className='text-[18px] font-medium'>@ig_account_dummy</p>
+							<i class='fa-solid fa-envelope text-[#c71610]'></i>
+							<a
+								className='text-[18px] font-medium'
+								href={`mailto:${salesProfile.email}`}>
+								{salesProfile.email}
+							</a>
 						</div>
 					</div>
 					{/* wa dan ig */}

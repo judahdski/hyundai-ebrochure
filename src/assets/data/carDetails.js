@@ -700,7 +700,7 @@ export const carDetails = [
 		},
 	},
 	{
-		carID: 'ipEZQz', // 
+		carID: 'ipEZQz', //
 		image: { banner: stargazerXBanner, mainDisplay: stargazerXMD },
 		sections: {
 			highlight: [

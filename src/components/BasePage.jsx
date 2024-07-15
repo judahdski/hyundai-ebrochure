@@ -7,12 +7,6 @@ const BasePage = ({ content, carID }) => {
 
 	return (
 		<main className='flex flex-col items-center'>
-			{/* <div className='h-56 sm:h-64 xl:h-80 2xl:h-96'>
-				<Carousel slideInterval={5000}>
-					
-				</Carousel>
-			</div> */}
-
 			<img
 				src={carBannerPath ?? konaExampleBanner}
 				alt='Kona'

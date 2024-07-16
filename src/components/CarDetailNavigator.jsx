@@ -7,8 +7,9 @@ const CarDetailNavigator = ({ carDetailSection, setCarDetailSection }) => {
 		{ code: 'price', title: 'PRICE', isLast: false },
 		{ code: 'full_spec', title: 'FULL SPEC', isLast: true },
 	];
+	const { innerWidth: screenWidth } = window;
 
-	return (
+	return screenWidth > 768 ? (
 		<div className='bg-white -mt-[27px] w-full flex justify-stretch rounded-[12px] overflow-hidden shadow-md'>
 			{navigatorList.map(({ code, title, isLast }) => (
 				<div
@@ -19,6 +20,16 @@ const CarDetailNavigator = ({ carDetailSection, setCarDetailSection }) => {
 					{title}
 				</div>
 			))}
+		</div>
+	) : (
+		<div className='bg-white -mt-[27px] w-full flex justify-center rounded-[12px] overflow-hidden shadow-md'>
+			<div
+				className={`p-4 text-center tracking-[3px] ${carDetailSection == code ? ' text-[18px] text-[#1C4682] font-medium' : 'text-black'} flex-1 flex justify-center items-center  border-r-2 ${
+					!isLast ? 'border-[#EDF3FA]' : ''
+				} cursor-pointer hover:bg-slate-50`}
+				onClick={() => setCarDetailSection(code)}>
+				{title}
+			</div>
 		</div>
 	);
 };

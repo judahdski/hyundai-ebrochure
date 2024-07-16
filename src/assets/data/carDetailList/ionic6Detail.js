@@ -1,6 +1,29 @@
-export const ionic6Detail = {
+import { ioniq6Banner } from '../../img/banner/index';
+import { ioniq6MD } from '../../img/main_display/index';
+import {
+	eksterior1Ioniq6,
+	eksterior2Ioniq6,
+	eksterior3Ioniq6,
+	eksterior4Ioniq6,
+	eksterior5Ioniq6,
+	eksterior6Ioniq6,
+	eksterior7Ioniq6,
+	eksterior8Ioniq6,
+	interior1Ioniq6,
+	interior2Ioniq6,
+	interior3Ioniq6,
+	section1HighlightIoniq6,
+	section2HighlightIoniq6,
+	abyssBlackPearlIoniq6,
+	biophilicBluePearlIoniq6,
+	gravityGoldMatteIoniq6,
+	nocturneGrayMatteIoniq6,
+	serenityWhitePearlIoniq6,
+} from '../../img/carList/ioniq6/index';
+
+export const ioniq6Detail = {
 	carID: 'ciEPt3',
-	image: { banner: ionic6Banner, mainDisplay: ionic6MD },
+	image: { banner: ioniq6Banner, mainDisplay: ioniq6MD },
 	sections: {
 		highlight: [
 			{

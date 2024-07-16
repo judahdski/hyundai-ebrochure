@@ -1,6 +1,6 @@
 import { Dropdown } from 'flowbite-react';
 import React, { useState } from 'react';
-import { ionic6PriceTemp } from '../../../assets/img/temp';
+import { ioniq6PriceTemp } from '../../../assets/img/temp';
 
 const SubPrice = ({ carID }) => {
 	const [carVariant, setCarVariant] = useState(null);
@@ -24,12 +24,12 @@ const SubPrice = ({ carID }) => {
 
 			<div className='flex flex-col xl:flex-row gap-[32px] xl:gap-[56px] items-center'>
 				<img
-					src={ionic6PriceTemp}
+					src={ioniq6PriceTemp}
 					alt=''
 					className='xl:w-1/2'
 				/>
 				<div className='xl:w-1/2'>
-					<p className='text-[28px] xl:text-[32px] text-[#505153] font-medium mb-4'>IONIC 6 VARIAN DELTA</p>
+					<p className='text-[28px] xl:text-[32px] text-[#505153] font-medium mb-4'>Ioniq 6 VARIAN DELTA</p>
 					<p>
 						Total Price <span className='text-[20px] xl:text-[28px] text-[#1C4682] font-medium'>Rp.900,000,000</span>
 					</p>

@@ -1,14 +1,14 @@
-import { cretaLeftPose, ionic5LeftPose, ionic6LeftPose, palisadeLeftPose, santafeLeftPose, stargazerLeftPose, stargazerxLeftPose, stariaLeftPose } from '../img/carousel-lineups/index';
+import { cretaLeftPose, ioniq5LeftPose, ioniq6LeftPose, palisadeLeftPose, santafeLeftPose, stargazerLeftPose, stargazerxLeftPose, stariaLeftPose } from '../img/carousel-lineups/index';
 import { onlineOrder, testDrive, tradeIn } from '../img/features/index';
 
 export const carList = [
 	{
-		name: 'Ionic 6',
-		imgPath: ionic6LeftPose,
+		name: 'Ioniq 6',
+		imgPath: ioniq6LeftPose,
 	},
 	{
-		name: 'Ionic 5',
-		imgPath: ionic5LeftPose,
+		name: 'Ioniq 5',
+		imgPath: ioniq5LeftPose,
 	},
 	{
 		name: 'Creta',

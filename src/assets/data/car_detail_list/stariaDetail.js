@@ -1,3 +1,24 @@
+import { stariaBanner } from "../../img/banner/index";
+import { stariaMD } from "../../img/main_display/index";
+import {
+	eksterior1Staria,
+	eksterior2Staria,
+	eksterior3Staria,
+	eksterior4Staria,
+	eksterior5Staria,
+	eksterior6Staria,
+	interior1Staria,
+	interior2Staria,
+	interior3Staria,
+	interior4Staria,
+	section1Highlight1Staria,
+	section2Highlight1Staria,
+	abyssBlackPearlStaria,
+	creamyWhitePearlStaria,
+	graphiteGrayMetallicStaria,
+	shimmeringSilverMetallicStaria
+} from "../../img/car_list/staria/index";
+
 export const stariaDetail = {
 	carID: '1hsMWj',
 	image: { banner: stariaBanner, mainDisplay: stariaMD },
@@ -21,48 +42,56 @@ export const stariaDetail = {
 				{
 					description: 'Abyss Black Pearl',
 					hexCode: '#1D1C1E',
-					imgPath: 'creta_putih_pick_color.png',
+					imgPath: abyssBlackPearlStaria,
 				},
 				{
 					description: 'Shimmering Silver Metallic',
 					hexCode: '#CBCBCB',
-					imgPath: 'creta_putih_pick_color.png',
+					imgPath: shimmeringSilverMetallicStaria,
 				},
 				{
 					description: 'Graphite Gray Metallic',
 					hexCode: '#2C2C31',
-					imgPath: 'main_img_gallery.png',
+					imgPath: graphiteGrayMetallicStaria,
 				},
 				{
-					description: 'Creamy White',
+					description: 'Creamy White Pearl',
 					hexCode: '#F9F9FB',
-					imgPath: 'main_img_gallery.png',
+					imgPath: creamyWhitePearlStaria,
 				},
 			],
 			article: [],
 			eksterior: [
 				{
 					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: 'eksterior1_creta.png',
+					path: eksterior1Staria,
 				},
 				{
 					alt: 'LED Headlamp',
-					path: 'eksterior2_creta.png',
+					path: eksterior2Staria,
 				},
 				{
 					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: 'eksterior3_creta.png',
+					path: eksterior3Staria,
 				},
 				{
 					alt: 'LED Rear Combination Lamp',
-					path: 'eksterior4_creta.png',
+					path: eksterior4Staria,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior5Staria,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior6Staria,
 				},
 			],
 			interior: [
-				{ alt: '', path: 'interior1_creta.png' },
-				{ alt: '', path: 'interior2_creta.png' },
-				{ alt: '', path: 'interior3_creta.png' },
-				{ alt: '', path: 'interior4_creta.png' },
+				{ alt: '', path: interior1Staria },
+				{ alt: '', path: interior2Staria },
+				{ alt: '', path: interior3Staria },
+				{ alt: '', path: interior4Staria },
 			],
 		},
 		priceList: [

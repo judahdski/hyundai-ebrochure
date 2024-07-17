@@ -7,4 +7,4 @@ import stargazerDetail from './car_detail_list/stargazerDetail';
 import stargazerXDetail from './car_detail_list/stargazerXDetail';
 import stariaDetail from './car_detail_list/stariaDetail';
 
-export { cretaDetail, ioniq5Detail, ioniq6Detail, palisadeDetail, santaFeDetail, stargazerDetail, stargazerXDetail, stariaDetail };
+export default carDetails = [cretaDetail, ioniq5Detail, ioniq6Detail, palisadeDetail, santaFeDetail, stargazerDetail, stargazerXDetail, stariaDetail];

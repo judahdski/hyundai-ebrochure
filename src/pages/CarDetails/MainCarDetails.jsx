@@ -5,10 +5,11 @@ import SubGallery from './components/SubGallery';
 import SubPrice from './components/SubPrice';
 import SubFullSpec from './components/SubFullSpec';
 
-const MainCarDetails = ({ carID }) => {
+const MainCarDetails = () => {
 	const [carDetailSection, setCarDetailSection] = useState('highlight');
 
 	let sectionComponent;
+	const carID = localStorage.getItem('carID');
 
 	switch (carDetailSection) {
 		case 'highlight':

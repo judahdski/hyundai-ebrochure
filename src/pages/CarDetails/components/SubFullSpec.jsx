@@ -1,8 +1,6 @@
 import { Dropdown, Table } from 'flowbite-react';
 import React, { useState } from 'react';
 
-import { carDetails } from '../../../assets/data/carDetails';
-
 const SubFullSpec = ({ carID }) => {
 	const [carModel, setCarModel] = useState(null);
 
@@ -26,38 +24,29 @@ const SubFullSpec = ({ carID }) => {
 					</Dropdown>
 				</div>
 			</div> */}
-			{carDetail.sections.fullSpec.category.map(({ id, title }, index) => (
-				<div
-					key={index}
-					className='flex flex-col gap-6'>
-					<p className='text-2xl text-center font-medium'>{title}</p>
-
-					{carDetail.sections.fullSpec.specDetail
-						.filter((row) => row.specID == id)
-						.map(({ code, detail }) => (
-							<Table>
-								<Table.Head>
-									<Table.HeadCell className='bg-[#30486B] w-[30%] text-white'>{code}</Table.HeadCell>
-									<Table.HeadCell className='bg-[#30486B] w-[70%] text-white'></Table.HeadCell>
-								</Table.Head>
-								<Table.Body className='divide-y'>
-									{detail.map(({ description, value }) => (
-										<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
-											<Table.Cell className='whitespace-nowrap font-medium text-gray-900'>{description}</Table.Cell>
-											<Table.Cell>{value}</Table.Cell>
-										</Table.Row>
-									))}
-								</Table.Body>
-							</Table>
+			<div className='flex flex-col gap-6'>
+				<p className='text-2xl text-center font-medium'>title</p>
+				<Table>
+					<Table.Head>
+						<Table.HeadCell className='bg-[#30486B] w-[30%] text-white'>code</Table.HeadCell>
+						<Table.HeadCell className='bg-[#30486B] w-[70%] text-white'>code1</Table.HeadCell>
+					</Table.Head>
+					<Table.Body className='divide-y'>
+						{detail.map(({ description, value }) => (
+							<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
+								<Table.Cell className='whitespace-nowrap font-medium text-gray-900'>description</Table.Cell>
+								<Table.Cell>value</Table.Cell>
+							</Table.Row>
 						))}
-				</div>
-			))}
+					</Table.Body>
+				</Table>
+			</div>
 			<div className='flex flex-col gap-6'>
 				<p className='text-2xl text-center font-medium'>Dimensi</p>
 				<Table>
 					<Table.Head>
 						<Table.HeadCell className='bg-[#30486B] w-[30%] text-white'>Product name</Table.HeadCell>
-						<Table.HeadCell className='bg-[#30486B] w-[70%] text-white'></Table.HeadCell>
+						<Table.HeadCell className='bg-[#30486B] w-[70%] text-white'>product1</Table.HeadCell>
 					</Table.Head>
 					<Table.Body className='divide-y'>
 						<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>

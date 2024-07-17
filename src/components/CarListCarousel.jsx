@@ -1,10 +1,9 @@
 'use client';
 
 import { Carousel } from 'flowbite-react';
-import { cars } from '../assets/data/cars';
-import { carDetails } from '../assets/data/carDetails';
+import { cretaMD, palisadeMD } from '../assets/img/main_display/index';
 
-export const CarListCarousel = ({ setPage, setCarID }) => {
+export const CarListCarousel = ({ setPage }) => {
 	return (
 		<div>
 			<Carousel
@@ -21,32 +20,30 @@ export const CarListCarousel = ({ setPage, setCarID }) => {
 						<i class='fa-solid fa-chevron-right text-base md:text-3xl'></i>
 					</div>
 				}>
-				{carDetails.map(({ carID, image }, index) => {
-					let carName = cars.filter((car) => car.id == carID)[0].name;
-
-					return (
-						<CarCard
-							key={index}
-							imgPath={image.mainDisplay}
-							carTitle={carName}
-							carID={carID}
-							setPage={setPage}
-							setCarID={setCarID}
-						/>
-					);
-				})}
+				<CarCard
+					imgPath={cretaMD}
+					carTitle='creta'
+					carID='asdf'
+					setPage={setPage}
+				/>
+				<CarCard
+					imgPath={palisadeMD}
+					carTitle='palisade'
+					carID='123asdf'
+					setPage={setPage}
+				/>
 			</Carousel>
 		</div>
 	);
 };
 
-const CarCard = ({ imgPath, carTitle, carID, setPage, setCarID }) => {
+const CarCard = ({ setPage, imgPath, carTitle, carID }) => {
 	return (
 		<div
 			className='w-full flex justify-center cursor-pointer'
 			onClick={() => {
 				setPage(carID);
-				setCarID(carID);
+				localStorage.setItem('carID', carID);
 			}}>
 			<div className='max-w-[640px] flex flex-col items-center gap-2 md:gap-6'>
 				<img

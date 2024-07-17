@@ -1,5 +1,5 @@
 import React from 'react';
-import { CarListCarousel } from '../componentscar_listCarousel';
+import { CarListCarousel } from '../components/CarListCarousel';
 import { generalCode } from '../assets/data/generalCodes';
 import { WAButton } from '../components/WAButton';
 

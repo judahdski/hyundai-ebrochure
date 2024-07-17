@@ -19,10 +19,10 @@ import section2Highlight1StargazerX from './highlight/section2_highlight1_starga
 import section2Highlight2StargazerX from './highlight/section2_highlight2_stargazerx.jpg';
 import section2Highlight3StargazerX from './highlight/section2_highlight3_stargazerx.jpg';
 
-import creamyWhitePearlStargazer from 'creamy_white_pearl_stargazer.png';
-import dragoRedPearlStargazer from 'drago_red_pearl_stargazer.png';
-import magneticSilverMetallicStargazer from 'magnetic_silver_metallic_stargazer.png';
-import titanGrayMetallicStargazer from 'titan_gray_metallic_stargazer.png';
+import creamyWhitePearlStargazerX from 'creamy_white_pearl_stargazer.png';
+import dragoRedPearlStargazerX from 'drago_red_pearl_stargazer.png';
+import magneticSilverMetallicStargazerX from 'magnetic_silver_metallic_stargazer.png';
+import titanGrayMetallicStargazerX from 'titan_gray_metallic_stargazer.png';
 import midnightBlackPearlStargazerx from 'midnight_black_pearl_stargazerx.png';
 
 export {
@@ -43,9 +43,9 @@ export {
 	section2Highlight1StargazerX,
 	section2Highlight2StargazerX,
 	section2Highlight3StargazerX,
-	creamyWhitePearlStargazer,
-	dragoRedPearlStargazer,
-	magneticSilverMetallicStargazer,
-	titanGrayMetallicStargazer,
+	creamyWhitePearlStargazerX,
+	dragoRedPearlStargazerX,
+	magneticSilverMetallicStargazerX,
+	titanGrayMetallicStargazerX,
 	midnightBlackPearlStargazerx,
 };

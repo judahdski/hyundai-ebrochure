@@ -1,5 +1,29 @@
 import { palisadeMD } from '../../img/main_display/index';
 import { palisadeBanner } from '../../img/banner/index';
+import {
+	eksterior1Palisade,
+	eksterior2Palisade,
+	eksterior3Palisade,
+	eksterior4Palisade,
+	eksterior5Palisade,
+	eksterior6Palisade,
+	interior1Palisade,
+	interior2Palisade,
+	interior3Palisade,
+	interior4Palisade,
+	palisadeArticleGallery,
+	section1HighlightPalisade,
+	section1Highlight2Palisade,
+	section1Highlight3Palisade,
+	section2Highlight1Palisade,
+	section2Highlight2Palisade,
+	section2Highlight3Palisade,
+	abyssBlackPearlPalisade,
+	creamyWhitePearlPalisade,
+	graphiteGrayMetallicPalisade,
+	moonlightBluePearlPalisade,
+	shimmeringSilverMetallicPalisade,
+} from '../../imgcar_list/palisade/index';
 
 export const palisadeDetail = {
 	carID: 'fpPQbL', // palisade
@@ -10,7 +34,7 @@ export const palisadeDetail = {
 				code: 'highlight_segment_1',
 				title: 'Empower your world.',
 				body: 'Jadikan pencapaian hidup Anda dan keluarga lebih berarti dengan New PALISADE. Berkendara penuh performa dan inovasi begitu berkesan di setiap perjalanan menuju dunia baru yang Anda miliki seutuhnya',
-				images: ['section1_highlight_creta.jpg'],
+				images: [],
 			},
 			{
 				code: 'highlight_segment_2',
@@ -24,59 +48,67 @@ export const palisadeDetail = {
 				{
 					description: 'Abyss Black Pearl',
 					hexCode: '#252628',
-					imgPath: 'creta_putih_pick_color.png',
+					imgPath: abyssBlackPearlPalisade,
 				},
 				{
 					description: 'Moonlight Blue Pearl',
 					hexCode: '#2C3649',
-					imgPath: 'creta_putih_pick_color.png',
+					imgPath: moonlightBluePearlPalisade,
 				},
 				{
 					description: 'Creamy White Pearl',
 					hexCode: '#E8E8E8',
-					imgPath: 'main_img_gallery.png',
+					imgPath: creamyWhitePearlPalisade,
 				},
 				{
 					description: 'Graphite Gray Metallic',
 					hexCode: '#414649',
-					imgPath: 'main_img_gallery.png',
+					imgPath: graphiteGrayMetallicPalisade,
 				},
 				{
 					description: 'Shimmering Silver Metallic',
 					hexCode: '#989C9D',
-					imgPath: 'main_img_gallery.png',
+					imgPath: shimmeringSilverMetallicPalisade,
 				},
 			],
 			article: [
 				{
 					title: 'Empower your life.',
 					body: 'Penampilan New PALISADE memukau setiap mata yang memandang. Karakter desain yang kuat dan berwibawa di semua sisi merefleksikan pencapaian dan keberhasilan Anda.',
-					img: ['creta_article_gallery'],
+					img: [palisadeArticleGallery],
 				},
 			],
 			eksterior: [
 				{
 					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: 'eksterior1_creta.png',
+					path: eksterior1Palisade,
 				},
 				{
 					alt: 'LED Headlamp',
-					path: 'eksterior2_creta.png',
+					path: eksterior2Palisade,
 				},
 				{
 					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: 'eksterior3_creta.png',
+					path: eksterior3Palisade,
 				},
 				{
 					alt: 'LED Rear Combination Lamp',
-					path: 'eksterior4_creta.png',
+					path: eksterior4Palisade,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior5Palisade,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior6Palisade,
 				},
 			],
 			interior: [
-				{ alt: '', path: 'interior1_creta.png' },
-				{ alt: '', path: 'interior2_creta.png' },
-				{ alt: '', path: 'interior3_creta.png' },
-				{ alt: '', path: 'interior4_creta.png' },
+				{ alt: '', path: interior1Palisade },
+				{ alt: '', path: interior2Palisade },
+				{ alt: '', path: interior3Palisade },
+				{ alt: '', path: interior4Palisade },
 			],
 		},
 		priceList: [

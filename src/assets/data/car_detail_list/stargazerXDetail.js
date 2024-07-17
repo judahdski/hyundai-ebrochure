@@ -1,3 +1,30 @@
+import { stargazerXBanner } from '../../img/banner/index';
+import { stargazerXMD } from '../../img/main_display/index';
+import {
+	eksterior1StargazerX,
+	eksterior2StargazerX,
+	eksterior3StargazerX,
+	eksterior4StargazerX,
+	eksterior5StargazerX,
+	eksterior6StargazerX,
+	interior1StargazerX,
+	interior2StargazerX,
+	interior3StargazerX,
+	interior4StargazerX,
+	stargazerxArticleGallery,
+	section1HighlightStargazerX,
+	section1Highlight2StargazerX,
+	section1Highlight3StargazerX,
+	section2Highlight1StargazerX,
+	section2Highlight2StargazerX,
+	section2Highlight3StargazerX,
+	creamyWhitePearlStargazerX,
+	magneticSilverMetallicStargazerX,
+	titanGrayMetallicStargazerX,
+	midnightBlackPearlStargazerx,
+	dragoRedPearlStargazerX,
+} from '../../img/car_list/stargazer-x/index';
+
 export const stargazerXDetail = {
 	carID: 'ipEZQz',
 	image: { banner: stargazerXBanner, mainDisplay: stargazerXMD },
@@ -21,59 +48,67 @@ export const stargazerXDetail = {
 				{
 					description: 'Dragon Red Pearl',
 					hexCode: '#9A2F2E',
-					imgPath: 'creta_putih_pick_color.png',
+					imgPath: dragoRedPearlStargazerX,
 				},
 				{
 					description: 'Magnetic Silver Metalic',
 					hexCode: '#898789',
-					imgPath: 'creta_putih_pick_color.png',
+					imgPath: magneticSilverMetallicStargazerX,
 				},
 				{
 					description: 'Creamy White Pearl',
 					hexCode: '#F2F5F5',
-					imgPath: 'main_img_gallery.png',
+					imgPath: creamyWhitePearlStargazerX,
 				},
 				{
 					description: 'Midnight Black Pearl',
 					hexCode: '#181A1B',
-					imgPath: 'main_img_gallery.png',
+					imgPath: midnightBlackPearlStargazerx,
 				},
 				{
 					description: 'Titan Gray Metalic',
 					hexCode: '#424649',
-					imgPath: 'main_img_gallery.png',
+					imgPath: titanGrayMetallicStargazerX,
 				},
 			],
 			article: [
 				{
 					title: 'Express your soul.',
 					body: ' tampil dengan desain eksterior baru X Dedicated Design menjadi simbol dari semangat baru untuk mengekspresikan jati dirimu yang sesungguhnya.',
-					img: ['creta_article_gallery'],
+					img: [stargazerxArticleGallery],
 				},
 			],
 			eksterior: [
 				{
 					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: 'eksterior1_creta.png',
+					path: eksterior1StargazerX,
 				},
 				{
 					alt: 'LED Headlamp',
-					path: 'eksterior2_creta.png',
+					path: eksterior2StargazerX,
 				},
 				{
 					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: 'eksterior3_creta.png',
+					path: eksterior3StargazerX,
 				},
 				{
 					alt: 'LED Rear Combination Lamp',
-					path: 'eksterior4_creta.png',
+					path: eksterior4StargazerX,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior5StargazerX,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior6StargazerX,
 				},
 			],
 			interior: [
-				{ alt: '', path: 'interior1_creta.png' },
-				{ alt: '', path: 'interior2_creta.png' },
-				{ alt: '', path: 'interior3_creta.png' },
-				{ alt: '', path: 'interior4_creta.png' },
+				{ alt: '', path: interior1StargazerX },
+				{ alt: '', path: interior2StargazerX },
+				{ alt: '', path: interior3StargazerX },
+				{ alt: '', path: interior4StargazerX },
 			],
 		},
 		priceList: [

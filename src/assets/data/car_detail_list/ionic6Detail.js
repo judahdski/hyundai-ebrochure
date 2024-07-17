@@ -12,14 +12,14 @@ import {
 	interior1Ioniq6,
 	interior2Ioniq6,
 	interior3Ioniq6,
-	section1HighlightIoniq6,
-	section2HighlightIoniq6,
+	section1Highlight1Ioniq6,
+	section2Highlight1Ioniq6,
 	abyssBlackPearlIoniq6,
 	biophilicBluePearlIoniq6,
 	gravityGoldMatteIoniq6,
 	nocturneGrayMatteIoniq6,
 	serenityWhitePearlIoniq6,
-} from '../../img/carList/ioniq6/index';
+} from '../../imgcar_list/ioniq6/index';
 
 export const ioniq6Detail = {
 	carID: 'ciEPt3',
@@ -30,13 +30,13 @@ export const ioniq6Detail = {
 				code: 'highlight_segment_1',
 				title: 'Awaken your world.',
 				body: 'Dirancang untuk melengkapi kehidupan sehari-hari dengan memberikan ruang untuk membangkitkan potensi yang Anda punya. Melalui siluet aerodinamis, serta tampilan interior yang dirancang untuk memberikan kesenangan dalam berkendara. IONIQ 6 hadir untuk mewujudkan era baru mobilitas listrik.',
-				images: ['section1_highlight_creta.jpg'],
+				images: [section1Highlight1Ioniq6],
 			},
 			{
 				code: 'highlight_segment_2',
 				title: 'Charging flexibly.',
 				body: 'Bebas rasa khawatir ketika mengendarai IONIQ 6. IONIQ 6 telah dilengkapi portable charger yang dapat terhubung ke stop kontak dinding standar. Selain itu IONIQ 6 juga dapat menunjang pengisian daya sampai 80% hanya dalam +/- 18 menit*.',
-				images: ['section1_highlight_creta.jpg'],
+				images: [section2Highlight1Ioniq6],
 			},
 			{
 				code: 'highlight_segment_3',
@@ -56,53 +56,68 @@ export const ioniq6Detail = {
 				{
 					description: 'Gravity Gold Matte',
 					hexCode: '#9B9A92',
-					imgPath: 'creta_putih_pick_color.png',
+					imgPath: gravityGoldMatteIoniq6,
 				},
 				{
 					description: 'Nocturne Gray Matte',
 					hexCode: '#2D373B',
-					imgPath: 'creta_putih_pick_color.png',
+					imgPath: nocturneGrayMatteIoniq6,
 				},
 				{
 					description: 'Abyss Black Pearl',
 					hexCode: '#030507',
-					imgPath: 'main_img_gallery.png',
+					imgPath: abyssBlackPearlIoniq6,
 				},
 				{
 					description: 'Serenity White Pearl',
 					hexCode: '#E9EEE6',
-					imgPath: 'main_img_gallery.png',
+					imgPath: serenityWhitePearlIoniq6,
 				},
 				{
 					description: 'Biophilic Blue Pearl',
 					hexCode: '#060C16',
-					imgPath: 'main_img_gallery.png',
+					imgPath: biophilicBluePearlIoniq6,
 				},
 			],
 			article: [],
 			eksterior: [
 				{
 					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: 'eksterior1_creta.png',
+					path: eksterior1Ioniq6,
 				},
 				{
 					alt: 'LED Headlamp',
-					path: 'eksterior2_creta.png',
+					path: eksterior2Ioniq6,
 				},
 				{
 					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: 'eksterior3_creta.png',
+					path: eksterior3Ioniq6,
 				},
 				{
 					alt: 'LED Rear Combination Lamp',
-					path: 'eksterior4_creta.png',
+					path: eksterior4Ioniq6,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior5Ioniq6,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior6Ioniq6,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior7Ioniq6,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior8Ioniq6,
 				},
 			],
 			interior: [
-				{ alt: '', path: 'interior1_creta.png' },
-				{ alt: '', path: 'interior2_creta.png' },
-				{ alt: '', path: 'interior3_creta.png' },
-				{ alt: '', path: 'interior4_creta.png' },
+				{ alt: '', path: interior1Ioniq6 },
+				{ alt: '', path: interior2Ioniq6 },
+				{ alt: '', path: interior3Ioniq6 },
 			],
 		},
 		priceList: [

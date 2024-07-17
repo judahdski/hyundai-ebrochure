@@ -11,8 +11,8 @@ import interior1Ioniq6 from './interior/interior1_ioniq6.png';
 import interior2Ioniq6 from './interior/interior2_ioniq6.png';
 import interior3Ioniq6 from './interior/interior3_ioniq6.png';
 
-import section1HighlightIoniq6 from './highlight/section1_highlight_ioniq6';
-import section2HighlightIoniq6 from './highlight/section2_highlight_ioniq6';
+import section1Highlight1Ioniq6 from './highlight/section1_highlight_ioniq6';
+import section2Highlight1Ioniq6 from './highlight/section2_highlight_ioniq6';
 
 import abyssBlackPearlIoniq6 from './pick_color/abyss_black_pearl_ioniq6.png';
 import biophilicBluePearlIoniq6 from './pick_color/biophilic_blue_pearl.png';
@@ -32,8 +32,8 @@ export {
 	interior1Ioniq6,
 	interior2Ioniq6,
 	interior3Ioniq6,
-	section1HighlightIoniq6,
-	section2HighlightIoniq6,
+	section1Highlight1Ioniq6,
+	section2Highlight1Ioniq6,
 	abyssBlackPearlIoniq6,
 	biophilicBluePearlIoniq6,
 	gravityGoldMatteIoniq6,

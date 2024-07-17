@@ -1,5 +1,5 @@
 import React from 'react';
-import { CarListCarousel } from '../components/CarListCarousel';
+import { CarListCarousel } from '../componentscar_listCarousel';
 import { generalCode } from '../assets/data/generalCodes';
 
 const Lineups = ({ setPage, setCarID }) => {

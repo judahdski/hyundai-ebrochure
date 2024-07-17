@@ -20,7 +20,7 @@ import {
 	midnightBlackPearlIoniq5,
 	opticWhiteIoniq5,
 	titanGrayMetallicIoniq5,
-} from '../../img/carList/ioniq5/index';
+} from '../../imgcar_list/ioniq5/index';
 
 export const ioniq5Detail = {
 	carID: 'W8poza',

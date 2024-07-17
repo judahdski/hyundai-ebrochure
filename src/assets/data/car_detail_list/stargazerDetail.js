@@ -1,5 +1,32 @@
 import { stargazerMD } from '../../img/main_display/index';
 import { stargazerBanner } from '../../img/banner/index';
+import {
+	eksterior1Stargazer,
+	eksterior2Stargazer,
+	eksterior3Stargazer,
+	eksterior4Stargazer,
+	eksterior5Stargazer,
+	eksterior6Stargazer,
+	eksterior7Stargazer,
+	eksterior8Stargazer,
+	interior1Stargazer,
+	interior2Stargazer,
+	interior3Stargazer,
+	interior4Stargazer,
+	interior5Stargazer,
+	interior6Stargazer,
+	interior7Stargazer,
+	stargazerArticleGallery,
+	section1Highlight1Stargazer,
+	section2Highlight1Stargazer,
+	section2Highlight2Stargazer,
+	section2Highlight3Stargazer,
+	creamyWhitePearlStargazer,
+	dragoRedPearlStargazer,
+	magneticSilverMetallicStargazer,
+	titanGrayMetallicStargazer,
+} from '../../img/car_list/stargazer/index';
+import { midnightBlackPearlStargazerx } from '../../img/car_list/stargazer-x';
 
 export const stargazerDetail = {
 	carID: 'RBm1W3', // stargazer
@@ -24,59 +51,78 @@ export const stargazerDetail = {
 				{
 					description: 'Magnetic Silver Metallic',
 					hexCode: '#848688',
-					imgPath: 'creta_putih_pick_color.png',
+					imgPath: magneticSilverMetallicStargazer,
 				},
 				{
 					description: 'Creamy White Pearl',
 					hexCode: '#EEF2F1',
-					imgPath: 'creta_putih_pick_color.png',
+					imgPath: creamyWhitePearlStargazer,
 				},
 				{
 					description: 'Midnight Black Pearl',
 					hexCode: '#070B10',
-					imgPath: 'main_img_gallery.png',
+					imgPath: midnightBlackPearlStargazerx,
 				},
 				{
 					description: 'Titan Gray Metallic',
 					hexCode: '#3C464B',
-					imgPath: 'main_img_gallery.png',
+					imgPath: titanGrayMetallicStargazer,
 				},
 				{
 					description: 'Dragon Red Pearl',
 					hexCode: '#9D201F',
-					imgPath: 'main_img_gallery.png',
+					imgPath: dragoRedPearlStargazer,
 				},
 			],
 			article: [
 				{
 					title: 'Tampil memukau bagai bintang.',
 					body: 'Desain futuristik dan dinamis akan langsung terlihat melalui <i>one curve design</i> yang diciptakan untuk memalingkan setiap pandangan. Dilengkapi dengan <i>Horizon type DRL (Daytime Running Lights)</i> dan <i>H-shape LED Rear Combination Lamp</i>, New STARGAZER semakin menawan dengan eksterior yang membuat Anda dan keluarga tampil memukau bagai bintang.',
-					img: ['creta_article_gallery'],
+					img: [stargazerArticleGallery],
 				},
 			],
 			eksterior: [
 				{
 					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: 'eksterior1_creta.png',
+					path: eksterior1Stargazer,
 				},
 				{
 					alt: 'LED Headlamp',
-					path: 'eksterior2_creta.png',
+					path: eksterior2Stargazer,
 				},
 				{
 					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: 'eksterior3_creta.png',
+					path: eksterior3Stargazer,
 				},
 				{
 					alt: 'LED Rear Combination Lamp',
-					path: 'eksterior4_creta.png',
+					path: eksterior4Stargazer,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior5Stargazer,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior6Stargazer,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior7Stargazer,
+				},
+				{
+					alt: 'LED Rear Combination Lamp',
+					path: eksterior8Stargazer,
 				},
 			],
 			interior: [
-				{ alt: '', path: 'interior1_creta.png' },
-				{ alt: '', path: 'interior2_creta.png' },
-				{ alt: '', path: 'interior3_creta.png' },
-				{ alt: '', path: 'interior4_creta.png' },
+				{ alt: '', path: interior1Stargazer },
+				{ alt: '', path: interior2Stargazer },
+				{ alt: '', path: interior3Stargazer },
+				{ alt: '', path: interior4Stargazer },
+				{ alt: '', path: interior5Stargazer },
+				{ alt: '', path: interior6Stargazer },
+				{ alt: '', path: interior7Stargazer },
 			],
 		},
 		priceList: [

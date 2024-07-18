@@ -3,10 +3,10 @@ import { articleSect11Img, articleSect21Img, articleSect22Img, articleSect23Img 
 
 const SubHighlight = ({ carID }) => {
 	return (
-		<div className='p-[72px] flex flex-col gap-[72px]'>
-			<div className='flex flex-col gap-8 items-center'>
-				<h3 className='text-[32px] font-medium'>Bintang baru keluarga.</h3>
-				<p className='leading-6'>
+		<div className='px-4 py-8 md:p-[72px] flex flex-col gap-8 md:gap-[72px]'>
+			<div className='flex flex-col gap-6 md:gap-8 md:items-center'>
+				<h3 className='text-[22px] md:text-[32px] font-medium'>Bintang baru keluarga.</h3>
+				<p className='text-sm md:text-base leading-6'>
 					Saatnya menikmati era baru MPV bersama New STARGAZER, inovasi mobilitas untuk setiap perjalanan berkualitas. Inilah standar baru mobil keluarga yang menghadirkan kenyamanan maksimal dan fitur berkelas, serta memberikan
 					ruang luas untuk kebersamaan Anda dan orang terkasih.
 				</p>

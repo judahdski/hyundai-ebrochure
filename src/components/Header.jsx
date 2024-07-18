@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import headerLogo from '../assets/img/hyundai-logo-header.png';
 import { generalCode } from '../assets/data/generalCodes';
-import { Button, Modal } from 'flowbite-react';
+import { Modal } from 'flowbite-react';
 import { WAButton } from './WAButton';
 
-const Header = ({ setPage, setCarID, page }) => {
+const Header = ({ setPage, page }) => {
 	const [openModal, setOpenModal] = useState(false);
 
 	return (
@@ -14,12 +14,11 @@ const Header = ({ setPage, setCarID, page }) => {
 				alt='Hyundai Logo'
 			/>
 
-      <div
-        className='pr-[12px] flex items-center text-base md:hidden'
-        onClick={() => setOpenModal(true)}
-      >
-        <i className='fa-solid fa-bars'></i>
-      </div>
+			<div
+				className='pr-[12px] flex items-center text-base md:hidden'
+				onClick={() => setOpenModal(true)}>
+				<i className='fa-solid fa-bars'></i>
+			</div>
 
 			<Modal
 				show={openModal}
@@ -49,11 +48,10 @@ const Header = ({ setPage, setCarID, page }) => {
 						<div className='w-full flex flex-col justify-stretch gap-4'>
 							{generalCode
 								.filter((item) => item.category == 'feature')
-								.map(({ code, description, value }) => (
+								.map(({ description, value }) => (
 									<WAButton
-										customClass={'p-4 w-full border border-[#E2E2E2] rounded-2xl flex items-center justify-stretch gap-4'}
 										content={
-											<div>
+											<div className='p-4 w-full border border-[#E2E2E2] rounded-2xl flex items-center justify-stretch gap-4'>
 												<img
 													src={value}
 													alt={description}

@@ -24,7 +24,7 @@ const Footer = ({ isContactPage }) => {
 
 				<div className='flex flex-col gap-[10px]'>
 					<div className='flex items-center gap-2'>
-						<i class='fa-brands fa-whatsapp text-[#16C907]'></i>
+						<i className='fa-brands fa-whatsapp text-[#16C907]'></i>
 						<a
 							className='text-sm md:text-base font-medium'
 							href={`tel:${salesProfile.phoneNo}`}>
@@ -32,7 +32,7 @@ const Footer = ({ isContactPage }) => {
 						</a>
 					</div>
 					<div className='flex items-center gap-2'>
-						<i class='fa-solid fa-envelope text-[#c71610]'></i>
+						<i className='fa-solid fa-envelope text-[#c71610]'></i>
 						<a
 							className='text-sm md:text-base font-medium'
 							href={`mailto:${salesProfile.email}`}>

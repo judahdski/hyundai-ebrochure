@@ -18,7 +18,7 @@ const Header = ({ setPage, setCarID, page }) => {
         className='pr-[12px] flex items-center text-base md:hidden'
         onClick={() => setOpenModal(true)}
       >
-        <i class='fa-solid fa-bars'></i>
+        <i className='fa-solid fa-bars'></i>
       </div>
 
       <Modal
@@ -50,8 +50,9 @@ const Header = ({ setPage, setCarID, page }) => {
             <div className='w-full flex flex-col justify-stretch gap-4'>
               {generalCode
                 .filter((item) => item.category == 'feature')
-                .map(({ code, description, value }) => (
+                .map(({ code, description, value }, index) => (
                   <WAButton
+                    key={index}
                     customClass={
                       'p-4 w-full border border-[#E2E2E2] rounded-2xl flex items-center justify-stretch gap-4'
                     }

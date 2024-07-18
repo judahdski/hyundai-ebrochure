@@ -30,7 +30,7 @@ const Contact = () => {
           {/* wa dan ig */}
           <div className='flex flex-col items-center md:items-start gap-3'>
             <div className='flex items-center gap-4'>
-              <i class='fa-brands fa-whatsapp text-[21px] text-[#16C907]'></i>
+              <i className='fa-brands fa-whatsapp text-[21px] text-[#16C907]'></i>
               <a
                 className='text-[18px] font-medium'
                 href={`tel:${salesProfile.phoneNo}`}
@@ -39,7 +39,7 @@ const Contact = () => {
               </a>
             </div>
             <div className='flex items-center gap-4'>
-              <i class='fa-solid fa-envelope text-[#c71610]'></i>
+              <i className='fa-solid fa-envelope text-[#c71610]'></i>
               <a
                 className='text-[18px] font-medium'
                 href={`mailto:${salesProfile.email}`}

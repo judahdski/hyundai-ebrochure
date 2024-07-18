@@ -9,10 +9,11 @@ const CarDetailNavigator = ({ carDetailSection, setCarDetailSection }) => {
   ];
   const { innerWidth: screenWidth } = window;
 
-  return screenWidth > 768 ? (
+  return screenWidth > 980 ? (
     <div className='bg-white -mt-[27px] w-full flex justify-stretch rounded-[12px] overflow-hidden shadow-md'>
-      {navigatorList.map(({ code, title, isLast }) => (
+      {navigatorList.map(({ code, title, isLast }, index) => (
         <div
+          key={index}
           className={`p-4 text-center tracking-[3px] ${
             carDetailSection == code
               ? ' text-[18px] text-[#1C4682] font-medium'

@@ -4,6 +4,7 @@ import SubHighlight from './components/SubHighlight';
 import SubGallery from './components/SubGallery';
 import SubPrice from './components/SubPrice';
 import SubFullSpec from './components/SubFullSpec';
+import { Carousel } from 'flowbite-react';
 
 const MainCarDetails = () => {
 	const [carDetailSection, setCarDetailSection] = useState('highlight');
@@ -30,13 +31,28 @@ const MainCarDetails = () => {
 	}
 
 	return (
+		// <div className='w-full max-w-[1280px]'>
+		// <CarDetailNavigator
+		// 	carDetailSection={carDetailSection}
+		// 	setCarDetailSection={setCarDetailSection}
+		// />
+
+		// 	{sectionComponent}
+		// </div>
 		<div className='w-full max-w-[1280px]'>
 			<CarDetailNavigator
 				carDetailSection={carDetailSection}
 				setCarDetailSection={setCarDetailSection}
 			/>
-
-			{sectionComponent}
+			<Carousel
+				indicators={false}
+				slide={false}
+				onSlideChange={(slide) => setCarDetailSection(slide)}>
+				<SubHighlight carID={carID} />
+				<SubGallery carID={carID} />
+				<SubPrice carID={carID} />
+				<SubFullSpec carID={carID} />
+			</Carousel>
 		</div>
 	);
 };

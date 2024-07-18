@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const SubFullSpec = ({ carID }) => {
 	const [carModel, setCarModel] = useState(null);
 
-	const carDetail = carDetails.filter((row) => row.carID == carID)[0];
+	// const car = cars.filter((row) => row.carID == carID)[0];
 
 	return (
 		<div className='p-[72px] pt-0 flex flex-col gap-[32px]'>
@@ -32,12 +32,10 @@ const SubFullSpec = ({ carID }) => {
 						<Table.HeadCell className='bg-[#30486B] w-[70%] text-white'>code1</Table.HeadCell>
 					</Table.Head>
 					<Table.Body className='divide-y'>
-						{detail.map(({ description, value }) => (
-							<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
+					<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
 								<Table.Cell className='whitespace-nowrap font-medium text-gray-900'>description</Table.Cell>
 								<Table.Cell>value</Table.Cell>
 							</Table.Row>
-						))}
 					</Table.Body>
 				</Table>
 			</div>

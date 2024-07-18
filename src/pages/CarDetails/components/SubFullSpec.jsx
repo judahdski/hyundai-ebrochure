@@ -1,16 +1,16 @@
-import { Dropdown, Table } from 'flowbite-react';
+import { Table } from 'flowbite-react';
 import React, { useState } from 'react';
 
 const SubFullSpec = ({ carID }) => {
-	const [carModel, setCarModel] = useState(null);
+  const [carModel, setCarModel] = useState(null);
 
-	// const car = cars.filter((row) => row.carID == carID)[0];
+  //   const carDetail = carDetails.filter((row) => row.carID == carID)[0];
 
-	return (
-		<div className='p-[72px] pt-0 flex flex-col gap-[32px]'>
-			<div className='pt-[48px]'></div>
-			{/*  */}
-			{/* <div className='pt-[48px] flex items-center gap-6'>
+  return (
+    <div className='p-[72px] pt-0 flex flex-col gap-[32px]'>
+      <div className='pt-[48px]'></div>
+      {/*  */}
+      {/* <div className='pt-[48px] flex items-center gap-6'>
 				<p className='font-medium'>Model</p>
 				<div className='py-2 px-4 rounded-lg border border-[#CFCFCF]'>
 					<Dropdown

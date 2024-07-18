@@ -12,12 +12,12 @@ export const CarListCarousel = ({ setPage }) => {
 				pauseOnHover={true}
 				leftControl={
 					<div className='p-8'>
-						<i class='fa-solid fa-chevron-left text-base md:text-3xl'></i>
+						<i className='fa-solid fa-chevron-left text-base md:text-3xl'></i>
 					</div>
 				}
 				rightControl={
 					<div className='p-8'>
-						<i class='fa-solid fa-chevron-right text-base md:text-3xl'></i>
+						<i className='fa-solid fa-chevron-right text-base md:text-3xl'></i>
 					</div>
 				}>
 				<CarCard

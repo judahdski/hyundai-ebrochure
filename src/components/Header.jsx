@@ -14,11 +14,12 @@ const Header = ({ setPage, setCarID, page }) => {
 				alt='Hyundai Logo'
 			/>
 
-			<div
-				className='pr-[12px] flex items-center text-base md:hidden'
-				onClick={() => setOpenModal(true)}>
-				<i class='fa-solid fa-bars'></i>
-			</div>
+      <div
+        className='pr-[12px] flex items-center text-base md:hidden'
+        onClick={() => setOpenModal(true)}
+      >
+        <i className='fa-solid fa-bars'></i>
+      </div>
 
 			<Modal
 				show={openModal}

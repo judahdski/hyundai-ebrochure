@@ -7,25 +7,9 @@ const SubFullSpec = ({ carID }) => {
 	//   const carDetail = carDetails.filter((row) => row.carID == carID)[0];
 
 	return (
-		<div className='p-[72px] pt-0 flex flex-col gap-[32px]'>
-			<div className='pt-[48px]'></div>
-			{/*  */}
-			{/* <div className='pt-[48px] flex items-center gap-6'>
-				<p className='font-medium'>Model</p>
-				<div className='py-2 px-4 rounded-lg border border-[#CFCFCF]'>
-					<Dropdown
-						label={carModel ?? 'Silahkan pilih model mobil'}
-						dismissOnClick={true}
-						inline>
-						<Dropdown.Item onClick={() => setCarModel('Dashboard')}>Dashboard</Dropdown.Item>
-						<Dropdown.Item onClick={() => setCarModel('Settings')}>Settings</Dropdown.Item>
-						<Dropdown.Item onClick={() => setCarModel('Earnings')}>Earnings</Dropdown.Item>
-						<Dropdown.Item onClick={() => setCarModel('Sign out')}>Sign out</Dropdown.Item>
-					</Dropdown>
-				</div>
-			</div> */}
-			<div className='flex flex-col gap-6'>
-				<p className='text-2xl text-center font-medium'>title</p>
+		<div className='px-4 py-8 md:p-[72px] flex flex-col gap-[32px]'>
+			<div className='flex flex-col gap-4 md:gap-6'>
+				<p className='text-[20px] md:text-2xl text-center font-medium'>Title</p>
 				<Table>
 					<Table.Head>
 						<Table.HeadCell className='bg-[#30486B] w-[30%] text-white'>code</Table.HeadCell>
@@ -63,3 +47,23 @@ const SubFullSpec = ({ carID }) => {
 };
 
 export default SubFullSpec;
+
+{
+	/*  */
+}
+{
+	/* <div className='pt-[48px] flex items-center gap-6'>
+				<p className='font-medium'>Model</p>
+				<div className='py-2 px-4 rounded-lg border border-[#CFCFCF]'>
+					<Dropdown
+						label={carModel ?? 'Silahkan pilih model mobil'}
+						dismissOnClick={true}
+						inline>
+						<Dropdown.Item onClick={() => setCarModel('Dashboard')}>Dashboard</Dropdown.Item>
+						<Dropdown.Item onClick={() => setCarModel('Settings')}>Settings</Dropdown.Item>
+						<Dropdown.Item onClick={() => setCarModel('Earnings')}>Earnings</Dropdown.Item>
+						<Dropdown.Item onClick={() => setCarModel('Sign out')}>Sign out</Dropdown.Item>
+					</Dropdown>
+				</div>
+			</div> */
+}

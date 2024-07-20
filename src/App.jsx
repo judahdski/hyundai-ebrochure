@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import BasePage from './components/BasePage';
 
 import Lineups from './pages/Lineups';
-import contact from './pages/contact';
+import Contact from './pages/Contact';
 import Pricelist from './pages/Pricelist';
 import MainCarDetails from './pages/CarDetails/MainCarDetails';
 
@@ -17,7 +17,7 @@ function App() {
 	if (page == 'scr_lu' || page == null) {
 		mainContent = <Lineups setPage={setPage} />;
 	} else if (page == 'scr_ct') {
-		mainContent = <contact />;
+		mainContent = <Contact />;
 	} else if (page == 'scr_pl') {
 		mainContent = <Pricelist />;
 	} else {
@@ -37,8 +37,3 @@ function App() {
 }
 
 export default App;
-
-/**
- * bagi color jadi beberapa kategori
- * mainColor = 1C4682
- */

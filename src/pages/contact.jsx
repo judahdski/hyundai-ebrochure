@@ -2,7 +2,7 @@ import React from 'react';
 import { salesProfile } from '../assets/data/salesProfile';
 import { WAButton } from '../components/WAButton';
 
-const contact = () => {
+const Contact = () => {
 	return (
 		<div className='w-full max-w-[1280px] md:flex md:flex-row'>
 			<div className='p-8 md:w-1/2 flex justify-center items-center'>
@@ -91,4 +91,4 @@ const contact = () => {
 	);
 };
 
-export default contact;
+export default Contact;

@@ -79,7 +79,8 @@ const Contact = () => {
 							/>
 						</div>
 						<WAButton
-							content={<p className='mt-2 p-4 bg-[#3165AF] rounded-lg text-white text-base font-medium'>Kirim Pesan</p>}
+							customClassName={'mt-2 p-4 bg-[#3165AF] rounded-lg text-white text-base font-medium'}
+							content={<>Kirim Pesan</>}
 							waMessage='Hello World'
 						/>
 					</form>

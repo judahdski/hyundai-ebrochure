@@ -48,17 +48,19 @@ const Header = ({ setPage, page }) => {
 						<div className='w-full flex flex-col justify-stretch gap-4'>
 							{generalCode
 								.filter((item) => item.category == 'feature')
-								.map(({ description, value }) => (
+								.map(({ description, value }, index) => (
 									<WAButton
+										key={index}
+										customClassName={'p-4 w-full border border-[#E2E2E2] rounded-2xl flex items-center justify-stretch gap-4'}
 										content={
-											<div className='p-4 w-full border border-[#E2E2E2] rounded-2xl flex items-center justify-stretch gap-4'>
+											<>
 												<img
 													src={value}
 													alt={description}
 													className='w-[24px] h-[24px]'
 												/>
 												<p className='text-sm font-medium'>{description}</p>
-											</div>
+											</>
 										}
 										waMessage={''}
 									/>

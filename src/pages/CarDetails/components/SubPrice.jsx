@@ -1,6 +1,7 @@
 import { Dropdown } from 'flowbite-react';
 import React, { useState } from 'react';
 import { ioniq6PriceTemp } from '../../../assets/img/temp';
+import { WAButton } from '../../../components/WAButton';
 
 const SubPrice = ({ carID }) => {
 	const [carVariant, setCarVariant] = useState(null);
@@ -37,9 +38,18 @@ const SubPrice = ({ carID }) => {
 			</div>
 
 			{/* Button Buy and test drive */}
-			<div className='pt-0 px-4 flex flex-col md:flex-row items-center md:justify-center gap-4 md:gap-8'>
-				<button className='bg-[#1C4682] hover:bg-[#183e72] w-full max-w-[288px] md:max-w-[336px] py-[14px] md:py-4 rounded-lg text-white text-[16px] md:text-[18px] font-medium md:order-2 shadow-lg'>BUY ME</button>
-				<button className='w-full max-w-[288px] md:max-w-[336px] py-[14px] md:py-4 bg-[#EDF3FA] hover:bg-[#e1e8f0] rounded-lg text-[#1C4682] text-[16px] md:text-[18px] md:order-1'>TEST DRIVE</button>
+			<div className='w-full px-4 pt-[32px] pb-[48px] md:pt-[48px] md:pb-[54px] flex flex-col md:flex-row items-center md:justify-center gap-4 md:gap-8'>
+				<WAButton
+					customClassName={'w-[288px] px-3 py-[14px] md:py-4 bg-[#1C4682] hover:bg-[#194075] rounded-lg text-base text-white text-center tracking-wider font-semibold md:order-2'}
+					content={<>BUY ME</>}
+					waMessage={'Halo, saya ingin berbicara dengan sales untuk konsultasi mengenai mobil Hyundai. Bisa bantu saya menghubungi sales? Terima kasih.'}
+				/>
+
+				<WAButton
+					customClassName={'w-[288px] px-3 py-[14px] md:py-4 bg-[#EDF3FA] hover:bg-[#e1e8f0] rounded-lg text-base text-[#1C4682] text-center tracking-wider font-semibold md:font-medium md:order-1'}
+					content={<>TEST DRIVE</>}
+					waMessage={'Halo, saya ingin menjadwalkan test drive. Apakah ada waktu yang tersedia? Terima kasih.'}
+				/>
 			</div>
 			{/* Button Buy and test drive */}
 		</div>

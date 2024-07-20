@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import BasePage from './components/BasePage';
 
 import Lineups from './pages/Lineups';
-import Contact from './pages/Contact';
+import contact from './pages/contact';
 import Pricelist from './pages/Pricelist';
 import MainCarDetails from './pages/CarDetails/MainCarDetails';
 
@@ -17,7 +17,7 @@ function App() {
 	if (page == 'scr_lu' || page == null) {
 		mainContent = <Lineups setPage={setPage} />;
 	} else if (page == 'scr_ct') {
-		mainContent = <Contact />;
+		mainContent = <contact />;
 	} else if (page == 'scr_pl') {
 		mainContent = <Pricelist />;
 	} else {

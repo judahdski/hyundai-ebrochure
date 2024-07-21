@@ -2,9 +2,16 @@ import { Dropdown } from 'flowbite-react';
 import React, { useState } from 'react';
 import { ioniq6PriceTemp } from '../../../assets/img/temp';
 import { WAButton } from '../../../components/WAButton';
+import { cretaDetail } from '../../../assets/data/car_detail_list/cretaDetail';
 
 const SubPrice = ({ carID }) => {
+	// #region UseState
 	const [carVariant, setCarVariant] = useState(null);
+	// #endregion UseState
+
+	//#region Get data
+	const getPriceList = () => cretaDetail.sections.priceList;
+	//#endregion
 
 	return (
 		<div className='py-6 px-4 md:py-[56px] md:px-[72px] flex flex-col gap-[56px]'>

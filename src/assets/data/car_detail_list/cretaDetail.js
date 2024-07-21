@@ -1,12 +1,12 @@
 import { cretaBanner } from '../../img/banner/index';
 import { cretaMD } from '../../img/main_display/index';
-import * as CretaImages from '../../img/creta/index';
+import * as CretaImages from '../../img/car_list/creta/index';
 
 export const cretaDetail = {
 	carID: 'Pt7A7k', // creta
-	image: { banner: cretaBanner, mainDisplay: cretaMD },
+	mainImage: { banner: cretaBanner, mainDisplay: cretaMD },
 	sections: {
-		highlight: [
+		highlights: [
 			{
 				code: 'highlight_segment_1',
 				title: 'Spotlight in motion.',
@@ -21,209 +21,209 @@ export const cretaDetail = {
 			},
 		],
 		gallery: {
-			color: [
+			colors: [
 				{
-					description: 'Optic White',
-					hexCode: '#EEF1F0',
-					imgPath: CretaImages.opticWhiteCreta,
+					name: 'Optic White',
+					hexImage: CretaImages.OpticWhiteHexImageCreta,
+					carImage: CretaImages.opticWhiteCreta,
 				},
 				{
-					description: 'Midnight Black',
-					hexCode: '#090C12',
-					imgPath: CretaImages.midnightBlackCreta,
+					name: 'Midnight Black',
+					hexImage: CretaImages.MidnightBlackHexImageCreta,
+					carImage: CretaImages.midnightBlackCreta,
 				},
 				{
-					description: 'Magnetic Silver',
-					hexCode: '#090C12',
-					imgPath: CretaImages.magneticSilverCreta,
+					name: 'Magnetic Silver',
+					hexImage: CretaImages.MagneticSilverHexImageCreta,
+					carImage: CretaImages.magneticSilverCreta,
 				},
 			],
-			article: [
+			articles: [
 				{
 					title: 'See the spotlight.',
 					body: 'Didesain untuk tampil beda di tengah mobilitas urban. Parametric Jewel Pattern Grille & Hidden-type LED DRL, serta 17-inch Diamond Cut Alloy Wheel membuat CRETA semakin gagah dan berkarakter sebagai pusat perhatian.',
-					img: [CretaImages.cretaArticleGallery],
+					images: [CretaImages.cretaArticleGallery],
 				},
 			],
-			eksterior: [
+			exteriors: [
 				{
-					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: CretaImages.eksterior1Creta,
+					caption: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
+					image: CretaImages.eksterior1Creta,
 				},
 				{
-					alt: 'LED Headlamp',
-					path: CretaImages.eksterior2Creta,
+					caption: 'LED Headlamp',
+					image: CretaImages.eksterior2Creta,
 				},
 				{
-					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: CretaImages.eksterior3Creta,
+					caption: '17-inch Diamond Cut Alloy Wheels',
+					image: CretaImages.eksterior3Creta,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: CretaImages.eksterior5Creta,
+					caption: 'LED Rear Combination Lamp',
+					image: CretaImages.eksterior5Creta,
 				},
 			],
-			interior: [
-				{ alt: '', path: CretaImages.interior1Creta },
-				{ alt: '', path: CretaImages.interior2Creta },
-				{ alt: '', path: CretaImages.interior3Creta },
-				{ alt: '', path: CretaImages.interior4Creta },
+			interiors: [
+				{ caption: '', image: CretaImages.interior1Creta },
+				{ caption: '', image: CretaImages.interior2Creta },
+				{ caption: '', image: CretaImages.interior3Creta },
+				{ caption: '', image: CretaImages.interior4Creta },
 			],
 		},
 		priceList: [
-			{ name: 'PRIME DUAL TONE 1.5 IVT', value: 'Rp. 411,300,000' },
-			{ name: 'PRIME 1.5 IVT', value: 'Rp. 408,300,000' },
-			{ name: 'STYLE 1.5 IVT', value: 'Rp. 376,000,000' },
-			{ name: 'BLACK EDITION 1.5 IVT', value: 'Rp. 350,000,000' },
-			{ name: 'TREND 1.5 IVT', value: 'Rp. 333,500,000' },
-			{ name: 'TREND 1.5 MT', value: 'Rp. 313,000,000' },
-			{ name: 'ACTIVE 1.5 IVT MT', value: 'Rp. 291,300,000' },
+			{ model: 'PRIME DUAL TONE 1.5 IVT', price: 'Rp. 411,300,000' },
+			{ model: 'PRIME 1.5 IVT', price: 'Rp. 408,300,000' },
+			{ model: 'STYLE 1.5 IVT', price: 'Rp. 376,000,000' },
+			{ model: 'BLACK EDITION 1.5 IVT', price: 'Rp. 350,000,000' },
+			{ model: 'TREND 1.5 IVT', price: 'Rp. 333,500,000' },
+			{ model: 'TREND 1.5 MT', price: 'Rp. 313,000,000' },
+			{ model: 'ACTIVE 1.5 IVT MT', price: 'Rp. 291,300,000' },
 		],
 		fullSpec: {
-			category: [
+			categories: [
 				{ id: 'FS001', title: 'Performa' },
 				{ id: 'FS002', title: 'Dimensi' },
 				{ id: 'FS003', title: 'Roda' },
 			],
-			specDetail: [
+			details: [
 				{
-					specID: 'FS001',
-					code: 'Mesin',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Mesin',
+					specs: [
 						{
-							description: 'Engine Type',
+							name: 'Engine Type',
 							value: '1.5L MPI',
 						},
 						{
-							description: 'Displacement (cc)',
+							name: 'Displacement (cc)',
 							value: '1,497',
 						},
 						{
-							description: 'Max Power (ps/rpm)',
+							name: 'Max Power (ps/rpm)',
 							value: '115/6,300',
 						},
 						{
-							description: 'Max Toque (kg-m/rpm)',
+							name: 'Max Toque (kg-m/rpm)',
 							value: '14.7/4,500',
 						},
 						{
-							description: 'Number of Cylinders',
+							name: 'Number of Cylinders',
 							value: '4',
 						},
 						{
-							description: 'Valves of Cylinders',
+							name: 'Valves of Cylinders',
 							value: '16-valve (HLA)',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Transmisi',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Transmisi',
+					specs: [
 						{
-							description: 'Transmission Type',
+							name: 'Transmission Type',
 							value: 'IVT',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Konsumsi Bahan Bakar',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Konsumsi Bahan Bakar',
+					specs: [
 						{
-							description: 'Fuel Type',
+							name: 'Fuel Type',
 							value: 'Gasoline',
 						},
 						{
-							description: 'Tank Capacity',
+							name: 'Tank Capacity',
 							value: '40 L',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Length Overall (mm)',
+							name: 'Length Overall (mm)',
 							value: '4,315',
 						},
 						{
-							description: 'Width Overall (mm)',
+							name: 'Width Overall (mm)',
 							value: '1,790',
 						},
 						{
-							description: 'Height Overall (mm)',
+							name: 'Height Overall (mm)',
 							value: '1,630',
 						},
 						{
-							description: 'Base Wheel (mm)',
+							name: 'Base Wheel (mm)',
 							value: '2,610',
 						},
 						{
-							description: 'Front Wheelthread (mm)',
+							name: 'Front Wheelthread (mm)',
 							value: '1,572',
 						},
 						{
-							description: 'Rear Wheelthread (mm)',
+							name: 'Rear Wheelthread (mm)',
 							value: '1,576',
 						},
 						{
-							description: 'Front OverHang (mm)',
+							name: 'Front OverHang (mm)',
 							value: '855',
 						},
 						{
-							description: 'Rear OverHang (mm)',
+							name: 'Rear OverHang (mm)',
 							value: '850',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Bagasi',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Bagasi',
+					specs: [
 						{
-							description: 'Cargo Area (L)',
+							name: 'Cargo Area (L)',
 							value: '416 / 1,384',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Bobot',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Bobot',
+					specs: [
 						{
-							description: 'Lightest WeightCurb (kg)',
+							name: 'Lightest WeightCurb (kg)',
 							value: '1,200',
 						},
 						{
-							description: 'Heaviest WeightCurb (kg)',
+							name: 'Heaviest WeightCurb (kg)',
 							value: '1,245',
 						},
 						{
-							description: 'Gross Weight (kg)',
+							name: 'Gross Weight (kg)',
 							value: '1,660',
 						},
 					],
 				},
 				{
-					specID: 'FS003',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS003',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Front Wheels',
+							name: 'Front Wheels',
 							value: '6.5J x 17"',
 						},
 						{
-							description: 'Rear Wheels',
+							name: 'Rear Wheels',
 							value: '6.5J x 17"',
 						},
 						{
-							description: 'Front Tires',
+							name: 'Front Tires',
 							value: '215/60 R17',
 						},
 						{
-							description: 'Rear Tires',
+							name: 'Rear Tires',
 							value: '215/60 R17',
 						},
 					],

@@ -1,29 +1,6 @@
 import { stargazerXBanner } from '../../img/banner/index';
 import { stargazerXMD } from '../../img/main_display/index';
-import {
-	eksterior1StargazerX,
-	eksterior2StargazerX,
-	eksterior3StargazerX,
-	eksterior4StargazerX,
-	eksterior5StargazerX,
-	eksterior6StargazerX,
-	interior1StargazerX,
-	interior2StargazerX,
-	interior3StargazerX,
-	interior4StargazerX,
-	stargazerxArticleGallery,
-	section1HighlightStargazerX,
-	section1Highlight2StargazerX,
-	section1Highlight3StargazerX,
-	section2Highlight1StargazerX,
-	section2Highlight2StargazerX,
-	section2Highlight3StargazerX,
-	creamyWhitePearlStargazerX,
-	magneticSilverMetallicStargazerX,
-	titanGrayMetallicStargazerX,
-	midnightBlackPearlStargazerx,
-	dragoRedPearlStargazerX,
-} from '../../img/car_list/stargazer-x/index';
+import * as StargazerXImages from '../../img/car_list/stargazer-x/index';
 
 export const stargazerXDetail = {
 	carID: 'ipEZQz',
@@ -44,174 +21,174 @@ export const stargazerXDetail = {
 			},
 		],
 		gallery: {
-			color: [
+			colors: [
 				{
-					description: 'Dragon Red Pearl',
-					hexCode: '#9A2F2E',
-					imgPath: dragoRedPearlStargazerX,
+					name: 'Dragon Red Pearl',
+					hexImage: StargazerXImages.DragonRedPearlHexImageStargazerx,
+					carImage: StargazerXImages.dragoRedPearlStargazerX,
 				},
 				{
-					description: 'Magnetic Silver Metalic',
-					hexCode: '#898789',
-					imgPath: magneticSilverMetallicStargazerX,
+					name: 'Magnetic Silver Metalic',
+					hexImage: StargazerXImages.MagneticSilverMetallicHexImageStargazerx,
+					carImage: StargazerXImages.magneticSilverMetallicStargazerX,
 				},
 				{
-					description: 'Creamy White Pearl',
-					hexCode: '#F2F5F5',
-					imgPath: creamyWhitePearlStargazerX,
+					name: 'Creamy White Pearl',
+					hexImage: StargazerXImages.CreamyWhitePearlHexImageStargazerx,
+					carImage: StargazerXImages.creamyWhitePearlStargazerX,
 				},
 				{
-					description: 'Midnight Black Pearl',
-					hexCode: '#181A1B',
-					imgPath: midnightBlackPearlStargazerx,
+					name: 'Midnight Black Pearl',
+					hexImage: StargazerXImages.MidnightBlackPearlHexImageStargazerx,
+					carImage: StargazerXImages.midnightBlackPearlStargazerx,
 				},
 				{
-					description: 'Titan Gray Metalic',
-					hexCode: '#424649',
-					imgPath: titanGrayMetallicStargazerX,
+					name: 'Titan Gray Metalic',
+					hexImage: StargazerXImages.TitanGrayMetallicHexImageStargazerx,
+					carImage: StargazerXImages.titanGrayMetallicStargazerX,
 				},
 			],
-			article: [
+			articles: [
 				{
 					title: 'Express your soul.',
 					body: ' tampil dengan desain eksterior baru X Dedicated Design menjadi simbol dari semangat baru untuk mengekspresikan jati dirimu yang sesungguhnya.',
-					img: [stargazerxArticleGallery],
+					images: [StargazerXImages.stargazerxArticleGallery],
 				},
 			],
-			eksterior: [
+			exteriors: [
 				{
-					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: eksterior1StargazerX,
+					caption: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
+					image: StargazerXImages.eksterior1StargazerX,
 				},
 				{
-					alt: 'LED Headlamp',
-					path: eksterior2StargazerX,
+					caption: 'LED Headlamp',
+					image: StargazerXImages.eksterior2StargazerX,
 				},
 				{
-					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: eksterior3StargazerX,
+					caption: '17-inch Diamond Cut Alloy Wheels',
+					image: StargazerXImages.eksterior3StargazerX,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior4StargazerX,
+					caption: 'LED Rear Combination Lamp',
+					image: StargazerXImages.eksterior4StargazerX,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior5StargazerX,
+					caption: 'LED Rear Combination Lamp',
+					image: StargazerXImages.eksterior5StargazerX,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior6StargazerX,
+					caption: 'LED Rear Combination Lamp',
+					image: StargazerXImages.eksterior6StargazerX,
 				},
 			],
-			interior: [
-				{ alt: '', path: interior1StargazerX },
-				{ alt: '', path: interior2StargazerX },
-				{ alt: '', path: interior3StargazerX },
-				{ alt: '', path: interior4StargazerX },
+			interiors: [
+				{ caption: '', image: StargazerXImages.interior1StargazerX },
+				{ caption: '', image: StargazerXImages.interior2StargazerX },
+				{ caption: '', image: StargazerXImages.interior3StargazerX },
+				{ caption: '', image: StargazerXImages.interior4StargazerX },
 			],
 		},
 		priceList: [
 			{
 				name: 'PRIME Premium Color 1.5 IVT',
-				value: 'Rp. 339,700,000',
+				price: 'Rp. 339,700,000',
 			},
-			{ name: 'PRIME 1.5 IVT', value: 'Rp. 336,200,000' },
-			{ name: 'STYLE 1.5 IVT', value: 'Rp. 325,600,000' },
+			{ name: 'PRIME 1.5 IVT', price: 'Rp. 336,200,000' },
+			{ name: 'STYLE 1.5 IVT', price: 'Rp. 325,600,000' },
 		],
 		fullSpec: {
-			category: [
+			categories: [
 				{ id: 'FS001', title: 'Performa' },
 				{ id: 'FS002', title: 'Dimensi' },
 				{ id: 'FS003', title: 'Roda' },
 			],
-			specDetail: [
+			details: [
 				{
-					specID: 'FS001',
-					code: 'Mesin',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Mesin',
+					specs: [
 						{
-							description: 'Engine Type',
+							name: 'Engine Type',
 							value: 'Smartstream G1.5 MPI Inline 4 cylinders',
 						},
 						{
-							description: 'Displacement (cc)',
+							name: 'Displacement (cc)',
 							value: '1.497',
 						},
 						{
-							description: 'Max Power (ps/rpm)',
+							name: 'Max Power (ps/rpm)',
 							value: '84,4 (115)/6.300',
 						},
 						{
-							description: 'Max Toque (kg-m/rpm)',
+							name: 'Max Toque (kg-m/rpm)',
 							value: '143,8 (14.7)/4.500',
 						},
 						{
-							description: 'Number of Cylinders',
+							name: 'Number of Cylinders',
 							value: '4',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Transmisi',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Transmisi',
+					specs: [
 						{
-							description: 'Transmission Type',
+							name: 'Transmission Type',
 							value: 'IVT',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Konsumsi Bahan Bakar',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Konsumsi Bahan Bakar',
+					specs: [
 						{
-							description: 'Fuel Type',
+							name: 'Fuel Type',
 							value: 'Gasoline',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Length Overall (mm)',
+							name: 'Length Overall (mm)',
 							value: '4.495',
 						},
 						{
-							description: 'Width Overall (mm)',
+							name: 'Width Overall (mm)',
 							value: '1.815',
 						},
 						{
-							description: 'Height Overall (mm)',
+							name: 'Height Overall (mm)',
 							value: '1.710',
 						},
 						{
-							description: 'Base Wheel (mm)',
+							name: 'Base Wheel (mm)',
 							value: '2.780',
 						},
 					],
 				},
 				{
-					specID: 'FS003',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS003',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Front Wheels',
+							name: 'Front Wheels',
 							value: '6,5J x 17"',
 						},
 						{
-							description: 'Rear Wheels',
+							name: 'Rear Wheels',
 							value: '6,5J x 17"',
 						},
 						{
-							description: 'Front Tires',
+							name: 'Front Tires',
 							value: '205/55R17',
 						},
 						{
-							description: 'Rear Tires',
+							name: 'Rear Tires',
 							value: '205/55R17',
 						},
 					],

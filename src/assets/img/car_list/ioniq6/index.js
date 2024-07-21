@@ -20,6 +20,12 @@ import gravityGoldMatteIoniq6 from './pick_color/gravity_gold_matte_ioniq6.png';
 import nocturneGrayMatteIoniq6 from './pick_color/nocturne_gray_matte.png';
 import serenityWhitePearlIoniq6 from './pick_color/serenity_white_pearl_ioniq6.png';
 
+import AbyssBlackPearlHexImageIonic6 from './hex_image/abyss-black-pearl_hex-image_ionic6.png';
+import BiophilicBluePearlHexImageIonic6 from './hex_image/biophilic-blue-pearl_hex-image_ionic6.png';
+import GravityGoldMatteHexImageIonic6 from './hex_image/gravity-gold-matte_hex-image_ionic6.png';
+import NocturneGrayMatteHexImageIonic6 from './hex_image/nocturne-gray-matte_hex-image_ionic6.png';
+import SerenityWhitePearlHexImageIonic6 from './hex_image/serenity-white-pearl_hex-image_ionic6.png';
+
 export {
 	eksterior1Ioniq6,
 	eksterior2Ioniq6,
@@ -39,4 +45,9 @@ export {
 	gravityGoldMatteIoniq6,
 	nocturneGrayMatteIoniq6,
 	serenityWhitePearlIoniq6,
+	AbyssBlackPearlHexImageIonic6,
+	BiophilicBluePearlHexImageIonic6,
+	GravityGoldMatteHexImageIonic6,
+	NocturneGrayMatteHexImageIonic6,
+	SerenityWhitePearlHexImageIonic6,
 };

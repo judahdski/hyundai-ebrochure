@@ -1,38 +1,13 @@
-import { stargazerMD } from '../../img/main_display/index';
+import { stargazerMD } from '../../images/main_display/index';
 import { stargazerBanner } from '../../img/banner/index';
-import {
-	eksterior1Stargazer,
-	eksterior2Stargazer,
-	eksterior3Stargazer,
-	eksterior4Stargazer,
-	eksterior5Stargazer,
-	eksterior6Stargazer,
-	eksterior7Stargazer,
-	eksterior8Stargazer,
-	interior1Stargazer,
-	interior2Stargazer,
-	interior3Stargazer,
-	interior4Stargazer,
-	interior5Stargazer,
-	interior6Stargazer,
-	interior7Stargazer,
-	stargazerArticleGallery,
-	section1Highlight1Stargazer,
-	section2Highlight1Stargazer,
-	section2Highlight2Stargazer,
-	section2Highlight3Stargazer,
-	creamyWhitePearlStargazer,
-	dragoRedPearlStargazer,
-	magneticSilverMetallicStargazer,
-	titanGrayMetallicStargazer,
-} from '../../img/car_list/stargazer/index';
+import * as StargazerImages from '../../img/car_list/stargazer/index';
 import { midnightBlackPearlStargazerx } from '../../img/car_list/stargazer-x';
 
 export const stargazerDetail = {
 	carID: 'RBm1W3', // stargazer
-	image: { banner: stargazerBanner, mainDisplay: stargazerMD },
+	mainImage: { banner: stargazerBanner, mainDisplay: stargazerMD },
 	sections: {
-		highlight: [
+		highlights: [
 			{
 				code: 'highlight_segment_1',
 				title: 'Bintang baru keluarga.',
@@ -47,229 +22,229 @@ export const stargazerDetail = {
 			},
 		],
 		gallery: {
-			color: [
+			colors: [
 				{
-					description: 'Magnetic Silver Metallic',
-					hexCode: '#848688',
-					imgPath: magneticSilverMetallicStargazer,
+					name: 'Magnetic Silver Metallic',
+					hexImage: '#848688',
+					carImage: StargazerImages.magneticSilverMetallicStargazer,
 				},
 				{
-					description: 'Creamy White Pearl',
-					hexCode: '#EEF2F1',
-					imgPath: creamyWhitePearlStargazer,
+					name: 'Creamy White Pearl',
+					hexImage: '#EEF2F1',
+					carImage: StargazerImages.creamyWhitePearlStargazer,
 				},
 				{
-					description: 'Midnight Black Pearl',
-					hexCode: '#070B10',
-					imgPath: midnightBlackPearlStargazerx,
+					name: 'Midnight Black Pearl',
+					hexImage: '#070B10',
+					carImage: StargazerImages.midnightBlackPearlStargazerx,
 				},
 				{
-					description: 'Titan Gray Metallic',
-					hexCode: '#3C464B',
-					imgPath: titanGrayMetallicStargazer,
+					name: 'Titan Gray Metallic',
+					hexImage: '#3C464B',
+					carImage: StargazerImages.titanGrayMetallicStargazer,
 				},
 				{
-					description: 'Dragon Red Pearl',
-					hexCode: '#9D201F',
-					imgPath: dragoRedPearlStargazer,
+					name: 'Dragon Red Pearl',
+					hexImage: '#9D201F',
+					carImage: StargazerImages.dragoRedPearlStargazer,
 				},
 			],
-			article: [
+			articles: [
 				{
 					title: 'Tampil memukau bagai bintang.',
-					body: 'Desain futuristik dan dinamis akan langsung terlihat melalui <i>one curve design</i> yang diciptakan untuk memalingkan setiap pandangan. Dilengkapi dengan <i>Horizon type DRL (Daytime Running Lights)</i> dan <i>H-shape LED Rear Combination Lamp</i>, New STARGAZER semakin menawan dengan eksterior yang membuat Anda dan keluarga tampil memukau bagai bintang.',
-					img: [stargazerArticleGallery],
+					body: 'Desain futuristik dan dinamis akan langsung terlihat melalui <i>one curve design</i> yang diciptakan untuk memalingkan setiap pandangan. Dilengkapi dengan <i>Horizon type DRL (Daytime Running Lights)</i> dan <i>H-shape LED Rear Combination Lamp</i>, New STARGAZER semakin menawan dengan exterior yang membuat Anda dan keluarga tampil memukau bagai bintang.',
+					images: [StargazerImages.stargazerArticleGallery],
 				},
 			],
-			eksterior: [
+			exteriors: [
 				{
-					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: eksterior1Stargazer,
+					caption: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
+					image: StargazerImages.exterior1Stargazer,
 				},
 				{
-					alt: 'LED Headlamp',
-					path: eksterior2Stargazer,
+					caption: 'LED Headlamp',
+					image: StargazerImages.exterior2Stargazer,
 				},
 				{
-					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: eksterior3Stargazer,
+					caption: '17-inch Diamond Cut Alloy Wheels',
+					image: StargazerImages.exterior3Stargazer,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior4Stargazer,
+					caption: 'LED Rear Combination Lamp',
+					image: StargazerImages.exterior4Stargazer,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior5Stargazer,
+					caption: 'LED Rear Combination Lamp',
+					image: StargazerImages.exterior5Stargazer,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior6Stargazer,
+					caption: 'LED Rear Combination Lamp',
+					image: StargazerImages.exterior6Stargazer,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior7Stargazer,
+					caption: 'LED Rear Combination Lamp',
+					image: StargazerImages.exterior7Stargazer,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior8Stargazer,
+					caption: 'LED Rear Combination Lamp',
+					image: StargazerImages.exterior8Stargazer,
 				},
 			],
-			interior: [
-				{ alt: '', path: interior1Stargazer },
-				{ alt: '', path: interior2Stargazer },
-				{ alt: '', path: interior3Stargazer },
-				{ alt: '', path: interior4Stargazer },
-				{ alt: '', path: interior5Stargazer },
-				{ alt: '', path: interior6Stargazer },
-				{ alt: '', path: interior7Stargazer },
+			interiors: [
+				{ caption: '', image: StargazerImages.interior1Stargazer },
+				{ caption: '', image: StargazerImages.interior2Stargazer },
+				{ caption: '', image: StargazerImages.interior3Stargazer },
+				{ caption: '', image: StargazerImages.interior4Stargazer },
+				{ caption: '', image: StargazerImages.interior5Stargazer },
+				{ caption: '', image: StargazerImages.interior6Stargazer },
+				{ caption: '', image: StargazerImages.interior7Stargazer },
 			],
 		},
 		priceList: [
-			{ name: 'PRIME 1.5 IVT', value: 'Rp. 316,200,000' },
-			{ name: 'STYLE 1.5 IVT', value: 'Rp. 300,800,000' },
-			{ name: 'ESSENTIAL 1.5 IVT', value: 'Rp. 272,500,000' },
-			{ name: 'ESSENTIAL 1.5 MT', value: 'Rp. 258,800,000' },
-			{ name: 'ACTIVE 1.5 IVT', value: 'Rp. 260,000,000' },
-			{ name: 'ACTIVE 1.5 MT', value: 'Rp. 247,200,000' },
+			{ model: 'PRIME 1.5 IVT', price: 'Rp. 316,200,000' },
+			{ model: 'STYLE 1.5 IVT', price: 'Rp. 300,800,000' },
+			{ model: 'ESSENTIAL 1.5 IVT', price: 'Rp. 272,500,000' },
+			{ model: 'ESSENTIAL 1.5 MT', price: 'Rp. 258,800,000' },
+			{ model: 'ACTIVE 1.5 IVT', price: 'Rp. 260,000,000' },
+			{ model: 'ACTIVE 1.5 MT', price: 'Rp. 247,200,000' },
 		],
 		fullSpec: {
-			category: [
+			categories: [
 				{ id: 'FS001', title: 'Performa' },
 				{ id: 'FS002', title: 'Dimensi' },
 				{ id: 'FS003', title: 'Roda' },
 			],
-			specDetail: [
+			details: [
 				{
-					specID: 'FS001',
-					code: 'Mesin',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Mesin',
+					specs: [
 						{
-							description: 'Engine Type',
+							name: 'Engine Type',
 							value: '1.5L MPI',
 						},
 						{
-							description: 'Displacement (cc)',
+							name: 'Displacement (cc)',
 							value: '1,497',
 						},
 						{
-							description: 'Max Power (ps/rpm)',
+							name: 'Max Power (ps/rpm)',
 							value: '115/6,300',
 						},
 						{
-							description: 'Max Toque (kg-m/rpm)',
+							name: 'Max Toque (kg-m/rpm)',
 							value: '14.7/4,500',
 						},
 						{
-							description: 'Number of Cylinders',
+							name: 'Number of Cylinders',
 							value: '4',
 						},
 						{
-							description: 'Valves of Cylinders',
+							name: 'Valves of Cylinders',
 							value: '16-valve (HLA)',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Transmisi',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Transmisi',
+					specs: [
 						{
-							description: 'Transmission Type',
+							name: 'Transmission Type',
 							value: 'IVT',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Konsumsi Bahan Bakar',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Konsumsi Bahan Bakar',
+					specs: [
 						{
-							description: 'Fuel Type',
+							name: 'Fuel Type',
 							value: 'Gasoline',
 						},
 						{
-							description: 'Tank Capacity',
+							name: 'Tank Capacity',
 							value: '40 L',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Length Overall (mm)',
+							name: 'Length Overall (mm)',
 							value: '4,460',
 						},
 						{
-							description: 'Width Overall (mm)',
+							name: 'Width Overall (mm)',
 							value: '1,780',
 						},
 						{
-							description: 'Height Overall (mm)',
+							name: 'Height Overall (mm)',
 							value: '1,690',
 						},
 						{
-							description: 'Base Wheel (mm)',
+							name: 'Base Wheel (mm)',
 							value: '2,780',
 						},
 						{
-							description: 'Front OverHang (mm)',
+							name: 'Front OverHang (mm)',
 							value: '800',
 						},
 						{
-							description: 'Rear OverHang (mm)',
+							name: 'Rear OverHang (mm)',
 							value: '880',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Bagasi',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Bagasi',
+					specs: [
 						{
-							description: 'Cargo Area (L)',
+							name: 'Cargo Area (L)',
 							value: '585 (behind 2nd row) / 200 (behind 3rd row)',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Bobot',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Bobot',
+					specs: [
 						{
-							description: 'Lightest WeightCurb (kg)',
+							name: 'Lightest WeightCurb (kg)',
 							value: '1,209',
 						},
 						{
-							description: 'Heaviest WeightCurb (kg)',
+							name: 'Heaviest WeightCurb (kg)',
 							value: '1,272',
 						},
 						{
-							description: 'Gross Weight (kg)',
+							name: 'Gross Weight (kg)',
 							value: '1,830',
 						},
 					],
 				},
 				{
-					specID: 'FS003',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS003',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Front Wheels',
+							name: 'Front Wheels',
 							value: '6.5J x 16"',
 						},
 						{
-							description: 'Rear Wheels',
+							name: 'Rear Wheels',
 							value: '6.5J x 16"',
 						},
 						{
-							description: 'Front Tires',
+							name: 'Front Tires',
 							value: '205/55 R16',
 						},
 						{
-							description: 'Rear Tires',
+							name: 'Rear Tires',
 							value: '205/55 R16',
 						},
 					],

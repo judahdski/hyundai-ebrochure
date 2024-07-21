@@ -1,31 +1,12 @@
 import { ioniq6Banner } from '../../img/banner/index';
 import { ioniq6MD } from '../../img/main_display/index';
-import {
-	eksterior1Ioniq6,
-	eksterior2Ioniq6,
-	eksterior3Ioniq6,
-	eksterior4Ioniq6,
-	eksterior5Ioniq6,
-	eksterior6Ioniq6,
-	eksterior7Ioniq6,
-	eksterior8Ioniq6,
-	interior1Ioniq6,
-	interior2Ioniq6,
-	interior3Ioniq6,
-	section1Highlight1Ioniq6,
-	section2Highlight1Ioniq6,
-	abyssBlackPearlIoniq6,
-	biophilicBluePearlIoniq6,
-	gravityGoldMatteIoniq6,
-	nocturneGrayMatteIoniq6,
-	serenityWhitePearlIoniq6,
-} from '../../imgcar_list/ioniq6/index';
+import * as Ioniq6Images from '../../img/car_list/ioniq6/index';
 
 export const ioniq6Detail = {
 	carID: 'ciEPt3',
-	image: { banner: ioniq6Banner, mainDisplay: ioniq6MD },
+	mainImage: { banner: ioniq6Banner, mainDisplay: ioniq6MD },
 	sections: {
-		highlight: [
+		highlights: [
 			{
 				code: 'highlight_segment_1',
 				title: 'Awaken your world.',
@@ -52,177 +33,177 @@ export const ioniq6Detail = {
 			},
 		],
 		gallery: {
-			color: [
+			colors: [
 				{
-					description: 'Gravity Gold Matte',
-					hexCode: '#9B9A92',
-					imgPath: gravityGoldMatteIoniq6,
+					name: 'Gravity Gold Matte',
+					hexImage: Ioniq6Images.GravityGoldMatteHexImageIonic6,
+					carImage: Ioniq6Images.gravityGoldMatteIoniq6,
 				},
 				{
-					description: 'Nocturne Gray Matte',
-					hexCode: '#2D373B',
-					imgPath: nocturneGrayMatteIoniq6,
+					name: 'Nocturne Gray Matte',
+					hexImage: Ioniq6Images.NocturneGrayMatteHexImageIonic6,
+					carImage: Ioniq6Images.nocturneGrayMatteIoniq6,
 				},
 				{
-					description: 'Abyss Black Pearl',
-					hexCode: '#030507',
-					imgPath: abyssBlackPearlIoniq6,
+					name: 'Abyss Black Pearl',
+					hexImage: Ioniq6Images.AbyssBlackPearlHexImageIonic6,
+					carImage: Ioniq6Images.abyssBlackPearlIoniq6,
 				},
 				{
-					description: 'Serenity White Pearl',
-					hexCode: '#E9EEE6',
-					imgPath: serenityWhitePearlIoniq6,
+					name: 'Serenity White Pearl',
+					hexImage: Ioniq6Images.SerenityWhitePearlHexImageIonic6,
+					carImage: Ioniq6Images.serenityWhitePearlIoniq6,
 				},
 				{
-					description: 'Biophilic Blue Pearl',
-					hexCode: '#060C16',
-					imgPath: biophilicBluePearlIoniq6,
-				},
-			],
-			article: [],
-			eksterior: [
-				{
-					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: eksterior1Ioniq6,
-				},
-				{
-					alt: 'LED Headlamp',
-					path: eksterior2Ioniq6,
-				},
-				{
-					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: eksterior3Ioniq6,
-				},
-				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior4Ioniq6,
-				},
-				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior5Ioniq6,
-				},
-				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior6Ioniq6,
-				},
-				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior7Ioniq6,
-				},
-				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior8Ioniq6,
+					name: 'Biophilic Blue Pearl',
+					hexImage: Ioniq6Images.BiophilicBluePearlHexImageIonic6,
+					carImage: Ioniq6Images.biophilicBluePearlIoniq6,
 				},
 			],
-			interior: [
-				{ alt: '', path: interior1Ioniq6 },
-				{ alt: '', path: interior2Ioniq6 },
-				{ alt: '', path: interior3Ioniq6 },
+			articles: [],
+			exteriors: [
+				{
+					caption: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
+					image: Ioniq6Images.eksterior1Ioniq6,
+				},
+				{
+					caption: 'LED Headlamp',
+					image: Ioniq6Images.eksterior2Ioniq6,
+				},
+				{
+					caption: '17-inch Diamond Cut Alloy Wheels',
+					image: Ioniq6Images.eksterior3Ioniq6,
+				},
+				{
+					caption: 'LED Rear Combination Lamp',
+					image: Ioniq6Images.eksterior4Ioniq6,
+				},
+				{
+					caption: 'LED Rear Combination Lamp',
+					image: Ioniq6Images.eksterior5Ioniq6,
+				},
+				{
+					caption: 'LED Rear Combination Lamp',
+					image: Ioniq6Images.eksterior6Ioniq6,
+				},
+				{
+					caption: 'LED Rear Combination Lamp',
+					image: Ioniq6Images.eksterior7Ioniq6,
+				},
+				{
+					caption: 'LED Rear Combination Lamp',
+					image: Ioniq6Images.eksterior8Ioniq6,
+				},
+			],
+			interiors: [
+				{ caption: '', image: Ioniq6Images.interior1Ioniq6 },
+				{ caption: '', image: Ioniq6Images.interior2Ioniq6 },
+				{ caption: '', image: Ioniq6Images.interior3Ioniq6 },
 			],
 		},
 		priceList: [
-			{ name: 'SIGNATURE AWD', value: 'Rp. 1,197,000,000' },
-			{ name: 'AWD MATTE COLOR', value: 'Rp. 1,200,500,000' },
+			{ model: 'SIGNATURE AWD', price: 'Rp. 1,197,000,000' },
+			{ model: 'AWD MATTE COLOR', price: 'Rp. 1,200,500,000' },
 		],
 		fullSpec: {
-			category: [
+			categories: [
 				{ id: 'FS001', title: 'Performa' },
 				{ id: 'FS002', title: 'Dimensi' },
 				{ id: 'FS003', title: 'Roda' },
 			],
-			specDetail: [
+			details: [
 				{
-					specID: 'FS001',
-					code: 'Mesin',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Mesin',
+					specs: [
 						{
-							description: 'Max. Power (ps)',
+							name: 'Max. Power (ps)',
 							value: '326',
 						},
 						{
-							description: 'Max. Power (kW)',
+							name: 'Max. Power (kW)',
 							value: '239',
 						},
 						{
-							description: 'Max. Torque (Nm)',
+							name: 'Max. Torque (Nm)',
 							value: '605',
 						},
 						{
-							description: 'Acceleration (Sport) (0 - 100 kph) (sec)',
+							name: 'Acceleration (Sport) (0 - 100 kph) (sec)',
 							value: '5.1',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Transmisi',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Transmisi',
+					specs: [
 						{
-							description: 'Transmission Type',
+							name: 'Transmission Type',
 							value: 'Single Speed Reduction Gear',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Konsumsi Bahan Bakar',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Konsumsi Bahan Bakar',
+					specs: [
 						{
-							description: 'Motor Type',
+							name: 'Motor Type',
 							value: 'Permanent Magnet Synchronous Motor',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Aki',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Aki',
+					specs: [
 						{
-							description: 'Battery type',
+							name: 'Battery type',
 							value: 'Liquid cooled Lithium Ion',
 						},
 						{
-							description: 'Battery Capacity (kWh)',
+							name: 'Battery Capacity (kWh)',
 							value: '77,4',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Length Overall (mm)',
+							name: 'Length Overall (mm)',
 							value: '4,855',
 						},
 						{
-							description: 'Width Overall (mm)',
+							name: 'Width Overall (mm)',
 							value: '1,880',
 						},
 						{
-							description: 'Height Overall (mm)',
+							name: 'Height Overall (mm)',
 							value: '1,495',
 						},
 					],
 				},
 				{
-					specID: 'FS003',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS003',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Front Wheels',
+							name: 'Front Wheels',
 							value: '20 x 8.5J +53.5',
 						},
 						{
-							description: 'Rear Wheels',
+							name: 'Rear Wheels',
 							value: '20 x 8.5J +53.5',
 						},
 						{
-							description: 'Front Tires',
+							name: 'Front Tires',
 							value: '245/40R20 99Y',
 						},
 						{
-							description: 'Rear Tires',
+							name: 'Rear Tires',
 							value: '245/40R20 99Y',
 						},
 					],

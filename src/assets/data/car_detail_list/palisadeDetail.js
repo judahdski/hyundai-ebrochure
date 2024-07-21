@@ -1,35 +1,12 @@
 import { palisadeMD } from '../../img/main_display/index';
 import { palisadeBanner } from '../../img/banner/index';
-import {
-	eksterior1Palisade,
-	eksterior2Palisade,
-	eksterior3Palisade,
-	eksterior4Palisade,
-	eksterior5Palisade,
-	eksterior6Palisade,
-	interior1Palisade,
-	interior2Palisade,
-	interior3Palisade,
-	interior4Palisade,
-	palisadeArticleGallery,
-	section1HighlightPalisade,
-	section1Highlight2Palisade,
-	section1Highlight3Palisade,
-	section2Highlight1Palisade,
-	section2Highlight2Palisade,
-	section2Highlight3Palisade,
-	abyssBlackPearlPalisade,
-	creamyWhitePearlPalisade,
-	graphiteGrayMetallicPalisade,
-	moonlightBluePearlPalisade,
-	shimmeringSilverMetallicPalisade,
-} from '../../imgcar_list/palisade/index';
+import * as PalisadeImages from '../../img/car_list/palisade/index';
 
 export const palisadeDetail = {
 	carID: 'fpPQbL', // palisade
-	image: { banner: palisadeBanner, mainDisplay: palisadeMD },
+	mainImage: { banner: palisadeBanner, mainDisplay: palisadeMD },
 	sections: {
-		highlight: [
+		highlights: [
 			{
 				code: 'highlight_segment_1',
 				title: 'Empower your world.',
@@ -44,223 +21,223 @@ export const palisadeDetail = {
 			},
 		],
 		gallery: {
-			color: [
+			colors: [
 				{
-					description: 'Abyss Black Pearl',
-					hexCode: '#252628',
-					imgPath: abyssBlackPearlPalisade,
+					name: 'Abyss Black Pearl',
+					hexImage: '#252628',
+					carImage: PalisadeImages.abyssBlackPearlPalisade,
 				},
 				{
-					description: 'Moonlight Blue Pearl',
-					hexCode: '#2C3649',
-					imgPath: moonlightBluePearlPalisade,
+					name: 'Moonlight Blue Pearl',
+					hexImage: '#2C3649',
+					carImage: PalisadeImages.moonlightBluePearlPalisade,
 				},
 				{
-					description: 'Creamy White Pearl',
-					hexCode: '#E8E8E8',
-					imgPath: creamyWhitePearlPalisade,
+					name: 'Creamy White Pearl',
+					hexImage: '#E8E8E8',
+					carImage: PalisadeImages.creamyWhitePearlPalisade,
 				},
 				{
-					description: 'Graphite Gray Metallic',
-					hexCode: '#414649',
-					imgPath: graphiteGrayMetallicPalisade,
+					name: 'Graphite Gray Metallic',
+					hexImage: '#414649',
+					carImage: PalisadeImages.graphiteGrayMetallicPalisade,
 				},
 				{
-					description: 'Shimmering Silver Metallic',
-					hexCode: '#989C9D',
-					imgPath: shimmeringSilverMetallicPalisade,
+					name: 'Shimmering Silver Metallic',
+					hexImage: '#989C9D',
+					carImage: PalisadeImages.shimmeringSilverMetallicPalisade,
 				},
 			],
-			article: [
+			articles: [
 				{
 					title: 'Empower your life.',
 					body: 'Penampilan New PALISADE memukau setiap mata yang memandang. Karakter desain yang kuat dan berwibawa di semua sisi merefleksikan pencapaian dan keberhasilan Anda.',
-					img: [palisadeArticleGallery],
+					images: [PalisadeImages.palisadeArticleGallery],
 				},
 			],
-			eksterior: [
+			exteriors: [
 				{
-					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: eksterior1Palisade,
+					caption: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
+					image: PalisadeImages.exterior1Palisade,
 				},
 				{
-					alt: 'LED Headlamp',
-					path: eksterior2Palisade,
+					caption: 'LED Headlamp',
+					image: PalisadeImages.exterior2Palisade,
 				},
 				{
-					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: eksterior3Palisade,
+					caption: '17-inch Diamond Cut Alloy Wheels',
+					image: PalisadeImages.exterior3Palisade,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior4Palisade,
+					caption: 'LED Rear Combination Lamp',
+					image: PalisadeImages.exterior4Palisade,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior5Palisade,
+					caption: 'LED Rear Combination Lamp',
+					image: PalisadeImages.exterior5Palisade,
 				},
 				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior6Palisade,
+					caption: 'LED Rear Combination Lamp',
+					image: PalisadeImages.exterior6Palisade,
 				},
 			],
-			interior: [
-				{ alt: '', path: interior1Palisade },
-				{ alt: '', path: interior2Palisade },
-				{ alt: '', path: interior3Palisade },
-				{ alt: '', path: interior4Palisade },
+			interiors: [
+				{ caption: '', image: PalisadeImages.interior1Palisade },
+				{ caption: '', image: PalisadeImages.interior2Palisade },
+				{ caption: '', image: PalisadeImages.interior3Palisade },
+				{ caption: '', image: PalisadeImages.interior4Palisade },
 			],
 		},
 		priceList: [
-			{ name: 'DIESEL 2.2 AT SIGN AWD', value: 'Rp. 1,147,500,000' },
-			{ name: 'DIESEL 2.2 AT SIGN 4X2', value: 'Rp. 1,012,500,000' },
-			{ name: 'DIESEL 2.2 AT PRIME 4X2', value: 'Rp. 875,500,000' },
+			{ model: 'DIESEL 2.2 AT SIGN AWD', price: 'Rp. 1,147,500,000' },
+			{ model: 'DIESEL 2.2 AT SIGN 4X2', price: 'Rp. 1,012,500,000' },
+			{ model: 'DIESEL 2.2 AT PRIME 4X2', price: 'Rp. 875,500,000' },
 		],
 		fullSpec: {
-			category: [
+			categories: [
 				{ id: 'FS001', title: 'Performa' },
 				{ id: 'FS002', title: 'Dimensi' },
 				{ id: 'FS003', title: 'Roda' },
 			],
-			specDetail: [
+			details: [
 				{
-					specID: 'FS001',
-					code: 'Mesin',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Mesin',
+					specs: [
 						{
-							description: 'Engine Type',
+							name: 'Engine Type',
 							value: 'R 2.2 CRDi',
 						},
 						{
-							description: 'Displacement (cc)',
+							name: 'Displacement (cc)',
 							value: '2,199',
 						},
 						{
-							description: 'Max Power (ps/rpm)',
+							name: 'Max Power (ps/rpm)',
 							value: '147 (200)/3,800',
 						},
 						{
-							description: 'Max Toque (kg-m/rpm)',
+							name: 'Max Toque (kg-m/rpm)',
 							value: '(45,0)/1,750 - 2,750',
 						},
 						{
-							description: 'Number of Cylinders',
+							name: 'Number of Cylinders',
 							value: '4',
 						},
 						{
-							description: 'Valves of Cylinders',
+							name: 'Valves of Cylinders',
 							value: '16-valve (HLA)',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Transmisi',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Transmisi',
+					specs: [
 						{
-							description: 'Transmission Type',
+							name: 'Transmission Type',
 							value: '8 Speed Automatic',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Konsumsi Bahan Bakar',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Konsumsi Bahan Bakar',
+					specs: [
 						{
-							description: 'Fuel Type',
+							name: 'Fuel Type',
 							value: 'Diesel',
 						},
 						{
-							description: 'Tank Capacity',
+							name: 'Tank Capacity',
 							value: '71 L',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Length Overall (mm)',
+							name: 'Length Overall (mm)',
 							value: '4,980',
 						},
 						{
-							description: 'Width Overall (mm)',
+							name: 'Width Overall (mm)',
 							value: '1,975',
 						},
 						{
-							description: 'Height Overall (mm)',
+							name: 'Height Overall (mm)',
 							value: '1,750',
 						},
 						{
-							description: 'Base Wheel (mm)',
+							name: 'Base Wheel (mm)',
 							value: '2,900',
 						},
 						{
-							description: 'Front Wheelthread (mm)',
+							name: 'Front Wheelthread (mm)',
 							value: '1,708',
 						},
 						{
-							description: 'Rear Wheelthread (mm)',
+							name: 'Rear Wheelthread (mm)',
 							value: '1,716',
 						},
 						{
-							description: 'Front OverHang (mm)',
+							name: 'Front OverHang (mm)',
 							value: '945',
 						},
 						{
-							description: 'Rear OverHang (mm)',
+							name: 'Rear OverHang (mm)',
 							value: '1,135',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Bagasi',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Bagasi',
+					specs: [
 						{
-							description: 'Cargo Area (L)',
+							name: 'Cargo Area (L)',
 							value: '704 / 311',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Bobot',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Bobot',
+					specs: [
 						{
-							description: 'Lightest WeightCurb (kg)',
+							name: 'Lightest WeightCurb (kg)',
 							value: '1,881',
 						},
 						{
-							description: 'Heaviest WeightCurb (kg)',
+							name: 'Heaviest WeightCurb (kg)',
 							value: '1,995',
 						},
 						{
-							description: 'Gross Weight (kg)',
+							name: 'Gross Weight (kg)',
 							value: '2,610',
 						},
 					],
 				},
 				{
-					specID: 'FS003',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS003',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Front Wheels',
+							name: 'Front Wheels',
 							value: '7.5J x 18"',
 						},
 						{
-							description: 'Rear Wheels',
+							name: 'Rear Wheels',
 							value: '7.5J x 18"',
 						},
 						{
-							description: 'Front Tires',
+							name: 'Front Tires',
 							value: '245/60 R18',
 						},
 						{
-							description: 'Rear Tires',
+							name: 'Rear Tires',
 							value: '245/60 R18',
 						},
 					],

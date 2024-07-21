@@ -17,6 +17,10 @@ import magneticSilverCreta from './pick_color/magnetic-silver_creta.png';
 import midnightBlackCreta from './pick_color/midnight-black_creta.png';
 import opticWhiteCreta from './pick_color/optic-white_creta.png';
 
+import MagneticSilverHexImageCreta from './hex_image/Magnetic-Silver_hex-image_creta.png';
+import MidnightBlackHexImageCreta from './hex_image/Midnight-Black_hex-image_creta.png';
+import OpticWhiteHexImageCreta from './hex_image/Optic-White_hex-image_creta.png';
+
 export {
 	section1HighlightCreta,
 	section2HighlightCreta,
@@ -32,4 +36,7 @@ export {
 	magneticSilverCreta,
 	midnightBlackCreta,
 	opticWhiteCreta,
+	MagneticSilverHexImageCreta,
+	MidnightBlackHexImageCreta,
+	OpticWhiteHexImageCreta,
 };

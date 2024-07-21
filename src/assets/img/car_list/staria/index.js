@@ -18,6 +18,11 @@ import creamyWhitePearlStaria from 'creamy_white_pearl_staria.png';
 import graphiteGrayMetallicStaria from 'graphite_gray_metallic_staria.png';
 import shimmeringSilverMetallicStaria from 'shimmering_silver_metallic_staria.png';
 
+import AbyssBlackPearlHexImageStaria from './hex_image/Abyss-Black-Pearl_hex-image_staria.png';
+import CreamyWhiteHexImageStaria from './hex_image/Creamy-White_hex-image_staria.png';
+import GraphiteGrayMetallicHexImageStaria from './hex_image/Graphite-Gray-Metallic_hex-image_staria.png';
+import ShimmeringSilverMetallicHexImageStaria from './hex_image/Shimmering-Silver-Metallic_hex-image_staria.png';
+
 export {
 	eksterior1Staria,
 	eksterior2Staria,
@@ -35,4 +40,8 @@ export {
 	creamyWhitePearlStaria,
 	graphiteGrayMetallicStaria,
 	shimmeringSilverMetallicStaria,
+	AbyssBlackPearlHexImageStaria,
+	CreamyWhiteHexImageStaria,
+	GraphiteGrayMetallicHexImageStaria,
+	ShimmeringSilverMetallicHexImageStaria,
 };

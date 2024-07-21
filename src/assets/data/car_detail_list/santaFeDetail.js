@@ -1,32 +1,12 @@
 import { santaFeBanner } from '../../img/banner/index';
 import { santaFeMD } from '../../img/main_display/index';
-import {
-	eksterior1SantaFe,
-	eksterior2SantaFe,
-	eksterior3SantaFe,
-	eksterior4SantaFe,
-	eksterior5SantaFe,
-	interior1SantaFe,
-	interior2SantaFe,
-	interior3SantaFe,
-	section1Highlight1SantaFe,
-	section2Highlight1SantaFe,
-	section3Highlight1SantaFe,
-	section4Highlight1SantaFe,
-	section5Highlight1SantaFe,
-	section6Highlight1SantaFe,
-	creamyWhitePearlSantafe,
-	lagoonBluePearlSantafe,
-	magneticSilverMetallicSantafe,
-	midnightBlackPearlSantafe,
-	titanGrayMetallicSantafe,
-} from '../../img/car_list/santa-fe/index';
+import * as SantaFeImages from '../../img/car_list/santa-fe/index';
 
 export const santaFeDetail = {
 	carID: 'lmVrRt',
-	image: { banner: santaFeBanner, mainDisplay: santaFeMD },
+	mainImage: { banner: santaFeBanner, mainDisplay: santaFeMD },
 	sections: {
-		highlight: [
+		highlights: [
 			{
 				code: 'highlight_segment_1',
 				title: 'Drive SANTA FE Together.',
@@ -59,228 +39,228 @@ export const santaFeDetail = {
 			},
 		],
 		gallery: {
-			color: [
+			colors: [
 				{
-					description: 'Creamy White Pearl',
-					hexCode: '#CFCFCF',
-					imgPath: creamyWhitePearlSantafe,
+					name: 'Creamy White Pearl',
+					hexImage: SantaFeImages.CreamyWhitePearlHexImageSantafe,
+					carImage: SantaFeImages.creamyWhitePearlSantafe,
 				},
 				{
-					description: 'Magentic Silver Metallic',
-					hexCode: '#A3A5A4',
-					imgPath: magneticSilverMetallicSantafe,
+					name: 'Magentic Silver Metallic',
+					hexImage: SantaFeImages.MagenticSilverMetallicHexImageSantafe,
+					carImage: SantaFeImages.magneticSilverMetallicSantafe,
 				},
 				{
-					description: 'Titan Gray Metallic',
-					hexCode: '#454545',
-					imgPath: titanGrayMetallicSantafe,
+					name: 'Titan Gray Metallic',
+					hexImage: SantaFeImages.TitanGrayMetallicHexImageSantafe,
+					carImage: SantaFeImages.titanGrayMetallicSantafe,
 				},
 				{
-					description: 'Midnight Black Pearl',
-					hexCode: '#252628',
-					imgPath: midnightBlackPearlSantafe,
+					name: 'Midnight Black Pearl',
+					hexImage: SantaFeImages.MidnightBlackPearlHexImageSantafe,
+					carImage: SantaFeImages.midnightBlackPearlSantafe,
 				},
 				{
-					description: 'Lagoon Blue Pearl',
-					hexCode: '#2C3135',
-					imgPath: lagoonBluePearlSantafe,
-				},
-			],
-			article: [],
-			eksterior: [
-				{
-					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: eksterior1SantaFe,
-				},
-				{
-					alt: 'LED Headlamp',
-					path: eksterior2SantaFe,
-				},
-				{
-					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: eksterior3SantaFe,
-				},
-				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior4SantaFe,
-				},
-				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior5SantaFe,
+					name: 'Lagoon Blue Pearl',
+					hexImage: SantaFeImages.LagoonBluePearlHexImageSantafe,
+					carImage: SantaFeImages.lagoonBluePearlSantafe,
 				},
 			],
-			interior: [
-				{ alt: '', path: interior1SantaFe },
-				{ alt: '', path: interior2SantaFe },
-				{ alt: '', path: interior3SantaFe },
+			articles: [],
+			exteriors: [
+				{
+					caption: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
+					image: SantaFeImages.exterior1SantaFe,
+				},
+				{
+					caption: 'LED Headlamp',
+					image: SantaFeImages.exterior2SantaFe,
+				},
+				{
+					caption: '17-inch Diamond Cut Alloy Wheels',
+					image: SantaFeImages.exterior3SantaFe,
+				},
+				{
+					caption: 'LED Rear Combination Lamp',
+					image: SantaFeImages.exterior4SantaFe,
+				},
+				{
+					caption: 'LED Rear Combination Lamp',
+					image: SantaFeImages.exterior5SantaFe,
+				},
+			],
+			interiors: [
+				{ caption: '', image: SantaFeImages.interior1SantaFe },
+				{ caption: '', image: SantaFeImages.interior2SantaFe },
+				{ caption: '', image: SantaFeImages.interior3SantaFe },
 			],
 		},
 		priceList: [
 			{
-				name: 'SIGN 2.2 AT',
-				value: 'Rp. 736,800,000',
+				model: 'SIGN 2.2 AT',
+				price: 'Rp. 736,800,000',
 			},
-			{ name: 'PRIME 2.2 AT', value: 'Rp. 666,100,000' },
-			{ name: 'SIGN 2.5 AT', value: 'Rp. 685,300,000' },
-			{ name: 'PRIME 2.5 AT', value: 'Rp. 605,500,000' },
+			{ model: 'PRIME 2.2 AT', price: 'Rp. 666,100,000' },
+			{ model: 'SIGN 2.5 AT', price: 'Rp. 685,300,000' },
+			{ model: 'PRIME 2.5 AT', price: 'Rp. 605,500,000' },
 		],
 		fullSpec: {
-			category: [
+			categories: [
 				{ id: 'FS001', title: 'Performa' },
 				{ id: 'FS002', title: 'Dimensi' },
 				{ id: 'FS003', title: 'Roda' },
 			],
-			specDetail: [
+			details: [
 				{
-					specID: 'FS001',
-					code: 'Mesin',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Mesin',
+					specs: [
 						{
-							description: 'Engine Type',
+							name: 'Engine Type',
 							value: '2.5 Theta III MPi',
 						},
 						{
-							description: 'Displacement (cc)',
+							name: 'Displacement (cc)',
 							value: '2,497',
 						},
 						{
-							description: 'Max Speed (kph)',
+							name: 'Max Speed (kph)',
 							value: '195',
 						},
 						{
-							description: 'Max Power (ps/rpm)',
+							name: 'Max Power (ps/rpm)',
 							value: '180/6,000',
 						},
 						{
-							description: 'Max Toque (kg-m/rpm)',
+							name: 'Max Toque (kg-m/rpm)',
 							value: '23.7/4,000',
 						},
 						{
-							description: 'Acceleration (0 - 100 kph) (sec)',
+							name: 'Acceleration (0 - 100 kph) (sec)',
 							value: '10.1',
 						},
 						{
-							description: 'Braking Distance (0-100 kph) (m)',
+							name: 'Braking Distance (0-100 kph) (m)',
 							value: '43.1',
 						},
 						{
-							description: 'Number of Cylinders',
+							name: 'Number of Cylinders',
 							value: '4',
 						},
 						{
-							description: 'Valves of Cylinders',
+							name: 'Valves of Cylinders',
 							value: '16-valve, HLA',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Transmisi',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Transmisi',
+					specs: [
 						{
-							description: 'Transmission Type',
+							name: 'Transmission Type',
 							value: '6-Speed Automatic FWD',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Konsumsi Bahan Bakar',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Konsumsi Bahan Bakar',
+					specs: [
 						{
-							description: 'Fuel Type',
+							name: 'Fuel Type',
 							value: 'Gasoline',
 						},
 						{
-							description: 'Tank Capacity',
+							name: 'Tank Capacity',
 							value: '67 L',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Length Overall (mm)',
+							name: 'Length Overall (mm)',
 							value: '4,785',
 						},
 						{
-							description: 'Width Overall (mm)',
+							name: 'Width Overall (mm)',
 							value: '1,900',
 						},
 						{
-							description: 'Height Overall (mm)',
+							name: 'Height Overall (mm)',
 							value: '1,710',
 						},
 						{
-							description: 'Base Wheel (mm)',
+							name: 'Base Wheel (mm)',
 							value: '2,765',
 						},
 						{
-							description: 'Front Wheelthread (mm)',
+							name: 'Front Wheelthread (mm)',
 							value: '1,646',
 						},
 						{
-							description: 'Rear Wheelthread (mm)',
+							name: 'Rear Wheelthread (mm)',
 							value: '1,656',
 						},
 						{
-							description: 'Front OverHang (mm)',
+							name: 'Front OverHang (mm)',
 							value: '945',
 						},
 						{
-							description: 'Rear OverHang (mm)',
+							name: 'Rear OverHang (mm)',
 							value: '1,075',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Bagasi',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Bagasi',
+					specs: [
 						{
-							description: 'Cargo Area (L)',
+							name: 'Cargo Area (L)',
 							value: '571 / 782',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Bobot',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Bobot',
+					specs: [
 						{
-							description: 'Lightest WeightCurb (kg)',
+							name: 'Lightest WeightCurb (kg)',
 							value: '1,650',
 						},
 						{
-							description: 'Heaviest WeightCurb (kg)',
+							name: 'Heaviest WeightCurb (kg)',
 							value: '1,776',
 						},
 						{
-							description: 'Gross Weight (kg)',
+							name: 'Gross Weight (kg)',
 							value: '2,510',
 						},
 					],
 				},
 				{
-					specID: 'FS003',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS003',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Front Wheels',
+							name: 'Front Wheels',
 							value: '7.5J x 18"',
 						},
 						{
-							description: 'Rear Wheels',
+							name: 'Rear Wheels',
 							value: '7.5J x 18"',
 						},
 						{
-							description: 'Front Tires',
+							name: 'Front Tires',
 							value: '235/60 R18',
 						},
 						{
-							description: 'Rear Tires',
+							name: 'Rear Tires',
 							value: '235/60 R18',
 						},
 					],

@@ -1,47 +1,47 @@
 import { Table } from 'flowbite-react';
 import React, { useState } from 'react';
+import { cretaDetail } from '../../../assets/data/car_detail_list/cretaDetail';
 
 const SubFullSpec = ({ carID }) => {
+	// #region UseState
 	const [carModel, setCarModel] = useState(null);
+	// #endregion UseState
+
+	//#region Get data
+	const getFullSpec = () => cretaDetail.sections.fullSpec;
+	const categories = getFullSpec().categories;
+	const specDetails = getFullSpec().details;
+	//#endregion
 
 	//   const carDetail = carDetails.filter((row) => row.carID == carID)[0];
 
 	return (
 		<div className='px-4 py-8 md:p-[72px] flex flex-col gap-[32px]'>
-			<div className='flex flex-col gap-4 md:gap-6'>
-				<p className='text-[20px] md:text-2xl text-center font-medium'>Title</p>
-				<Table>
-					<Table.Head>
-						<Table.HeadCell className='bg-[#30486B] w-[30%] text-white'>code</Table.HeadCell>
-						<Table.HeadCell className='bg-[#30486B] w-[70%] text-white'>code1</Table.HeadCell>
-					</Table.Head>
-					<Table.Body className='divide-y'>
-						<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
-							<Table.Cell className='whitespace-nowrap font-medium text-gray-900'>description</Table.Cell>
-							<Table.Cell>value</Table.Cell>
-						</Table.Row>
-					</Table.Body>
-				</Table>
-			</div>
-			<div className='flex flex-col gap-6'>
-				<p className='text-2xl text-center font-medium'>Dimensi</p>
-				<Table>
-					<Table.Head>
-						<Table.HeadCell className='bg-[#30486B] w-[30%] text-white'>Product name</Table.HeadCell>
-						<Table.HeadCell className='bg-[#30486B] w-[70%] text-white'>product1</Table.HeadCell>
-					</Table.Head>
-					<Table.Body className='divide-y'>
-						<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
-							<Table.Cell className='whitespace-nowrap font-medium text-gray-900'>Engine Type</Table.Cell>
-							<Table.Cell>R 2.2 CRDi</Table.Cell>
-						</Table.Row>
-						<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
-							<Table.Cell className='whitespace-nowrap font-medium text-gray-900'>Displacement (cc)</Table.Cell>
-							<Table.Cell>2,199</Table.Cell>
-						</Table.Row>
-					</Table.Body>
-				</Table>
-			</div>
+			{categories.map(({ id, title }) => (
+				<div
+					key={id}
+					className='flex flex-col gap-4 md:gap-6'>
+					<p className='text-[20px] md:text-2xl text-center font-medium'>{title}</p>
+					{specDetails.map(({ specType, specs }, index) => {
+						<Table key={index}>
+							<Table.Head>
+								<Table.HeadCell className='bg-[#30486B] w-[30%] text-white'>{specType}</Table.HeadCell>
+								<Table.HeadCell className='bg-[#30486B] w-[70%] text-white'></Table.HeadCell>
+							</Table.Head>
+							<Table.Body className='divide-y'>
+								{specs.map(({ name, value }, index) => (
+									<Table.Row
+										key={index}
+										className='bg-white dark:border-gray-700 dark:bg-gray-800'>
+										<Table.Cell className='whitespace-nowrap font-medium text-gray-900'>{name}</Table.Cell>
+										<Table.Cell>{value}</Table.Cell>
+									</Table.Row>
+								))}
+							</Table.Body>
+						</Table>;
+					})}
+				</div>
+			))}
 		</div>
 	);
 };

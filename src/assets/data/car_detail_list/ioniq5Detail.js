@@ -1,32 +1,12 @@
 import { ioniq5Banner } from '../../img/banner/index';
 import { ioniq5MD } from '../../img/main_display/index';
-import {
-	eksterior1Ioniq5,
-	eksterior2Ioniq5,
-	eksterior3Ioniq5,
-	eksterior4Ioniq5,
-	eksterior5Ioniq5,
-	eksterior6Ioniq5,
-	interior1Ioniq5,
-	interior2Ioniq5,
-	interior3Ioniq5,
-	ioniq5ArticleGallery,
-	section1HighlightIoniq5,
-	section2HighlightIoniq5,
-	section3HighlightIoniq5,
-	section4HighlightIoniq5,
-	gravityGoldMatteIoniq5,
-	magneticSilverMetallicIoniq5,
-	midnightBlackPearlIoniq5,
-	opticWhiteIoniq5,
-	titanGrayMetallicIoniq5,
-} from '../../imgcar_list/ioniq5/index';
+import * as Ioniq5Images from '../../img/car_list/ioniq5/index';
 
 export const ioniq5Detail = {
 	carID: 'W8poza',
-	image: { banner: ioniq5Banner, mainDisplay: ioniq5MD },
+	mainImage: { banner: ioniq5Banner, mainDisplay: ioniq5MD },
 	sections: {
-		highlight: [
+		highlights: [
 			{
 				code: 'highlight_segment_1',
 				title: "Welcome on board. <br> Let's power up the future.",
@@ -53,209 +33,209 @@ export const ioniq5Detail = {
 			},
 		],
 		gallery: {
-			color: [
+			colors: [
 				{
-					description: 'Gravity Gold Matte',
-					hexCode: '#9F9895',
-					imgPath: gravityGoldMatteIoniq5,
+					name: 'Gravity Gold Matte',
+					hexImage: Ioniq5Images.GravityGoldMatteHexImageIoniq5,
+					carImage: Ioniq5Images.gravityGoldMatteIoniq5,
 				},
 				{
-					description: 'Midnight Black Pearl',
-					hexCode: '#1D1D1E',
-					imgPath: midnightBlackPearlIoniq5,
+					name: 'Midnight Black Pearl',
+					hexImage: Ioniq5Images.MidnightBlackPearlHexImageIoniq5,
+					carImage: Ioniq5Images.midnightBlackPearlIoniq5,
 				},
 				{
-					description: 'Titan Gray Metallic',
-					hexCode: '#434448',
-					imgPath: titanGrayMetallicIoniq5,
+					name: 'Titan Gray Metallic',
+					hexImage: Ioniq5Images.TitanGrayMetallicHexImageIoniq5,
+					carImage: Ioniq5Images.titanGrayMetallicIoniq5,
 				},
 				{
-					description: 'Optic White',
-					hexCode: '#E3E3EB',
-					imgPath: opticWhiteIoniq5,
+					name: 'Optic White',
+					hexImage: Ioniq5Images.OpticWhiteHexImageIoniq5,
+					carImage: Ioniq5Images.opticWhiteIoniq5,
 				},
 				{
-					description: 'Magnetic Silver Metallic',
-					hexCode: '#8B8B8E',
-					imgPath: magneticSilverMetallicIoniq5,
-				},
-			],
-			article: [],
-			eksterior: [
-				{
-					alt: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					path: eksterior1Ioniq5,
-				},
-				{
-					alt: 'LED Headlamp',
-					path: eksterior2Ioniq5,
-				},
-				{
-					alt: '17-inch Diamond Cut Alloy Wheels',
-					path: eksterior3Ioniq5,
-				},
-				{
-					alt: 'LED Rear Combination Lamp',
-					path: eksterior4Ioniq5,
+					name: 'Magnetic Silver Metallic',
+					hexImage: Ioniq5Images.MagneticSilverMetallicHexImageIoniq5,
+					carImage: Ioniq5Images.magneticSilverMetallicIoniq5,
 				},
 			],
-			interior: [
-				{ alt: '', path: interior1Ioniq5 },
-				{ alt: '', path: interior2Ioniq5 },
-				{ alt: '', path: interior3Ioniq5 },
+			articles: [],
+			exteriors: [
+				{
+					caption: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
+					image: Ioniq5Images.eksterior1Ioniq5,
+				},
+				{
+					caption: 'LED Headlamp',
+					image: Ioniq5Images.eksterior2Ioniq5,
+				},
+				{
+					caption: '17-inch Diamond Cut Alloy Wheels',
+					image: Ioniq5Images.eksterior3Ioniq5,
+				},
+				{
+					caption: 'LED Rear Combination Lamp',
+					image: Ioniq5Images.eksterior4Ioniq5,
+				},
+			],
+			interiors: [
+				{ caption: '', image: Ioniq5Images.interior1Ioniq5 },
+				{ caption: '', image: Ioniq5Images.interior2Ioniq5 },
+				{ caption: '', image: Ioniq5Images.interior3Ioniq5 },
 			],
 		},
 		priceList: [
-			{ name: 'SIGNATURE LONG RANGE', value: 'Rp. 859,000,000' },
-			{ name: 'SIGNATURE STANDARD RANGE', value: 'Rp. 809,000,000' },
-			{ name: 'PRIME LONG RANGE', value: 'Rp. 789,000,000' },
-			{ name: 'PRIME STANDARD RANGE', value: 'Rp. 748,000,000' },
+			{ model: 'SIGNATURE LONG RANGE', price: 'Rp. 859,000,000' },
+			{ model: 'SIGNATURE STANDARD RANGE', price: 'Rp. 809,000,000' },
+			{ model: 'PRIME LONG RANGE', price: 'Rp. 789,000,000' },
+			{ model: 'PRIME STANDARD RANGE', price: 'Rp. 748,000,000' },
 		],
 		fullSpec: {
-			category: [
+			categories: [
 				{ id: 'FS001', title: 'Performa' },
 				{ id: 'FS002', title: 'Dimensi' },
 				{ id: 'FS003', title: 'Roda' },
 			],
-			specDetail: [
+			details: [
 				{
-					specID: 'FS001',
-					code: 'Mesin',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Mesin',
+					specs: [
 						{
-							description: 'Max. Power (ps)',
+							name: 'Max. Power (ps)',
 							value: '170',
 						},
 						{
-							description: 'Max. Power (kW)',
+							name: 'Max. Power (kW)',
 							value: '125',
 						},
 						{
-							description: 'Max. Torque (Nm)',
+							name: 'Max. Torque (Nm)',
 							value: '350',
 						},
 						{
-							description: 'Acceleration (Sport) (0 - 100 kph) (sec)',
+							name: 'Acceleration (Sport) (0 - 100 kph) (sec)',
 							value: '8,5',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Transmisi',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Transmisi',
+					specs: [
 						{
-							description: 'Transmission Type',
+							name: 'Transmission Type',
 							value: 'Single Speed Reduction Gear',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Konsumsi Bahan Bakar',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Konsumsi Bahan Bakar',
+					specs: [
 						{
-							description: 'Motor Type',
+							name: 'Motor Type',
 							value: 'Permanent Magnet Synchronous Motor',
 						},
 					],
 				},
 				{
-					specID: 'FS001',
-					code: 'Aki',
-					detail: [
+					categoryID: 'FS001',
+					specType: 'Aki',
+					specs: [
 						{
-							description: 'Battery type',
+							name: 'Battery type',
 							value: 'Liquid cooled Lithium Ion',
 						},
 						{
-							description: 'Battery Capacity (kWh)',
+							name: 'Battery Capacity (kWh)',
 							value: '58',
 						},
 						{
-							description: 'Battery Voltage(V)',
+							name: 'Battery Voltage(V)',
 							value: '522,7',
 						},
 						{
-							description: 'Battery Power Output (kW)',
+							name: 'Battery Power Output (kW)',
 							value: '195',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Length Overall (mm)',
+							name: 'Length Overall (mm)',
 							value: '4.635',
 						},
 						{
-							description: 'Width Overall (mm)',
+							name: 'Width Overall (mm)',
 							value: '1.890',
 						},
 						{
-							description: 'Height Overall (mm)',
+							name: 'Height Overall (mm)',
 							value: '1.605',
 						},
 						{
-							description: 'Base Wheel (mm)',
+							name: 'Base Wheel (mm)',
 							value: '3.000',
 						},
 						{
-							description: 'Front Wheelthread (mm)',
+							name: 'Front Wheelthread (mm)',
 							value: '1.638',
 						},
 						{
-							description: 'Rear Wheelthread (mm)',
+							name: 'Rear Wheelthread (mm)',
 							value: '1.647',
 						},
 						{
-							description: 'Front OverHang (mm)',
+							name: 'Front OverHang (mm)',
 							value: '845',
 						},
 						{
-							description: 'Rear OverHang (mm)',
+							name: 'Rear OverHang (mm)',
 							value: '790',
 						},
 					],
 				},
 				{
-					specID: 'FS002',
-					code: 'Bobot',
-					detail: [
+					categoryID: 'FS002',
+					specType: 'Bobot',
+					specs: [
 						{
-							description: 'Lightest WeightCurb (kg)',
+							name: 'Lightest WeightCurb (kg)',
 							value: '1.830',
 						},
 						{
-							description: 'Heaviest WeightCurb (kg)',
+							name: 'Heaviest WeightCurb (kg)',
 							value: '1.910',
 						},
 						{
-							description: 'Gross Weight (kg)',
+							name: 'Gross Weight (kg)',
 							value: '2.370',
 						},
 					],
 				},
 				{
-					specID: 'FS003',
-					code: 'Tampak Luar',
-					detail: [
+					categoryID: 'FS003',
+					specType: 'Tampak Luar',
+					specs: [
 						{
-							description: 'Front Wheels',
+							name: 'Front Wheels',
 							value: '7.5J x 15',
 						},
 						{
-							description: 'Rear Wheels',
+							name: 'Rear Wheels',
 							value: '7.5J x 15',
 						},
 						{
-							description: 'Front Tires',
+							name: 'Front Tires',
 							value: '235/55 R19',
 						},
 						{
-							description: 'Rear Tires',
+							name: 'Rear Tires',
 							value: '235/55 R19',
 						},
 					],

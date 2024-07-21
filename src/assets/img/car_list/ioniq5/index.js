@@ -22,6 +22,12 @@ import midnightBlackPearlIoniq5 from './pick_color/midnight_black_pearl_ioniq5.p
 import opticWhiteIoniq5 from './pick_color/optic_white_ioniq5.png';
 import titanGrayMetallicIoniq5 from './pick_color/titan_gray_metallic_ioniq5.png';
 
+import GravityGoldMatteHexImageIoniq5 from './hex_image/Gravity-Gold-Matte_hex-image_ioniq5.jpg';
+import MagneticSilverMetallicHexImageIoniq5 from './hex_image/Magnetic-Silver-Metallic_hex-image_ioniq5.jpg';
+import MidnightBlackPearlHexImageIoniq5 from './hex_image/Midnight-Black-Pearl_hex-image_ioniq5.jpg';
+import OpticWhiteHexImageIoniq5 from './hex_image/Optic-White_hex-image_ioniq5.jpg';
+import TitanGrayMetallicHexImageIoniq5 from './hex_image/Titan-Gray-Metallic_hex-image_ioniq5.jpg';
+
 export {
 	eksterior1Ioniq5,
 	eksterior2Ioniq5,
@@ -42,4 +48,9 @@ export {
 	midnightBlackPearlIoniq5,
 	opticWhiteIoniq5,
 	titanGrayMetallicIoniq5,
+	GravityGoldMatteHexImageIoniq5,
+	MagneticSilverMetallicHexImageIoniq5,
+	MidnightBlackPearlHexImageIoniq5,
+	OpticWhiteHexImageIoniq5,
+	TitanGrayMetallicHexImageIoniq5,
 };

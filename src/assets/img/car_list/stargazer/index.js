@@ -1,11 +1,11 @@
-import eksterior1Stargazer from './eksterior/eksterior1_stargazer.jpg';
-import eksterior2Stargazer from './eksterior/eksterior2_stargazer.jpg';
-import eksterior3Stargazer from './eksterior/eksterior3_stargazer.jpg';
-import eksterior4Stargazer from './eksterior/eksterior4_stargazer.jpg';
-import eksterior5Stargazer from './eksterior/eksterior5_stargazer.jpg';
-import eksterior6Stargazer from './eksterior/eksterior6_stargazer.jpg';
-import eksterior7Stargazer from './eksterior/eksterior7_stargazer.jpg';
-import eksterior8Stargazer from './eksterior/eksterior8_stargazer.jpg';
+import exterior1Stargazer from './exterior/exterior1_stargazer.jpg';
+import exterior2Stargazer from './exterior/exterior2_stargazer.jpg';
+import exterior3Stargazer from './exterior/exterior3_stargazer.jpg';
+import exterior4Stargazer from './exterior/exterior4_stargazer.jpg';
+import exterior5Stargazer from './exterior/exterior5_stargazer.jpg';
+import exterior6Stargazer from './exterior/exterior6_stargazer.jpg';
+import exterior7Stargazer from './exterior/exterior7_stargazer.jpg';
+import exterior8Stargazer from './exterior/exterior8_stargazer.jpg';
 
 import interior1Stargazer from './interior/interior1_stargazer.jpg';
 import interior2Stargazer from './interior/interior2_stargazer.jpg';
@@ -27,15 +27,21 @@ import dragoRedPearlStargazer from 'drago_red_pearl_stargazer.png';
 import magneticSilverMetallicStargazer from 'magnetic_silver_metallic_stargazer.png';
 import titanGrayMetallicStargazer from 'titan_gray_metallic_stargazer.png';
 
+import CreamyWhitePearlHexImageStargazer from './hex_image/Creamy-White-Pearl_hex-image_stargazer.png';
+import DragonRedPearlHexImageStargazer from './hex_image/Dragon-Red-Pearl_hex-image_stargazer.png';
+import MagneticSilverMetallicHexImageStargazer from './hex_image/Magnetic-Silver-Metallic_hex-image_stargazer.png';
+import MidnightBlackPearlHexImageStargazer from './hex_image/Midnight-Black-Pearl_hex-image_stargazer.png';
+import TitanGrayMetallicHexImageStargazer from './hex_image/Titan-Gray-Metallic_hex-image_stargazer.png';
+
 export {
-	eksterior1Stargazer,
-	eksterior2Stargazer,
-	eksterior3Stargazer,
-	eksterior4Stargazer,
-	eksterior5Stargazer,
-	eksterior6Stargazer,
-	eksterior7Stargazer,
-	eksterior8Stargazer,
+	exterior1Stargazer,
+	exterior2Stargazer,
+	exterior3Stargazer,
+	exterior4Stargazer,
+	exterior5Stargazer,
+	exterior6Stargazer,
+	exterior7Stargazer,
+	exterior8Stargazer,
 	interior1Stargazer,
 	interior2Stargazer,
 	interior3Stargazer,
@@ -52,4 +58,9 @@ export {
 	dragoRedPearlStargazer,
 	magneticSilverMetallicStargazer,
 	titanGrayMetallicStargazer,
+	CreamyWhitePearlHexImageStargazer,
+	DragonRedPearlHexImageStargazer,
+	MagneticSilverMetallicHexImageStargazer,
+	MidnightBlackPearlHexImageStargazer,
+	TitanGrayMetallicHexImageStargazer,
 };

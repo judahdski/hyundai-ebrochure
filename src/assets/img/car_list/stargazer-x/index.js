@@ -25,6 +25,12 @@ import magneticSilverMetallicStargazerX from 'magnetic_silver_metallic_stargazer
 import titanGrayMetallicStargazerX from 'titan_gray_metallic_stargazer.png';
 import midnightBlackPearlStargazerx from 'midnight_black_pearl_stargazerx.png';
 
+import CreamyWhitePearlHexImageStargazerx from './hex_image/Creamy-White-Pearl_hex-image_stargazerx.png';
+import DragonRedPearlHexImageStargazerx from './hex_image/Dragon-Red-Pearl_hex-image_stargazerx.png';
+import MagneticSilverMetallicHexImageStargazerx from './hex_image/Magnetic-Silver-Metalic_hex-image_stargazerx.png';
+import MidnightBlackPearlHexImageStargazerx from './hex_image/Midnight-Black-Pearl_hex-image_stargazerx.png';
+import TitanGrayMetallicHexImageStargazerx from './hex_image/Titan-Gray-Metalic_hex-image_stargazerx.png';
+
 export {
 	eksterior1StargazerX,
 	eksterior2StargazerX,
@@ -48,4 +54,9 @@ export {
 	magneticSilverMetallicStargazerX,
 	titanGrayMetallicStargazerX,
 	midnightBlackPearlStargazerx,
+	CreamyWhitePearlHexImageStargazerx,
+	DragonRedPearlHexImageStargazerx,
+	MagneticSilverMetallicHexImageStargazerx,
+	MidnightBlackPearlHexImageStargazerx,
+	TitanGrayMetallicHexImageStargazerx,
 };

@@ -17,31 +17,37 @@ const SubFullSpec = ({ carID }) => {
 
 	return (
 		<div className='px-4 py-8 md:p-[72px] flex flex-col gap-[32px]'>
-			{categories.map(({ id, title }) => (
-				<div
-					key={id}
-					className='flex flex-col gap-4 md:gap-6'>
-					<p className='text-[20px] md:text-2xl text-center font-medium'>{title}</p>
-					{specDetails.map(({ specType, specs }, index) => {
-						<Table key={index}>
-							<Table.Head>
-								<Table.HeadCell className='bg-[#30486B] w-[30%] text-white'>{specType}</Table.HeadCell>
-								<Table.HeadCell className='bg-[#30486B] w-[70%] text-white'></Table.HeadCell>
-							</Table.Head>
-							<Table.Body className='divide-y'>
-								{specs.map(({ name, value }, index) => (
-									<Table.Row
-										key={index}
-										className='bg-white dark:border-gray-700 dark:bg-gray-800'>
-										<Table.Cell className='whitespace-nowrap font-medium text-gray-900'>{name}</Table.Cell>
-										<Table.Cell>{value}</Table.Cell>
-									</Table.Row>
-								))}
-							</Table.Body>
-						</Table>;
-					})}
-				</div>
-			))}
+			{categories.map(({ id, title }) => {
+				console.log({ specDetails: specDetails.filter((row) => row.categoryID == id) });
+
+				return (
+					<div
+						key={id}
+						className='flex flex-col gap-4 md:gap-6'>
+						<p className='text-[20px] md:text-2xl text-center font-medium'>{title}</p>
+						{specDetails
+							.filter((row) => row.categoryID == id)[0]
+							.specs.map(({ specType, specs }, index) => {
+								<Table key={index}>
+									<Table.Head>
+										<Table.HeadCell className='bg-[#30486B] w-[30%] text-white'>{specType}</Table.HeadCell>
+										<Table.HeadCell className='bg-[#30486B] w-[70%] text-white'></Table.HeadCell>
+									</Table.Head>
+									<Table.Body className='divide-y'>
+										{specs.map(({ name, value }, index) => (
+											<Table.Row
+												key={index}
+												className='bg-white dark:border-gray-700 dark:bg-gray-800'>
+												<Table.Cell className='whitespace-nowrap font-medium text-gray-900'>{name}</Table.Cell>
+												<Table.Cell>{value}</Table.Cell>
+											</Table.Row>
+										))}
+									</Table.Body>
+								</Table>;
+							})}
+					</div>
+				);
+			})}
 		</div>
 	);
 };

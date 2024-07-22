@@ -21,11 +21,15 @@ const SubGallery = ({ carID }) => {
 		<div className='p-4 md:p-[72px] pt-6 md:pt-[48px] flex flex-col gap-[36px] md:gap-[72px]'>
 			{/* #region Color Picks */}
 			<div className='flex flex-col items-center gap-2 md:gap-[32px]'>
-				<img
-					src={colorPickObj.image}
-					alt='Ioniq 6'
-					className='w-full max-w-[1000px]'
-				/>
+				{colorPickObj.colorName ? (
+					<img
+						src={colorPickObj.image}
+						alt='Ioniq 6'
+						className='w-full max-w-[1000px]'
+					/>
+				) : (
+					<p>Silahkan Pilih warna</p>
+				)}
 				<div className='w-full flex flex-col md:flex-row gap-4 md:gap-[80px]'>
 					<div className='flex flex-col gap-2 md:gap-4'>
 						<p className='text-base md:text-2xl text-[#7C7C7C] font-medium'>Warna</p>
@@ -33,8 +37,9 @@ const SubGallery = ({ carID }) => {
 					</div>
 					<div className='flex gap-6'>
 						{colors.map(({ hexImage, name, carImage }) => (
-							<div
-								className={`h-[48px] md:h-full aspect-square bg-[#${hexImage}] rounded-xl md:rounded-2xl cursor-pointer`}
+							<img
+								className={`h-[48px] md:h-full aspect-square rounded-xl md:rounded-2xl cursor-pointer border-[3px] border-blue-950/[.2] shadow`}
+								src={hexImage}
 								onClick={() => setColorPickObj({ image: carImage, colorName: name })}
 							/>
 						))}

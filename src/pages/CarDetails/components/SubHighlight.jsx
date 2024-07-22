@@ -8,7 +8,7 @@ const SubHighlight = ({ carID }) => {
 
 	return (
 		<div className='px-4 py-8 md:p-[72px] flex flex-col gap-8 md:gap-[72px]'>
-			{getHighlights.map(({ code, title, body, images }) => (
+			{getHighlights().map(({ code, title, body, images }) => (
 				<div
 					key={code}
 					className='flex flex-col gap-6 md:gap-8 md:items-center'>

@@ -7,7 +7,7 @@ const Lineups = ({ setPage, setCarID }) => {
 	return (
 		<div className='w-full max-w-[1280px]'>
 			{/* Features */}
-			<div className='hidden md:flex -mt-[47px] rounded-2xl shadow overflow-hidden'>
+			<div className='hidden md:flex mx-4 -mt-[47px] rounded-2xl shadow overflow-hidden'>
 				{generalCode
 					.filter((item) => item.category == 'feature')
 					.map(({ code, description, value }, index) => (

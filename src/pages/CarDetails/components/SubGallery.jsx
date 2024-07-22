@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ioniq6exteriorOverview, ioniq6InteriorOverview } from '../../../assets/img/temp/index';
+import { ioniq6InteriorOverview, ioniq6ExteriorOverview } from '../../../assets/img/temp/index';
 import { cretaDetail } from '../../../assets/data/car_detail_list/cretaDetail';
 
 const SubGallery = ({ carID }) => {
@@ -67,7 +67,7 @@ const SubGallery = ({ carID }) => {
 				<div onClick={() => setexteriorOpen(!exteriorOpen)}>
 					<div className='w-full h-[56px] md:h-[154px] rounded-lg md:rounded-2xl relative'>
 						<img
-							src={ioniq6exteriorOverview}
+							src={ioniq6ExteriorOverview}
 							alt='Ioniq 6 exterior Overview'
 						/>
 						<p className='absolute inset-y-0 w-full flex justify-center items-center text-base md:text-[32px] text-white tracking-wide font-bold cursor-pointer'>exterior</p>

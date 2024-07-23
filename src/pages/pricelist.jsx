@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { carPricelist } from '../assets/data/carPricelist';
 import { generalCode } from '../assets/data/generalCodes';
 import { WAButton } from '../components/WAButton';
 import { Carousel, Table } from 'flowbite-react';

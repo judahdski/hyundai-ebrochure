@@ -78,7 +78,10 @@ export const stariaDetail = {
 			],
 		},
 		priceList: [
-			{ model: 'LOMBARDI', price: 'Rp. 1,429,000,000' },
+			{
+				model: 'LOMBARDI',
+				price: 'Rp. 1,429,000,000',
+			},
 			{ model: 'SIGN 7', price: 'Rp. 1,039,500,000' },
 			{ model: 'SIGN 9', price: 'Rp. 905,500,000' },
 		],

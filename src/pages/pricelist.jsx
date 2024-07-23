@@ -54,12 +54,20 @@ const Pricelist = () => {
 							<i className='fa-solid fa-chevron-right text-base md:text-3xl'></i>
 						</div>
 					}>
-					<CarCard imgPath={ioniq6ColorPick} />
+					{carPricelist.map(({ carID, image, priceList }, index) => (
+						<CarCard
+							key={index}
+							imgPath={image}
+							carTitle={carID}
+							carID={carID}
+							priceList={priceList}
+						/>
+					))}
 				</Carousel>
 			</div>
 
 			{/* Button Buy and test drive */}
-			<div className='w-full px-4 pt-[32px] pb-[48px] md:pt-[48px] md:pb-[54px] flex flex-col md:flex-row items-center md:justify-center gap-4 md:gap-8'>
+			<div className='bgrew-full px-4 pt-[32px] pb-[48px] md:pt-[48px] md:pb-[54px] flex flex-col md:flex-row items-center md:justify-center gap-4 md:gap-8'>
 				<WAButton
 					customClassName={'w-[288px] px-3 py-[14px] md:py-4 bg-[#1C4682] hover:bg-[#194075] rounded-lg text-base text-white text-center tracking-wider font-semibold md:order-2'}
 					content={<>BUY ME</>}
@@ -79,36 +87,28 @@ const Pricelist = () => {
 
 export default Pricelist;
 
-const CarCard = ({ imgPath, carTitle, carID }) => {
+const CarCard = ({ imgPath, carID, priceList }) => {
 	return (
-		<div className='px-2 lg:px-12 w-full max-w-[1280px] flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-10'>
+		<div className='px-2 lg:px-12 w-full max-w-[1280px] lg:h-[480px] flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-10'>
 			<img
 				className='lg:w-1/2'
 				src={imgPath}
-				alt={carTitle}
+				alt={carID}
 			/>
 			<Table className='lg:w-1/2 md:min-w-[560px] lg:min-w-[480px]'>
 				<Table.Head>
-					<Table.HeadCell>Product name</Table.HeadCell>
-					<Table.HeadCell>Color</Table.HeadCell>
+					<Table.HeadCell>Varian</Table.HeadCell>
+					<Table.HeadCell>Harga</Table.HeadCell>
 				</Table.Head>
 				<Table.Body className='divide-y'>
-					<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
-						<Table.Cell className='whitespace-nowrap font-medium text-gray-900 dark:text-white'>{'Apple MacBook Pro 17"'}</Table.Cell>
-						<Table.Cell>Sliver</Table.Cell>
-					</Table.Row>
-					<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
-						<Table.Cell className='whitespace-nowrap font-medium text-gray-900 dark:text-white'>{'Apple MacBook Pro 17"'}</Table.Cell>
-						<Table.Cell>Sliver</Table.Cell>
-					</Table.Row>
-					<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
-						<Table.Cell className='whitespace-nowrap font-medium text-gray-900 dark:text-white'>{'Apple MacBook Pro 17"'}</Table.Cell>
-						<Table.Cell>Sliver</Table.Cell>
-					</Table.Row>
-					<Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
-						<Table.Cell className='whitespace-nowrap font-medium text-gray-900 dark:text-white'>{'Apple MacBook Pro 17"'}</Table.Cell>
-						<Table.Cell>Sliver</Table.Cell>
-					</Table.Row>
+					{priceList.map(({ model, price }, index) => (
+						<Table.Row
+							key={index}
+							className='bg-white dark:border-gray-700 dark:bg-gray-800'>
+							<Table.Cell className='font-medium text-gray-900 dark:text-white'>{model}</Table.Cell>
+							<Table.Cell className='whitespace-nowrap'>{price}</Table.Cell>
+						</Table.Row>
+					))}
 				</Table.Body>
 			</Table>
 		</div>

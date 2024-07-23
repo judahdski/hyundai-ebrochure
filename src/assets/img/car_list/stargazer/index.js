@@ -22,10 +22,10 @@ import section2Highlight1Stargazer from './highlight/section2_highlight1_stargaz
 import section2Highlight2Stargazer from './highlight/section2_highlight2_stargazer.jpg';
 import section2Highlight3Stargazer from './highlight/section2_highlight3_stargazer.jpg';
 
-import creamyWhitePearlStargazer from 'creamy_white_pearl_stargazer.png';
-import dragoRedPearlStargazer from 'drago_red_pearl_stargazer.png';
-import magneticSilverMetallicStargazer from 'magnetic_silver_metallic_stargazer.png';
-import titanGrayMetallicStargazer from 'titan_gray_metallic_stargazer.png';
+import creamyWhitePearlStargazer from './pick_color/creamy_white_pearl_stargazer.png';
+import dragoRedPearlStargazer from './pick_color/drago_red_pearl_stargazer.png';
+import magneticSilverMetallicStargazer from './pick_color/magnetic_silver_metallic_stargazer.png';
+import titanGrayMetallicStargazer from './pick_color/titan_gray_metallic_stargazer.png';
 
 import CreamyWhitePearlHexImageStargazer from './hex_image/Creamy-White-Pearl_hex-image_stargazer.png';
 import DragonRedPearlHexImageStargazer from './hex_image/Dragon-Red-Pearl_hex-image_stargazer.png';

@@ -3,10 +3,10 @@ import cretaArticleGallery from './gallery/creta_article_gallery.jpg';
 import section1HighlightCreta from './highlight/section1_highlight_creta.jpg';
 import section2HighlightCreta from './highlight/section2_highlight_creta.jpg';
 
-import eksterior1Creta from './eksterior/eksterior1_creta.jpg';
-import eksterior2Creta from './eksterior/eksterior2_creta.jpg';
-import eksterior3Creta from './eksterior/eksterior3_creta.jpg';
-import eksterior5Creta from './eksterior/eksterior5_creta.jpg';
+import eksterior1Creta from './exterior/exterior1_creta.jpg';
+import eksterior2Creta from './exterior/exterior2_creta.jpg';
+import eksterior3Creta from './exterior/exterior3_creta.jpg';
+import eksterior5Creta from './exterior/exterior5_creta.jpg';
 
 import interior1Creta from './interior/interior1_creta.jpg';
 import interior2Creta from './interior/interior2_creta.jpg';

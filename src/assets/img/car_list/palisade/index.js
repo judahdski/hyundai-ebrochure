@@ -14,16 +14,16 @@ import palisadeArticleGallery from './gallery/palisade_article_gallery.jpg';
 
 import section1HighlightPalisade from './highlight/section1_highlight1_palisade.jpg';
 import section1Highlight2Palisade from './highlight/section1_highlight2_palisade.jpg';
-import section1Highlight3Palisade from './highlight/section1_highlight2_palisade.jpg';
+import section1Highlight3Palisade from './highlight/section1_highlight3_palisade.jpg';
 import section2Highlight1Palisade from './highlight/section2_highlight1_palisade.jpg';
 import section2Highlight2Palisade from './highlight/section2_highlight2_palisade.jpg';
-import section2Highlight3Palisade from './highlight/section2_highlight3_palisade.jpg';
+import section2Highlight3Palisade from './highlight/section2_highlight3_palisade.png';
 
-import abyssBlackPearlPalisade from 'abyss_black_pearl_palisade.png';
-import creamyWhitePearlPalisade from 'creamy_white_pearl_palisade.png';
-import graphiteGrayMetallicPalisade from 'graphite_gray_metallic_palisade.png';
-import moonlightBluePearlPalisade from 'moonlight_blue_pearl_palisade.png';
-import shimmeringSilverMetallicPalisade from 'shimmering_silver_metallic_palisade.png';
+import abyssBlackPearlPalisade from './pick_color/abyss_black_pearl_palisade.png';
+import creamyWhitePearlPalisade from './pick_color/creamy_white_pearl_palisade.png';
+import graphiteGrayMetallicPalisade from './pick_color/graphite_gray_metallic_palisade.png';
+import moonlightBluePearlPalisade from './pick_color/moonlight_blue_pearl_palisade.png';
+import shimmeringSilverMetallicPalisade from './pick_color/shimmering_silver_metallic_palisade.png';
 
 import AbyssBlackPearlHexImagePalisade from './hex_image/abyss-black-pearl_hex-image_palisade.jpg';
 import CreamyWhitePearlHexImagePalisade from './hex_image/creamy_white-pearl_hex-image_palisade.jpg';

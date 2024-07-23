@@ -11,13 +11,13 @@ export const stargazerXDetail = {
 				code: 'highlight_segment_1',
 				title: 'Unleash the X in you.',
 				body: 'Tunjukkan faktor X dalam dirimu bersama Hyundai . Desain baru berkarakter tegas namun tetap stylish dan futuristik, dilengkapi dengan beragam fitur inovatif membuat eksplorasi dalam hidup lebih menyenangkan.',
-				images: ['section1_highlight_creta.jpg'],
+				images: [StargazerXImages.section1HighlightStargazerX],
 			},
 			{
 				code: 'highlight_segment_2',
 				title: 'Bluelink <br> Connect with your car.',
 				body: 'Hyundai  telah dilengkapi dengan teknologi konektivitas Hyundai Bluelink, sebuah platform yang memudahkan pengecekan informasi penting tentang mobil Anda. Terhubung dengan call center Hyundai 7 x 24 jam saat terjadi kondisi darurat untuk segera memberikan Anda bantuan.',
-				images: ['section2_highlight_creta.jpg'],
+				images: [StargazerXImages.section2Highlight1StargazerX, StargazerXImages.section2Highlight2StargazerX, StargazerXImages.section2Highlight3StargazerX],
 			},
 		],
 		gallery: {

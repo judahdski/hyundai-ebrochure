@@ -1,7 +1,6 @@
-import { stargazerMD } from '../../images/main_display/index';
+import { stargazerMD } from '../../img/main_display/index';
 import { stargazerBanner } from '../../img/banner/index';
 import * as StargazerImages from '../../img/car_list/stargazer/index';
-import { midnightBlackPearlStargazerx } from '../../img/car_list/stargazer-x';
 
 export const stargazerDetail = {
 	carID: 'RBm1W3', // stargazer
@@ -12,13 +11,13 @@ export const stargazerDetail = {
 				code: 'highlight_segment_1',
 				title: 'Bintang baru keluarga.',
 				body: 'Saatnya menikmati era baru MPV bersama New STARGAZER, inovasi mobilitas untuk setiap perjalanan berkualitas. Inilah standar baru mobil keluarga yang menghadirkan kenyamanan maksimal dan fitur berkelas, serta memberikan ruang luas untuk kebersamaan Anda dan orang terkasih.',
-				images: ['section1_highlight_creta.jpg'],
+				images: [StargazerImages.section1Highlight1Stargazer],
 			},
 			{
 				code: 'highlight_segment_2',
 				title: 'Bluelink <br> Connect with your car.',
 				body: 'New STARGAZER telah dilengkapi dengan teknologi konektivitas Hyundai Bluelink, sebuah platform yang memudahkan pengecekan informasi penting tentang mobil Anda. Terhubung dengan call center Hyundai 7 x 24 jam saat terjadi kondisi darurat untuk segera memberikan Anda bantuan.',
-				images: ['section2_highlight_creta.jpg'],
+				images: [StargazerImages.section2Highlight1Stargazer, StargazerImages.section2Highlight2Stargazer, StargazerImages.section2Highlight3Stargazer],
 			},
 		],
 		gallery: {

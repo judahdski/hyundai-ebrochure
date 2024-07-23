@@ -11,13 +11,13 @@ export const stariaDetail = {
 				code: 'highlight_segment_1',
 				title: 'Larger than life.',
 				body: 'Bagi Anda yang selalu membuka ruang demi kesuksesan, bersiaplah menjalani pencapaian demi pencapaian bersama STARIA. STARIA merevolusi fungsi ruang berkendara untuk berpegian dalam kenyamanan yang maksimal, melakukan percakapan tatap muka yang menyenangkan selama perjalanan, sambil menikmati momen-momen yang memperkaya hidup Anda.',
-				images: ['section1_highlight_creta.jpg'],
+				images: [StariaImages.section1Highlight1Staria],
 			},
 			{
 				code: 'highlight_segment_2',
 				title: 'Launch into a new dimension.',
 				body: 'Mengadopsi gaya on-curve design, STARIA mengaplikasikan inovasi terbarunya pada rancang bentuk kendaraan MPV. Siluet futuristiknya membungkus berbagai fitur teknologi terdepan untuk berkendara yang semakin aman, nyaman dan mudah. Lebih dari sekedar membangun estetika desain, STARIA menciptakan kelas dan standar kemewahan yang baru di segmen MPV.',
-				images: ['section2_highlight_creta.jpg'],
+				images: [StariaImages.section2Highlight1Staria],
 			},
 		],
 		gallery: {

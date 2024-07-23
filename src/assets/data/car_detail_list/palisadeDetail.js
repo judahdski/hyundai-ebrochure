@@ -11,13 +11,13 @@ export const palisadeDetail = {
 				code: 'highlight_segment_1',
 				title: 'Empower your world.',
 				body: 'Jadikan pencapaian hidup Anda dan keluarga lebih berarti dengan New PALISADE. Berkendara penuh performa dan inovasi begitu berkesan di setiap perjalanan menuju dunia baru yang Anda miliki seutuhnya',
-				images: [],
+				images: [PalisadeImages.section1Highlight2Palisade, PalisadeImages.section1Highlight2Palisade, PalisadeImages.section1Highlight3Palisade],
 			},
 			{
 				code: 'highlight_segment_2',
 				title: 'Bluelink <br> Connect with your car.',
 				body: 'New PALISADE telah dilengkapi dengan teknologi konektivitas Hyundai Bluelink, sebuah platform yang memudahkan pengecekan informasi penting tentang mobil Anda. Terhubung dengan call center Hyundai 7 x 24 jam saat terjadi kondisi darurat untuk segera memberikan Anda bantuan.',
-				images: ['section2_highlight_creta.jpg'],
+				images: [PalisadeImages.section2Highlight1Palisade, PalisadeImages.section2Highlight2Palisade, PalisadeImages.section2Highlight3Palisade],
 			},
 		],
 		gallery: {

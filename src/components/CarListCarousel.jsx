@@ -2,6 +2,8 @@
 
 import { Carousel } from 'flowbite-react';
 import { cretaMD, palisadeMD } from '../assets/img/main_display/index';
+import { cars } from '../assets/data/cars';
+import { carDetails } from '../assets/data/carDetails';
 
 export const CarListCarousel = ({ setPage }) => {
 	return (
@@ -20,18 +22,19 @@ export const CarListCarousel = ({ setPage }) => {
 						<i className='fa-solid fa-chevron-right text-base md:text-3xl'></i>
 					</div>
 				}>
-				<CarCard
-					imgPath={cretaMD}
-					carTitle='creta'
-					carID='asdf'
-					setPage={setPage}
-				/>
-				<CarCard
-					imgPath={palisadeMD}
-					carTitle='palisade'
-					carID='123asdf'
-					setPage={setPage}
-				/>
+				{cars.map(({ id, name, type }) => {
+					const carObj = carDetails.filter((row) => row.id == id)[0].carDetail;
+
+					return (
+						<CarCard
+							key={id}
+							carID={id}
+							carTitle={name}
+							imgPath={carObj.mainImage?.mainDisplay}
+							setPage={setPage}
+						/>
+					);
+				})}
 			</Carousel>
 		</div>
 	);

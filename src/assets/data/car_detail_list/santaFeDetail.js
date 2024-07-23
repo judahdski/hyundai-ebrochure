@@ -96,10 +96,7 @@ export const santaFeDetail = {
 			],
 		},
 		priceList: [
-			{
-				model: 'SIGN 2.2 AT',
-				price: 'Rp. 736,800,000',
-			},
+			{ model: 'SIGN 2.2 AT', price: 'Rp. 736,800,000' },
 			{ model: 'PRIME 2.2 AT', price: 'Rp. 666,100,000' },
 			{ model: 'SIGN 2.5 AT', price: 'Rp. 685,300,000' },
 			{ model: 'PRIME 2.5 AT', price: 'Rp. 605,500,000' },

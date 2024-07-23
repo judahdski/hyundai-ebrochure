@@ -89,10 +89,7 @@ export const stargazerXDetail = {
 			],
 		},
 		priceList: [
-			{
-				name: 'PRIME Premium Color 1.5 IVT',
-				price: 'Rp. 339,700,000',
-			},
+			{ name: 'PRIME Premium Color 1.5 IVT', price: 'Rp. 339,700,000' },
 			{ name: 'PRIME 1.5 IVT', price: 'Rp. 336,200,000' },
 			{ name: 'STYLE 1.5 IVT', price: 'Rp. 325,600,000' },
 		],

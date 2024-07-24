@@ -50,7 +50,7 @@ const SubGallery = ({ carID }) => {
           <div className='flex gap-6'>
             {colors.map(({ hexImage, name, carImage }) => (
               <img
-                className={`h-[48px] md:h-full aspect-square rounded-xl md:rounded-2xl cursor-pointer border-[3px] border-blue-950/[.2] shadow`}
+                className={`h-[48px] lg:h-[74px] aspect-square rounded-xl md:rounded-2xl cursor-pointer border-[3px] border-blue-950/[.2] shadow`}
                 src={hexImage}
                 onClick={() =>
                   setColorPickObj({ image: carImage, colorName: name })
@@ -88,7 +88,7 @@ const SubGallery = ({ carID }) => {
         <div onClick={() => setexteriorOpen(!exteriorOpen)}>
           <div className='w-full h-[56px] md:h-[154px] rounded-lg md:rounded-2xl relative'>
             <img
-              src={carDetail().sections.gallery.exteriors[0]?.image}
+              src={ioniq6ExteriorOverview}
               alt='Exterior Overview'
             />
             <p className='absolute inset-y-0 w-full flex justify-center items-center text-base md:text-[32px] text-white tracking-wide font-bold cursor-pointer'>
@@ -114,7 +114,7 @@ const SubGallery = ({ carID }) => {
         <div onClick={() => setInteriorOpen(!interiorOpen)}>
           <div className='w-full h-[56px] md:h-[154px] rounded-lg md:rounded-2xl relative'>
             <img
-              src={carDetail().sections.gallery.interiors[0]?.image}
+              src={ioniq6InteriorOverview}
               alt='Interior Overview'
             />
             <p className='absolute inset-y-0 w-full flex justify-center items-center text-base md:text-[32px] text-white tracking-wide font-bold cursor-pointer'>

@@ -14,8 +14,6 @@ const SubFullSpec = ({ carID }) => {
     getFullSpec().details.filter((row) => row.categoryID == categoryID);
   //#endregion
 
-  //   const carDetail = carDetails.filter((row) => row.carID == carID)[0];
-
   return (
     <div className='px-4 py-8 md:p-[72px] flex flex-col gap-[32px]'>
       {categories.map(({ id, title }) => {
@@ -28,7 +26,7 @@ const SubFullSpec = ({ carID }) => {
               {title}
             </p>
 
-            {specDetails(id).map(({ specType, specs }, index) => {
+            {specDetails(id).map(({ specType, specs }, index) => (
               <Table key={index}>
                 <Table.Head>
                   <Table.HeadCell className='bg-[#30486B] w-[30%] text-white'>
@@ -49,8 +47,8 @@ const SubFullSpec = ({ carID }) => {
                     </Table.Row>
                   ))}
                 </Table.Body>
-              </Table>;
-            })}
+              </Table>
+            ))}
           </div>
         );
       })}

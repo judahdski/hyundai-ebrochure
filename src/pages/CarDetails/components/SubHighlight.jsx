@@ -3,8 +3,8 @@ import { carDetails } from '../../../assets/data/carDetails';
 
 const SubHighlight = ({ carID }) => {
   //#region Get data
-  const getHighlights = () =>
-    carDetails.filter((row) => row.id == carID)[0].carDetail.sections.highlight;
+  const carDetail = () => carDetails.filter((row) => row.id == carID)[0];
+  const getHighlights = () => carDetail().carDetail?.sections?.highlights;
   //#endregion
 
   return (
@@ -18,6 +18,7 @@ const SubHighlight = ({ carID }) => {
           <p className='text-sm md:text-base leading-6'>{body}</p>
           {images.map((imgPath) => (
             <img
+              className='rounded-lg'
               src={imgPath}
               alt=''
             />

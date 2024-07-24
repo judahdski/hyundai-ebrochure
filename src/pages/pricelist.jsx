@@ -14,7 +14,7 @@ const Pricelist = () => {
 			<div className='hidden md:flex mx-4 -mt-[47px] rounded-2xl shadow overflow-hidden'>
 				{generalCode
 					.filter((item) => item.category == 'feature')
-					.map(({ code, description, value }, index) => (
+					.map(({ code, description, value, message }, index) => (
 						<WAButton
 							key={index}
 							customClassName={`w-full bg-white py-4 flex flex-col items-center  ${code == 'ftr_po' ? 'border-r-2 border-l-2 border-[#EDF3FA]' : ''}`}
@@ -28,7 +28,7 @@ const Pricelist = () => {
 									<p className='pt-2 text-base font-medium'>{description}</p>
 								</>
 							}
-							waMessage={''}
+							waMessage={message ?? 'Halo mas, saya ingin '}
 						/>
 					))}
 			</div>

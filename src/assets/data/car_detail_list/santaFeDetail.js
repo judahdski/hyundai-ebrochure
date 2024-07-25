@@ -96,13 +96,10 @@ export const santaFeDetail = {
 			],
 		},
 		priceList: [
-			{
-				model: 'SIGN 2.2 AT',
-				price: 'Rp. 736,800,000',
-			},
-			{ model: 'PRIME 2.2 AT', price: 'Rp. 666,100,000' },
-			{ model: 'SIGN 2.5 AT', price: 'Rp. 685,300,000' },
-			{ model: 'PRIME 2.5 AT', price: 'Rp. 605,500,000' },
+			{ model: 'CRDi 2.2 AT Signature', price: 'Rp. 760,000,000' },
+			{ model: 'CRDi 2.2 AT Prime', price: 'Rp. 687,500,000' },
+			{ model: 'Gasoline 2.5 AT Signature', price: 'Rp. 707,000,000' },
+			{ model: 'Gasoline 2.5 AT Prime', price: 'Rp. 626,000,000' },
 		],
 		fullSpec: {
 			categories: [

@@ -86,10 +86,11 @@ export const ioniq5Detail = {
 			],
 		},
 		priceList: [
-			{ model: 'SIGNATURE LONG RANGE', price: 'Rp. 859,000,000' },
-			{ model: 'SIGNATURE STANDARD RANGE', price: 'Rp. 809,000,000' },
-			{ model: 'PRIME LONG RANGE', price: 'Rp. 789,000,000' },
-			{ model: 'PRIME STANDARD RANGE', price: 'Rp. 748,000,000' },
+			{ model: 'Signature Batik', price: 'Rp. 987,000,000' },
+			{ model: 'Signature Long Range', price: 'Rp. 895,500,000' },
+			{ model: 'Signature Standar Range', price: 'Rp. 845,500,000' },
+			{ model: 'Prime Long Range', price: 'Rp. 823,500,000' },
+			{ model: 'Prime Standar Range', price: 'Rp. 782,500,000' },
 		],
 		fullSpec: {
 			categories: [

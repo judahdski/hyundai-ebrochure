@@ -102,8 +102,8 @@ export const ioniq6Detail = {
 			],
 		},
 		priceList: [
-			{ model: 'SIGNATURE AWD', price: 'Rp. 1,197,000,000' },
-			{ model: 'AWD MATTE COLOR', price: 'Rp. 1,200,500,000' },
+			{ model: 'Signature AWD', price: 'Rp. 1,221,000,000' },
+			{ model: 'Signature AWD Matte Color', price: 'Rp. 1,224,500,000' },
 		],
 		fullSpec: {
 			categories: [

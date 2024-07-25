@@ -16,7 +16,7 @@ export const cars = [
 	},
 	{
 		id: 'fpPQbL',
-		name: 'Palisade',
+		name: 'New Palisade XRT',
 		type: 'SUV',
 	},
 	{

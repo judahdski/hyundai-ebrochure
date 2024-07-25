@@ -4,7 +4,7 @@ import * as StargazerXImages from '../../img/car_list/stargazer-x/index';
 
 export const stargazerXDetail = {
 	carID: 'ipEZQz',
-	image: { banner: stargazerXBanner, mainDisplay: stargazerXMD },
+	mainImage: { banner: stargazerXBanner, mainDisplay: stargazerXMD },
 	sections: {
 		highlight: [
 			{
@@ -89,12 +89,9 @@ export const stargazerXDetail = {
 			],
 		},
 		priceList: [
-			{
-				name: 'PRIME Premium Color 1.5 IVT',
-				price: 'Rp. 339,700,000',
-			},
-			{ name: 'PRIME 1.5 IVT', price: 'Rp. 336,200,000' },
-			{ name: 'STYLE 1.5 IVT', price: 'Rp. 325,600,000' },
+			{ name: 'Prime Matte Color', price: 'Rp. 350,500,000' },
+			{ name: 'Prime', price: 'Rp. 347,400,000' },
+			{ name: 'Style', price: 'Rp. 336,800,000' },
 		],
 		fullSpec: {
 			categories: [

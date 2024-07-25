@@ -24,27 +24,27 @@ export const palisadeDetail = {
 			colors: [
 				{
 					name: 'Abyss Black Pearl',
-					hexImage: '#252628',
+					hexImage: PalisadeImages.AbyssBlackPearlHexImagePalisade,
 					carImage: PalisadeImages.abyssBlackPearlPalisade,
 				},
 				{
 					name: 'Moonlight Blue Pearl',
-					hexImage: '#2C3649',
+					hexImage: PalisadeImages.MoonlightBluePearlHexImagePalisade,
 					carImage: PalisadeImages.moonlightBluePearlPalisade,
 				},
 				{
 					name: 'Creamy White Pearl',
-					hexImage: '#E8E8E8',
+					hexImage: PalisadeImages.CreamyWhitePearlHexImagePalisade,
 					carImage: PalisadeImages.creamyWhitePearlPalisade,
 				},
 				{
 					name: 'Graphite Gray Metallic',
-					hexImage: '#414649',
+					hexImage: PalisadeImages.GraphiteGrayMetallicHexImagePalisade,
 					carImage: PalisadeImages.graphiteGrayMetallicPalisade,
 				},
 				{
 					name: 'Shimmering Silver Metallic',
-					hexImage: '#989C9D',
+					hexImage: PalisadeImages.ShimmeringSilverMetallicHexImagePalisade,
 					carImage: PalisadeImages.shimmeringSilverMetallicPalisade,
 				},
 			],
@@ -89,9 +89,8 @@ export const palisadeDetail = {
 			],
 		},
 		priceList: [
-			{ model: 'DIESEL 2.2 AT SIGN AWD', price: 'Rp. 1,147,500,000' },
-			{ model: 'DIESEL 2.2 AT SIGN 4X2', price: 'Rp. 1,012,500,000' },
-			{ model: 'DIESEL 2.2 AT PRIME 4X2', price: 'Rp. 875,500,000' },
+			{ model: 'Signature AWD XRT', price: 'Rp. 1,216,000,000' },
+			{ model: 'Signature XRT', price: 'Rp. 1,080,000,000' },
 		],
 		fullSpec: {
 			categories: [

@@ -100,12 +100,9 @@ export const stargazerDetail = {
 			],
 		},
 		priceList: [
-			{ model: 'PRIME 1.5 IVT', price: 'Rp. 316,200,000' },
-			{ model: 'STYLE 1.5 IVT', price: 'Rp. 300,800,000' },
-			{ model: 'ESSENTIAL 1.5 IVT', price: 'Rp. 272,500,000' },
-			{ model: 'ESSENTIAL 1.5 MT', price: 'Rp. 258,800,000' },
-			{ model: 'ACTIVE 1.5 IVT', price: 'Rp. 260,000,000' },
-			{ model: 'ACTIVE 1.5 MT', price: 'Rp. 247,200,000' },
+			{ model: 'Prime 1.5 IVT', price: 'Rp. 321,900,000' },
+			{ model: 'Essential 1.5 IVT', price: 'Rp. 276,300,000' },
+			{ model: 'Essential 1.5 MT', price: 'Rp. 262,400,000' },
 		],
 		fullSpec: {
 			categories: [

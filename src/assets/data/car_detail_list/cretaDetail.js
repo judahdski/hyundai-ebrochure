@@ -71,13 +71,12 @@ export const cretaDetail = {
 			],
 		},
 		priceList: [
-			{ model: 'PRIME DUAL TONE 1.5 IVT', price: 'Rp. 411,300,000' },
-			{ model: 'PRIME 1.5 IVT', price: 'Rp. 408,300,000' },
-			{ model: 'STYLE 1.5 IVT', price: 'Rp. 376,000,000' },
-			{ model: 'BLACK EDITION 1.5 IVT', price: 'Rp. 350,000,000' },
-			{ model: 'TREND 1.5 IVT', price: 'Rp. 333,500,000' },
-			{ model: 'TREND 1.5 MT', price: 'Rp. 313,000,000' },
-			{ model: 'ACTIVE 1.5 IVT MT', price: 'Rp. 291,300,000' },
+			{ model: 'ALPHA EDITION', price: 'Rp. 422,800,000' },
+			{ model: 'Prime 1.5 IVT Dual Tone', price: 'Rp. 420,800,000' },
+			{ model: 'Prime 1.5 IVT', price: 'Rp. 417,800,000' },
+			{ model: 'Style 1.5 IVT', price: 'Rp. 384,800,000' },
+			{ model: 'Trend 1.5 IVT', price: 'Rp. 341,500,000' },
+			{ model: 'Trend 1.5 MT', price: 'Rp. 320,300,000' },
 		],
 		fullSpec: {
 			categories: [

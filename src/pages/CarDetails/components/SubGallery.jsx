@@ -42,8 +42,9 @@ const SubGallery = ({ carID }) => {
 						<p className='text-lg md:text-2xl font-semibold'>{colorPickObj.colorName}</p>
 					</div>
 					<div className='flex gap-6'>
-						{colors.map(({ hexImage, name, carImage }) => (
+						{colors.map(({ hexImage, name, carImage }, index) => (
 							<img
+								key={index}
 								className={`h-[48px] lg:h-[74px] aspect-square rounded-xl md:rounded-2xl cursor-pointer border-[3px] border-blue-950/[.2] shadow`}
 								src={hexImage}
 								onClick={() => setColorPickObj({ image: carImage, colorName: name })}
@@ -81,7 +82,7 @@ const SubGallery = ({ carID }) => {
 							src={ioniq6ExteriorOverview}
 							alt='Exterior Overview'
 						/>
-						<p className='absolute inset-y-0 w-full flex justify-center items-center text-base md:text-[32px] text-white tracking-wide font-bold cursor-pointer'>exterior</p>
+						<p className='absolute inset-y-0 w-full flex justify-center items-center text-base md:text-[32px] text-white tracking-wide font-bold cursor-pointer'>Exterior</p>
 					</div>
 					{exteriorOpen ? (
 						<div className='-mt-4 p-5 md:-mt-6 pt-6 md:pt-12 md:p-8 h-[160px] md:h-[330px] bg-[#1C4682]/[.08] border-[1px] border-[#1C4682]/[.48] rounded-lg flex gap-6 md:ap-8 overflow-y-scroll'>

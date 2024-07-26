@@ -3,10 +3,10 @@ import cretaArticleGallery from './gallery/creta_article_gallery.jpg';
 import section1HighlightCreta from './highlight/section1_highlight_creta.jpg';
 import section2HighlightCreta from './highlight/section2_highlight_creta.jpg';
 
-import eksterior1Creta from './exterior/exterior1_creta.jpg';
-import eksterior2Creta from './exterior/exterior2_creta.jpg';
-import eksterior3Creta from './exterior/exterior3_creta.jpg';
-import eksterior5Creta from './exterior/exterior5_creta.jpg';
+import exterior1Creta from './exterior/exterior1_creta.jpg';
+import exterior2Creta from './exterior/exterior2_creta.jpg';
+import exterior3Creta from './exterior/exterior3_creta.jpg';
+import exterior5Creta from './exterior/exterior5_creta.jpg';
 
 import interior1Creta from './interior/interior1_creta.jpg';
 import interior2Creta from './interior/interior2_creta.jpg';
@@ -25,10 +25,10 @@ export {
 	section1HighlightCreta,
 	section2HighlightCreta,
 	cretaArticleGallery,
-	eksterior1Creta,
-	eksterior2Creta,
-	eksterior3Creta,
-	eksterior5Creta,
+	exterior1Creta,
+	exterior2Creta,
+	exterior3Creta,
+	exterior5Creta,
 	interior1Creta,
 	interior2Creta,
 	interior3Creta,

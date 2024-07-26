@@ -6,7 +6,7 @@ export const stargazerXDetail = {
 	carID: 'ipEZQz',
 	mainImage: { banner: stargazerXBanner, mainDisplay: stargazerXMD },
 	sections: {
-		highlight: [
+		highlights: [
 			{
 				code: 'highlight_segment_1',
 				title: 'Unleash the X in you.',
@@ -68,18 +68,6 @@ export const stargazerXDetail = {
 					caption: '17-inch Diamond Cut Alloy Wheels',
 					image: StargazerXImages.eksterior3StargazerX,
 				},
-				{
-					caption: 'LED Rear Combination Lamp',
-					image: StargazerXImages.eksterior4StargazerX,
-				},
-				{
-					caption: 'LED Rear Combination Lamp',
-					image: StargazerXImages.eksterior5StargazerX,
-				},
-				{
-					caption: 'LED Rear Combination Lamp',
-					image: StargazerXImages.eksterior6StargazerX,
-				},
 			],
 			interiors: [
 				{ caption: '', image: StargazerXImages.interior1StargazerX },
@@ -89,9 +77,9 @@ export const stargazerXDetail = {
 			],
 		},
 		priceList: [
-			{ name: 'Prime Matte Color', price: 'Rp. 350,500,000' },
-			{ name: 'Prime', price: 'Rp. 347,400,000' },
-			{ name: 'Style', price: 'Rp. 336,800,000' },
+			{ model: 'Prime Matte Color', price: 'Rp. 350,500,000' },
+			{ model: 'Prime', price: 'Rp. 347,400,000' },
+			{ model: 'Style', price: 'Rp. 336,800,000' },
 		],
 		fullSpec: {
 			categories: [

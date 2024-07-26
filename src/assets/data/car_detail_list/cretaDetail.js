@@ -48,19 +48,19 @@ export const cretaDetail = {
 			exteriors: [
 				{
 					caption: 'Parametric Jewel Pattern Grille & Hidden-type LED DRL',
-					image: CretaImages.eksterior1Creta,
+					image: CretaImages.exterior1Creta,
 				},
 				{
 					caption: 'LED Headlamp',
-					image: CretaImages.eksterior2Creta,
+					image: CretaImages.exterior2Creta,
 				},
 				{
 					caption: '17-inch Diamond Cut Alloy Wheels',
-					image: CretaImages.eksterior3Creta,
+					image: CretaImages.exterior3Creta,
 				},
 				{
 					caption: 'LED Rear Combination Lamp',
-					image: CretaImages.eksterior5Creta,
+					image: CretaImages.exterior5Creta,
 				},
 			],
 			interiors: [

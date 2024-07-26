@@ -23,8 +23,9 @@ const SubHighlight = ({ carID }) => {
 						className='flex flex-col gap-6 md:gap-8 md:items-center'>
 						<h3 className='text-[22px] md:text-[32px] text-center font-medium'>{formattedTitle}</h3>
 						<p className='text-sm md:text-base leading-6'>{body}</p>
-						{images.map((imgPath) => (
+						{images.map((imgPath, index) => (
 							<img
+								key={index}
 								className='rounded-lg'
 								src={imgPath}
 								alt=''

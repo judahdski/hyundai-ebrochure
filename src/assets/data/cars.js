@@ -1,5 +1,10 @@
 export const cars = [
 	{
+		id: 'a23scs',
+		name: 'All New KONA Electric',
+		type: 'Electric Vehicle (EV)',
+	},
+	{
 		id: 'ciEPt3',
 		name: 'Ioniq 6',
 		type: 'Electric Vehicle (EV)',

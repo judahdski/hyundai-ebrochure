@@ -6,8 +6,20 @@ import { titanGrayMetallicSantafe } from '../img/car_list/santa-fe/index';
 import { magneticSilverMetallicStargazer } from '../img/car_list/stargazer/index';
 import { dragoRedPearlStargazerX } from '../img/car_list/stargazer-x/index';
 import { abyssBlackPearlStaria } from '../img/car_list/staria/index';
+import { CreamyWhitePearlKona } from '../img/car_list/kona';
 
 export const carPricelist = [
+	{
+		carID: 'a23scs',
+		image: CreamyWhitePearlKona,
+		priceList: [
+			{ model: 'Signature Long Range', price: 'Rp. 590,400,000' },
+			{ model: 'Signature Std Range', price: 'Rp. 575,400,000' },
+			{ model: 'Prime Long Range', price: 'Rp. 560,400,000' },
+			{ model: 'Prime Std Range', price: 'Rp. 515,400,000' },
+			{ model: 'Style', price: 'Rp. 499,400,000' },
+		],
+	},
 	{
 		carID: 'Pt7A7k',
 		image: opticWhiteCreta,

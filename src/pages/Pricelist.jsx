@@ -89,7 +89,7 @@ export default Pricelist;
 
 const CarCard = ({ imgPath, carID, priceList }) => {
 	return (
-		<div className='px-2 lg:px-12 w-full max-w-[1280px] lg:h-[480px] flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-10'>
+		<div className='px-2 lg:px-12 w-full max-w-[1280px] h-[650px] lg:h-[480px] flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-10'>
 			<img
 				className='lg:w-1/2'
 				src={imgPath}

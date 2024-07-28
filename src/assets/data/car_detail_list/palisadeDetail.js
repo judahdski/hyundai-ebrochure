@@ -11,7 +11,7 @@ export const palisadeDetail = {
 				code: 'highlight_segment_1',
 				title: 'Empower your world.',
 				body: 'Jadikan pencapaian hidup Anda dan keluarga lebih berarti dengan New PALISADE. Berkendara penuh performa dan inovasi begitu berkesan di setiap perjalanan menuju dunia baru yang Anda miliki seutuhnya',
-				images: [PalisadeImages.section1Highlight2Palisade, PalisadeImages.section1Highlight2Palisade, PalisadeImages.section1Highlight3Palisade],
+				images: [PalisadeImages.section1HighlightPalisade, PalisadeImages.section1Highlight2Palisade, PalisadeImages.section1Highlight3Palisade],
 			},
 			{
 				code: 'highlight_segment_2',

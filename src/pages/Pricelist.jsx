@@ -41,7 +41,7 @@ const Pricelist = () => {
 
 			<div className=''>
 				<Carousel
-					slideInterval={1000}
+					slide={false}
 					indicators={false}
 					pauseOnHover={true}
 					leftControl={

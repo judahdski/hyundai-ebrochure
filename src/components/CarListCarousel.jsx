@@ -9,7 +9,7 @@ export const CarListCarousel = ({ setPage }) => {
 	return (
 		<div>
 			<Carousel
-				slideInterval={1000}
+				slideInterval={2000}
 				indicators={false}
 				pauseOnHover={true}
 				leftControl={
@@ -53,7 +53,7 @@ const CarCard = ({ setPage, imgPath, carTitle, carID }) => {
 					src={imgPath}
 					alt={carTitle}
 				/>
-				<h4 className='text-2xl tracking-widest font-medium uppercase'>{carTitle}</h4>
+				<h4 className='text-xl md:text-2xl tracking-wide md:tracking-widest font-semibold uppercase'>{carTitle}</h4>
 			</div>
 		</div>
 	);

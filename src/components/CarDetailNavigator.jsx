@@ -31,7 +31,7 @@ const CarDetailNavigator = ({ carDetailSection, setCarDetailSection }) => {
 		<>
 			<div className='-mt-[27px] px-2 w-full'>
 				<div
-					className='bg-white px-4 py-[14px] flex justify-center rounded-[12px] overflow-hidden shadow-md font-medium text-center tracking-[3px] cursor-pointer'
+					className='bg-white px-4 py-[14px] flex justify-center rounded-[12px] overflow-hidden shadow-md font-semibold text-[#1C4682] text-center tracking-[3px] cursor-pointer'
 					onClick={() => setOpenModal(true)}>
 					{navigatorList.filter((row) => row.code == carDetailSection)[0].title}
 				</div>

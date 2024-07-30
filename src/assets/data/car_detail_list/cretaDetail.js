@@ -67,6 +67,96 @@ export const cretaDetail = {
 						},
 					],
 				},
+				{
+					variant: 'Style',
+					variantColors: [
+						{
+							name: 'Midnight Black Pearl',
+							hexImage: CretaImages.OpticWhiteHexImageCreta,
+							carImage: CretaImages.opticWhiteCreta,
+						},
+						{
+							name: 'Dragon Red Pearl',
+							hexImage: CretaImages.MidnightBlackHexImageCreta,
+							carImage: CretaImages.midnightBlackCreta,
+						},
+						{
+							name: 'Titan Gray Metallic',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+						{
+							name: 'Magnetic Silver Metallic',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+						{
+							name: 'Creamy White Pearl',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+					],
+				},
+				{
+					variant: 'Trend',
+					variantColors: [
+						{
+							name: 'Midnight Black Pearl',
+							hexImage: CretaImages.OpticWhiteHexImageCreta,
+							carImage: CretaImages.opticWhiteCreta,
+						},
+						{
+							name: 'Dragon Red Pearl',
+							hexImage: CretaImages.MidnightBlackHexImageCreta,
+							carImage: CretaImages.midnightBlackCreta,
+						},
+						{
+							name: 'Titan Gray Metallic',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+						{
+							name: 'Magnetic Silver Metallic',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+						{
+							name: 'Creamy White Pearl',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+					],
+				},
+				{
+					variant: 'Active',
+					variantColors: [
+						{
+							name: 'Midnight Black Pearl',
+							hexImage: CretaImages.OpticWhiteHexImageCreta,
+							carImage: CretaImages.opticWhiteCreta,
+						},
+						{
+							name: 'Dragon Red Pearl',
+							hexImage: CretaImages.MidnightBlackHexImageCreta,
+							carImage: CretaImages.midnightBlackCreta,
+						},
+						{
+							name: 'Titan Gray Metallic',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+						{
+							name: 'Magnetic Silver Metallic',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+						{
+							name: 'Creamy White Pearl',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+					],
+				},
 			],
 			articles: [
 				{
@@ -79,12 +169,12 @@ export const cretaDetail = {
 			interiors: [CretaImages.interior1Creta, CretaImages.interior2Creta, CretaImages.interior3Creta, CretaImages.interior4Creta],
 		},
 		priceList: [
-			{ model: 'ALPHA EDITION', price: 'Rp. 422,800,000', image: '' },
-			{ model: 'Prime 1.5 IVT Dual Tone', price: 'Rp. 420,800,000', image: '' },
-			{ model: 'Prime 1.5 IVT', price: 'Rp. 417,800,000', image: '' },
-			{ model: 'Style 1.5 IVT', price: 'Rp. 384,800,000', image: '' },
-			{ model: 'Trend 1.5 IVT', price: 'Rp. 341,500,000', image: '' },
-			{ model: 'Trend 1.5 MT', price: 'Rp. 320,300,000', image: '' },
+			{ model: 'ALPHA EDITION', price: 'Rp. 422,800,000' },
+			{ model: 'Prime 1.5 IVT Dual Tone', price: 'Rp. 420,800,000' },
+			{ model: 'Prime 1.5 IVT', price: 'Rp. 417,800,000' },
+			{ model: 'Style 1.5 IVT', price: 'Rp. 384,800,000' },
+			{ model: 'Trend 1.5 IVT', price: 'Rp. 341,500,000' },
+			{ model: 'Trend 1.5 MT', price: 'Rp. 320,300,000' },
 		],
 		fullSpecs: [
 			{
@@ -392,7 +482,7 @@ export const cretaDetail = {
 				],
 			},
 			{
-				variant: 'A9C2G5',
+				variant: 'B1D6P3',
 				categories: [
 					{ id: 'FS001', title: 'Performa' },
 					{ id: 'FS002', title: 'Dimensi' },
@@ -544,7 +634,7 @@ export const cretaDetail = {
 				],
 			},
 			{
-				variant: 'A9C2G5',
+				variant: 'Z3K7H9',
 				categories: [
 					{ id: 'FS001', title: 'Performa' },
 					{ id: 'FS002', title: 'Dimensi' },
@@ -696,7 +786,7 @@ export const cretaDetail = {
 				],
 			},
 			{
-				variant: 'A9C2G5',
+				variant: 'E5T8J2',
 				categories: [
 					{ id: 'FS001', title: 'Performa' },
 					{ id: 'FS002', title: 'Dimensi' },
@@ -848,7 +938,7 @@ export const cretaDetail = {
 				],
 			},
 			{
-				variant: 'A9C2G5',
+				variant: 'N7L0Q4',
 				categories: [
 					{ id: 'FS001', title: 'Performa' },
 					{ id: 'FS002', title: 'Dimensi' },

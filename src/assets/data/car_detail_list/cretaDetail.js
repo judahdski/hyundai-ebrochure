@@ -51,17 +51,42 @@ export const cretaDetail = {
 					variant: 'Prime',
 					variantColors: [
 						{
-							name: 'Optic White',
+							name: 'Midnight Black Pearl',
 							hexImage: CretaImages.OpticWhiteHexImageCreta,
 							carImage: CretaImages.opticWhiteCreta,
 						},
 						{
-							name: 'Midnight Black',
+							name: 'Creamy White Pearl with Black Roof',
 							hexImage: CretaImages.MidnightBlackHexImageCreta,
 							carImage: CretaImages.midnightBlackCreta,
 						},
 						{
-							name: 'Magnetic Silver',
+							name: 'Dragon Red Pearl with Black Roof',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+						{
+							name: 'Magnetic Silver Metallic with Black Roof',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+						{
+							name: 'Dragon Red Pearl',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+						{
+							name: 'Titan Gray Metallic',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+						{
+							name: 'Magnetic Silver Metallic',
+							hexImage: CretaImages.MagneticSilverHexImageCreta,
+							carImage: CretaImages.magneticSilverCreta,
+						},
+						{
+							name: 'Creamy White Pearl',
 							hexImage: CretaImages.MagneticSilverHexImageCreta,
 							carImage: CretaImages.magneticSilverCreta,
 						},

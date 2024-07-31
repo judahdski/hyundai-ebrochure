@@ -22,15 +22,13 @@ export const CarListCarousel = ({ setPage }) => {
 						<i className='fa-solid fa-chevron-right text-base md:text-3xl'></i>
 					</div>
 				}>
-				{cars.map(({ id, name, type }) => {
-					const carObj = carDetails.filter((row) => row.id == id)[0].carDetail;
-
+				{cars.map(({ id, name, mainImage }) => {
 					return (
 						<CarCard
 							key={id}
 							carID={id}
 							carTitle={name}
-							imgPath={carObj.mainImage?.mainDisplay}
+							imgPath={mainImage.mainDisplay}
 							setPage={setPage}
 						/>
 					);

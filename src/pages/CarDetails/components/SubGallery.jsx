@@ -2,57 +2,94 @@ import React, { useState } from 'react';
 import { ioniq6InteriorOverview, ioniq6ExteriorOverview } from '../../../assets/img/temp/index';
 import { carDetails } from '../../../assets/data/carDetails';
 import { Spinner } from 'flowbite-react';
+import HeDropdown from '../../../components/HeDropdown';
 
 const SubGallery = ({ carID }) => {
-	// #region UseState
+	// #region Component State
 	const [exteriorOpen, setexteriorOpen] = useState(false);
 	const [interiorOpen, setInteriorOpen] = useState(false);
 	const [isLoading, setIsLoading] = useState(true);
-	const [colorPickObj, setColorPickObj] = useState({
+	// #endregion Component State
+
+	//  #region Data State
+	const [selectedColor, setSelectedColor] = useState({
 		image: null,
 		colorName: null,
 	});
-	// #endregion UseState
+	const [colors, setColors] = useState(null);
+	const [selectedModel, setSelectedModel] = useState(null);
+	// #endregion Data State
 
 	//#region Get data
 	const carDetail = () => carDetails.filter((row) => row.id == carID)[0].carDetail;
+
+	const getVariants = () => carDetail().variants;
 	const getGallery = () => carDetail().sections.gallery;
-	const colors = getGallery().colors;
+
 	const articles = getGallery().articles;
 	const exteriors = getGallery().exteriors;
 	const interiors = getGallery().interiors;
 	//#endregion
 
+	const dropdownItems = getVariants().map(({ model, type }) => {
+		const colorsTemp = getGallery().colors.filter((row) => row.variant == type)[0].variantColors;
+
+		return {
+			description: model,
+			onClick: () => {
+				const { carImage, name } = colorsTemp[0];
+
+				setSelectedColor({
+					image: carImage,
+					colorName: name,
+				});
+
+				setColors(colorsTemp);
+
+				setSelectedModel(model);
+			},
+		};
+	});
+
 	return (
 		<div className='p-4 md:p-[72px] pt-6 md:pt-[48px] flex flex-col gap-[36px] md:gap-[72px]'>
+			<HeDropdown
+				ActiveText={selectedModel ?? 'Silahkan pilih varian...'}
+				DropdownItems={dropdownItems}
+			/>
+
 			{/* #region Color Picks */}
-			<div className='flex flex-col items-center gap-2 md:gap-[32px]'>
-				{colorPickObj.colorName ? (
-					<img
-						src={colorPickObj.image}
-						alt='Ioniq 6'
-						className='w-full max-w-[1000px]'
-					/>
-				) : (
-					<p>Silahkan Pilih warna</p>
-				)}
-				<div className='w-full flex flex-col md:flex-row gap-4 md:gap-[80px]'>
-					<div className='flex flex-col gap-2 md:gap-4'>
-						<p className='text-base md:text-2xl text-[#7C7C7C] font-medium'>Warna</p>
-						<p className='text-lg md:text-2xl font-semibold'>{colorPickObj.colorName}</p>
-					</div>
-					<div className='flex gap-6'>
-						{colors.map(({ hexImage, name, carImage }, index) => (
-							<img
-								key={index}
-								className={`h-[48px] lg:h-[74px] aspect-square rounded-xl md:rounded-2xl cursor-pointer border-[3px] border-blue-950/[.2] shadow`}
-								src={hexImage}
-								onClick={() => setColorPickObj({ image: carImage, colorName: name })}
-							/>
-						))}
+			{colors ? (
+				<div className='flex flex-col items-center gap-2 md:gap-[32px]'>
+					{selectedColor.colorName ? (
+						<img
+							src={selectedColor.image}
+							alt='Ioniq 6'
+							className='w-full max-w-[1000px]'
+						/>
+					) : (
+						<p>Silahkan pilih warna</p>
+					)}
+					<div className='w-full flex flex-col md:flex-row gap-4 md:gap-[80px]'>
+						<div className='md:w-[20%] flex flex-col gap-2 md:gap-4'>
+							<p className='text-base md:text-2xl text-[#7C7C7C] font-medium'>Warna</p>
+							<p className='text-lg md:text-2xl font-semibold'>{selectedColor.colorName}</p>
+						</div>
+						<div className='md:w-[80%] flex gap-6 overflow-y-scroll'>
+							{colors.map(({ hexImage, name, carImage }, index) => (
+								<img
+									key={index}
+									className={`h-[48px] lg:h-[74px] aspect-square rounded-xl md:rounded-2xl cursor-pointer border-[3px] border-blue-950/[.2] shadow`}
+									src={hexImage}
+									onClick={() => setSelectedColor({ image: carImage, colorName: name })}
+								/>
+							))}
+						</div>
 					</div>
 				</div>
-			</div>
+			) : (
+				<></>
+			)}
 			{/* #endregion Color Picks */}
 
 			{/* #region Articles */}

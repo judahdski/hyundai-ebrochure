@@ -1,10 +1,10 @@
 import React from 'react';
 import konaExampleBanner from '../assets/img/kona_exmp_banner.jpg';
-import { carDetails } from '../assets/data/carDetails';
+import { cars } from '../assets/data/cars';
 
 const BasePage = ({ content }) => {
 	const carID = localStorage.getItem('carID');
-	const carBanner = carDetails.filter((row) => row.id == carID)[0]?.carDetail.mainImage.banner;
+	const carBanner = cars.filter((row) => row.id == carID)[0]?.mainImage.banner;
 
 	return (
 		<main className='flex flex-col items-center'>

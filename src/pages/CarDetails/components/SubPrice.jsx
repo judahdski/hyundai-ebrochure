@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { ioniq6PriceTemp } from '../../../assets/img/temp';
 import { WAButton } from '../../../components/WAButton';
 import { carDetails } from '../../../assets/data/carDetails';
+import { cars } from '../../../assets/data/cars';
+import HeDropdown from '../../../components/HeDropdown';
 
 const SubPrice = ({ carID }) => {
 	// #region UseState
@@ -11,28 +13,15 @@ const SubPrice = ({ carID }) => {
 
 	//#region Get data
 	const getPriceList = () => carDetails.filter((row) => row.id == carID)[0].carDetail?.sections.priceList;
-	const mainCarImage = carDetails.filter((row) => row.id == carID)[0].carDetail?.mainImage.mainDisplay;
+	const mainCarImage = cars.filter((row) => row.id == carID)[0]?.mainImage.mainDisplay;
 	//#endregion
 
 	return (
 		<div className='py-6 px-4 md:py-[56px] md:px-[72px] flex flex-col gap-[56px]'>
-			<div className='flex flex-col md:flex-row md:items-center gap-2 md:gap-6'>
-				<p className='text-[14px] md:text-base font-medium'>Pilih varian</p>
-
-				<Dropdown
-					label=''
-					dismissOnClick={true}
-					renderTrigger={() => <div className='flex-1 py-2 px-4 rounded-lg border border-[#CFCFCF] hover:bg-slate-50 cursor-pointer'>{carVariant.model ?? 'Silahkan pilih varian mobil..'}</div>}
-					className='lg:w-3/4'>
-					{getPriceList().map(({ model, price }, index) => (
-						<Dropdown.Item
-							key={index}
-							onClick={() => setCarVariant({ model, price })}>
-							{model}
-						</Dropdown.Item>
-					))}
-				</Dropdown>
-			</div>
+			<HeDropdown
+				DropdownItems={getPriceList().map(({ model, price }) => ({ description: model, onClick: () => setCarVariant({ model, price }) }))}
+				ActiveText={carVariant.model}
+			/>
 
 			{carVariant.model ? (
 				<>

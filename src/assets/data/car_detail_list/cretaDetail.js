@@ -28,7 +28,7 @@ export const cretaDetail = {
 		gallery: {
 			colors: [
 				{
-					variantID: 'Alpha',
+					variantType: 'Alpha',
 					variantColors: [
 						{
 							name: 'Optic White',
@@ -48,7 +48,7 @@ export const cretaDetail = {
 					],
 				},
 				{
-					variantID: 'Prime',
+					variantType: 'Prime',
 					variantColors: [
 						{
 							name: 'Midnight Black Pearl',
@@ -93,7 +93,7 @@ export const cretaDetail = {
 					],
 				},
 				{
-					variantID: 'Style',
+					variantType: 'Style',
 					variantColors: [
 						{
 							name: 'Midnight Black Pearl',
@@ -123,7 +123,7 @@ export const cretaDetail = {
 					],
 				},
 				{
-					variantID: 'Trend',
+					variantType: 'Trend',
 					variantColors: [
 						{
 							name: 'Midnight Black Pearl',
@@ -153,7 +153,7 @@ export const cretaDetail = {
 					],
 				},
 				{
-					variantID: 'Active',
+					variantType: 'Active',
 					variantColors: [
 						{
 							name: 'Midnight Black Pearl',

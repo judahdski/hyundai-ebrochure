@@ -32,7 +32,7 @@ const SubGallery = ({ carID }) => {
 	//#endregion
 
 	const dropdownItems = getVariants().map(({ model, type }) => {
-		const colorsTemp = getGallery().colors.filter((row) => row.variant == type)[0].variantColors;
+		const colorsTemp = getGallery().colors.filter((row) => row.variantType == type)[0].variantColors;
 
 		return {
 			description: model,

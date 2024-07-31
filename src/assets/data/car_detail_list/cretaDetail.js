@@ -28,7 +28,7 @@ export const cretaDetail = {
 		gallery: {
 			colors: [
 				{
-					variant: 'Alpha',
+					variantID: 'Alpha',
 					variantColors: [
 						{
 							name: 'Optic White',
@@ -48,7 +48,7 @@ export const cretaDetail = {
 					],
 				},
 				{
-					variant: 'Prime',
+					variantID: 'Prime',
 					variantColors: [
 						{
 							name: 'Midnight Black Pearl',
@@ -93,7 +93,7 @@ export const cretaDetail = {
 					],
 				},
 				{
-					variant: 'Style',
+					variantID: 'Style',
 					variantColors: [
 						{
 							name: 'Midnight Black Pearl',
@@ -123,7 +123,7 @@ export const cretaDetail = {
 					],
 				},
 				{
-					variant: 'Trend',
+					variantID: 'Trend',
 					variantColors: [
 						{
 							name: 'Midnight Black Pearl',
@@ -153,7 +153,7 @@ export const cretaDetail = {
 					],
 				},
 				{
-					variant: 'Active',
+					variantID: 'Active',
 					variantColors: [
 						{
 							name: 'Midnight Black Pearl',
@@ -203,7 +203,7 @@ export const cretaDetail = {
 		],
 		fullSpecs: [
 			{
-				variant: 'A9C2G5', //CRETA Alpha IVT
+				variantID: 'A9C2G5', //CRETA Alpha IVT
 				categories: [
 					{ id: 'FS001', title: 'Performa' },
 					{ id: 'FS002', title: 'Dimensi' },
@@ -355,7 +355,7 @@ export const cretaDetail = {
 				],
 			},
 			{
-				variant: 'M8F4R1', //CRETA Prime IVT
+				variantID: 'M8F4R1', //CRETA Prime IVT
 				categories: [
 					{ id: 'FS001', title: 'Performa' },
 					{ id: 'FS002', title: 'Dimensi' },
@@ -507,7 +507,7 @@ export const cretaDetail = {
 				],
 			},
 			{
-				variant: 'B1D6P3',
+				variantID: 'B1D6P3',
 				categories: [
 					{ id: 'FS001', title: 'Performa' },
 					{ id: 'FS002', title: 'Dimensi' },
@@ -659,7 +659,7 @@ export const cretaDetail = {
 				],
 			},
 			{
-				variant: 'Z3K7H9',
+				variantID: 'Z3K7H9',
 				categories: [
 					{ id: 'FS001', title: 'Performa' },
 					{ id: 'FS002', title: 'Dimensi' },
@@ -811,7 +811,7 @@ export const cretaDetail = {
 				],
 			},
 			{
-				variant: 'E5T8J2',
+				variantID: 'E5T8J2',
 				categories: [
 					{ id: 'FS001', title: 'Performa' },
 					{ id: 'FS002', title: 'Dimensi' },
@@ -963,7 +963,7 @@ export const cretaDetail = {
 				],
 			},
 			{
-				variant: 'N7L0Q4',
+				variantID: 'N7L0Q4',
 				categories: [
 					{ id: 'FS001', title: 'Performa' },
 					{ id: 'FS002', title: 'Dimensi' },

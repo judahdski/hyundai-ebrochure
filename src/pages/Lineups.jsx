@@ -2,6 +2,7 @@ import React from 'react';
 import { CarListCarousel } from '../components/CarListCarousel';
 import { generalCode } from '../assets/data/generalCodes';
 import { WAButton } from '../components/WAButton';
+import { salesProfile } from '../assets/data/salesProfile';
 
 const Lineups = ({ setPage, setCarID }) => {
 	// Always set localStorage carID to null
@@ -58,6 +59,39 @@ const Lineups = ({ setPage, setCarID }) => {
 				/>
 			</div>
 			{/* Button Buy and test drive */}
+
+			<div className='flex flex-col md:flex-row'>
+				<div className='md:flex-1 bg-[#FFA1A1] p-12 flex flex-col justify-center items-center gap-8'>
+					<div className='flex flex-col gap-3'>
+						<p className='font-medium text-xl md:text-2xl text-center text-white'>Masih Bingung Memilih Mobil Hyundai?</p>
+						<p className='text-sm md:text-base text-center text-white'>Hubungi Kami dan Dapatkan Konsultasi Gratis dari Tim Kami!</p>
+					</div>
+					<div className='flex flex-col md:flex-row items-center gap-4'>
+						<div className='bg-transparent px-4 py-3.5 w-[240px] flex justify-center items-center gap-3.5 border-2 border-white rounded-lg text-white'>
+							<i class='fa-brands fa-whatsapp text-lg'></i>
+							<p className='text-sm'>0813 1234 56789</p>
+						</div>
+						<div className='bg-transparent px-4 py-3.5 w-[240px] flex justify-center items-center gap-3.5 border-2 border-white rounded-lg text-white'>
+							<i class='fa-brands fa-instagram text-lg'></i>
+							<p className='text-sm'>@ig_account_dummy</p>
+						</div>
+					</div>
+				</div>
+
+				<div className='md:flex-1 px-4 py-12 flex flex-col items-center gap-6 border-t-4 border-b-2 border-[#1C4682]'>
+					<div className='bg-[#E7E7E7] w-[320px] md:w-[480px] aspect-square rounded-2xl flex justify-center items-center overflow-hidden'>
+						<img
+							src={salesProfile.images[0].path}
+							alt={salesProfile.images[0].alt}
+						/>
+					</div>
+					<div className='text-center flex flex-col gap-2'>
+						<h2 className='font-semibold text-3xl'>{salesProfile.fullName}</h2>
+						<p className='text-sm md:text-base'>{salesProfile.role}</p>
+						<p className='font-medium text-sm md:text-base'>Dealer Resmi Hyundai</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
